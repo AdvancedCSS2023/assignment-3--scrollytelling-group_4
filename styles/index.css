@@ -21,4 +21,10 @@ body {
   background-color: aqua;
   position: absolute;
   left: 50dvw;
+}
+
+.house__large--one {
+  position: absolute;
+  height: 100%;
+  width: 10em;
 }/*# sourceMappingURL=index.css.map */
