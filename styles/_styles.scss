@@ -1,0 +1,26 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+}
+
+.wrapper__left, .wrapper__right {
+    width: 50dvw;
+    height: 100dvh;
+    outline: 3px solid black;
+}
+
+.wrapper__left {
+    background-color: rgb(71, 255, 194);
+    
+}
+
+
+.wrapper__right {
+    background-color: aqua;
+position: absolute;
+left: 50dvw;
+}
