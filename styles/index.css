@@ -10,8 +10,8 @@ body {
 h1 {
   position: absolute;
   z-index: 2;
-  top: 120dvh;
-  left: 50dvw;
+  top: 50dvh;
+  left: 47dvw;
 }
 
 .wrapper__container {
@@ -25,15 +25,12 @@ h1 {
   width: 50dvw;
   min-width: 50dvw;
   height: 100dvh;
+  outline: 1px solid black;
   position: fixed;
-}
-
-.wrapper__left {
-  background-color: rgb(71, 255, 194);
+  background: linear-gradient(180deg, rgb(0, 245, 255) 50%, rgb(45, 166, 0) 50%);
 }
 
 .wrapper__right {
-  background-color: aqua;
   left: 50dvw;
 }
 

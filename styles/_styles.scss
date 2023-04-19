@@ -11,8 +11,8 @@ body {
 h1 {
     position: absolute;
     z-index: 2;
-    top: 120dvh;
-    left: 50dvw;
+    top: 50dvh;
+    left: 47dvw;
 }
 
 .wrapper__container {
@@ -26,18 +26,20 @@ h1 {
     width: 50dvw;
     min-width: 50dvw;
     height: 100dvh;
-    // outline: 3px solid black;
+    outline: 1px solid black;
     position: fixed;
+    background: linear-gradient(180deg, rgba(0,245,255,1) 50%, rgba(45,166,0,1) 50%);
+
 }
 
-.wrapper__left {
-    background-color: rgb(71, 255, 194);
+// .wrapper__left {
+//     background-color: rgb(71, 255, 194);
     
-}
+// }
 
 
 .wrapper__right {
-    background-color: aqua;
+// background: linear-gradient(180deg, rgba(0,245,255,1) 50%, rgba(45,166,0,1) 50%);
 // position: absolute;
 left: 50dvw;
 }
