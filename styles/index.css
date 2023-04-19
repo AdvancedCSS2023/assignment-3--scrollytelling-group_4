@@ -10,45 +10,73 @@ body {
 h1 {
   position: absolute;
   z-index: 2;
-  top: 50dvh;
-  left: 47dvw;
+  top: 45vh;
+  left: 47vw;
 }
 
 .wrapper__container {
   display: flex;
-  max-height: 100dvh;
+  max-height: 100vh;
   position: absolute;
   z-index: 1;
 }
 
 .wrapper__left, .wrapper__right {
-  width: 50dvw;
-  min-width: 50dvw;
-  height: 100dvh;
+  width: 50vw;
+  min-width: 50vw;
+  height: 100vh;
   outline: 1px solid black;
   position: fixed;
-  background: linear-gradient(180deg, rgb(0, 245, 255) 50%, rgb(45, 166, 0) 50%);
+  background: linear-gradient(180deg, rgb(0, 245, 255) 45%, rgb(45, 166, 0) 40%);
 }
 
 .wrapper__right {
-  left: 50dvw;
+  left: 50vw;
+}
+
+.wrapper__svg--right {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 svg {
   position: absolute;
-  max-height: 15em;
-  height: 100%;
-  max-width: 20%;
+  max-height: 20vh;
 }
 
 .house__large--one {
-  width: 10em;
-  top: 8em;
-  left: 7em;
+  width: 10vw;
+  top: 40vh;
+  left: 7vw;
 }
 
 .house__small--one {
-  width: 10em;
-  top: 9em;
-  left: 20em;
+  width: 10vw;
+  top: 40vh;
+  left: 20vw;
+}
+
+.hut__small--one {
+  width: 11vw;
+  top: 48vh;
+  left: 12vw;
+}
+
+.house__large--two {
+  width: 20vw;
+  top: 40vh;
+  left: 25vw;
+}
+
+.house__small--two {
+  width: 10vw;
+  top: 50vh;
+  left: 25vw;
 }/*# sourceMappingURL=index.css.map */
