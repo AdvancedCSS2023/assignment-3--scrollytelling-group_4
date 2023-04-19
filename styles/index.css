@@ -4,13 +4,28 @@
 }
 
 body {
+  height: 800dvh;
+}
+
+h1 {
+  position: absolute;
+  z-index: 2;
+  top: 120dvh;
+  left: 50dvw;
+}
+
+.wrapper__container {
   display: flex;
+  max-height: 100dvh;
+  position: absolute;
+  z-index: 1;
 }
 
 .wrapper__left, .wrapper__right {
   width: 50dvw;
+  min-width: 50dvw;
   height: 100dvh;
-  outline: 3px solid black;
+  position: fixed;
 }
 
 .wrapper__left {
@@ -19,12 +34,24 @@ body {
 
 .wrapper__right {
   background-color: aqua;
-  position: absolute;
   left: 50dvw;
 }
 
-.house__large--one {
+svg {
   position: absolute;
+  max-height: 15em;
   height: 100%;
+  max-width: 20%;
+}
+
+.house__large--one {
   width: 10em;
+  top: 8em;
+  left: 7em;
+}
+
+.house__small--one {
+  width: 10em;
+  top: 9em;
+  left: 20em;
 }/*# sourceMappingURL=index.css.map */
