@@ -26,15 +26,8 @@ img {
   left: 12vw;
 }
 
-.house__large--two {
-  width: 15vw;
-  // height: 15vw;
-  top: 40vh;
-  left: 29vw;
-}
 img {
   position: absolute;
-  // max-width: 30vw;
 }
 
 //Forest
@@ -147,39 +140,34 @@ img {
 
 //Town
 .house__large--one {
-  width: 10vw;
-  top: 40vh;
-  left: 7vw;
+  @include place(10vw, 45vh, 7vw);
 }
 
 .house__small--one {
-  width: 10vw;
-  top: 40vh;
-  left: 20vw;
+  @include place(10vw, 43vh, 20vw);
 }
 
 .hut__small--one {
-  width: 11vw;
-  top: 48vh;
-  left: 12vw;
+  @include place(11vw, 25vh, 12vw);
 }
 
 .house__large--two {
-  width: 20vw;
-  top: 40vh;
-  left: 25vw;
+  @include place(15vw, 15vh, 25vw);
 }
 
 .house__small--two {
-  width: 10vw;
-  // height: 10vw;
-  top: 50vh;
-  left: 27vw;
+  @include place(10vw, 40vh, 34vw);
+
+  }
+
+  .cloud__one {
+    height: 8vw;
+    @include place(38vw, 70vh, 10vw);
+    animation: cloud-animation 30s alternate-reverse infinite; 
 }
 
-.cloud__one {
-  width: 38vw;
-  height: 8vw;
-  top: 10vh;
-  left: 10vw;
+.cloud__two {
+  @include place(8vw, 85vh, 7vw);
+  animation: cloud-animation 40s alternate-reverse ease-in-out infinite; 
 }
+
