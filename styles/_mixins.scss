@@ -1,0 +1,5 @@
+@mixin place($width, $bottom, $left){
+    width: $width;
+    bottom: $bottom;
+    left: $left;
+}
