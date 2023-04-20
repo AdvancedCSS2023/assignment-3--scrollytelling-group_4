@@ -1,5 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 173.45 431.63">
-  <rect x="69.08" y="309.57" width="35.29" height="122.06" fill="#754c29"/>
-  <polygon points="86.72 0 0 365.44 173.45 365.44 86.72 0" fill="#009444"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 173.45 431.63"><path fill="#754c29" d="M69.08 309.57h35.29v122.06H69.08z"/><path fill="#009444" d="M86.72 0 0 365.44h173.45L86.72 0z"/></svg>
