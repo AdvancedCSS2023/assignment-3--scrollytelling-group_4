@@ -58,34 +58,17 @@ h1 {
   overflow: hidden;
 }
 
-svg, img {
-  position: absolute;
+@keyframes cloud-animation {
+  0% {
+    transform: translateX(-10vw);
+  }
+  50% {
+    transform: translateX(10vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
 }
-
-.house__large--one {
-  width: 10vw;
-  top: 40vh;
-  left: 7vw;
-}
-
-.house__small--one {
-  width: 10vw;
-  top: 40vh;
-  left: 20vw;
-}
-
-.hut__small--one {
-  width: 11vw;
-  top: 46vh;
-  left: 12vw;
-}
-
-.house__large--two {
-  width: 15vw;
-  top: 40vh;
-  left: 29vw;
-}
-
 img {
   position: absolute;
 }
@@ -122,37 +105,45 @@ img {
 
 .house__large--one {
   width: 10vw;
-  top: 40vh;
+  bottom: 45vh;
   left: 7vw;
 }
 
 .house__small--one {
   width: 10vw;
-  top: 40vh;
+  bottom: 43vh;
   left: 20vw;
 }
 
 .hut__small--one {
   width: 11vw;
-  top: 46vh;
+  bottom: 25vh;
   left: 12vw;
 }
 
 .house__large--two {
   width: 15vw;
-  top: 40vh;
-  left: 29vw;
+  bottom: 15vh;
+  left: 25vw;
 }
 
 .house__small--two {
   width: 10vw;
-  top: 50vh;
-  left: 27vw;
+  bottom: 40vh;
+  left: 34vw;
 }
 
 .cloud__one {
-  width: 38vw;
   height: 8vw;
-  top: 10vh;
+  width: 38vw;
+  bottom: 70vh;
   left: 10vw;
+  animation: cloud-animation 30s alternate-reverse infinite;
+}
+
+.cloud__two {
+  width: 8vw;
+  bottom: 85vh;
+  left: 7vw;
+  animation: cloud-animation 40s alternate-reverse ease-in-out infinite;
 }/*# sourceMappingURL=index.css.map */

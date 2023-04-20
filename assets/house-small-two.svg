@@ -2,7 +2,6 @@
           xmlns="http://www.w3.org/2000/svg"
           xml:space="preserve"
           viewBox="0 0 59 59"
-          class="house__small--two"
           preserveAspectRatio="xMidYMid meet"
         >
           <path d="m29.5 10-22 15.5v31h43V25z" style="fill: #c77c38" />
