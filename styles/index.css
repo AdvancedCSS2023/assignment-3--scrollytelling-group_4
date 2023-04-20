@@ -58,39 +58,38 @@ h1 {
   overflow: hidden;
 }
 
-svg {
+img {
   position: absolute;
-  max-height: 20vh;
 }
 
 #tree_1 {
-  width: 10vw;
+  width: 5vw;
   bottom: 45vh;
   left: 5vw;
 }
 
 #tree_2 {
-  width: 10vw;
+  width: 7vw;
   bottom: 42vh;
   left: 10vw;
 }
 
 #tree_3 {
-  width: 10vw;
+  width: 6vw;
   bottom: 46vh;
-  left: 15vw;
+  left: 16vw;
 }
 
 #tree_4 {
-  width: 10vw;
+  width: 5vw;
   bottom: 47vh;
-  left: 20vw;
+  left: 22vw;
 }
 
 #tree_5 {
-  width: 10vw;
+  width: 6vw;
   bottom: 48vh;
-  left: 26vw;
+  left: 28vw;
 }
 
 .house__large--one {
