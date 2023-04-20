@@ -58,6 +58,34 @@ h1 {
   overflow: hidden;
 }
 
+svg, img {
+  position: absolute;
+}
+
+.house__large--one {
+  width: 10vw;
+  top: 40vh;
+  left: 7vw;
+}
+
+.house__small--one {
+  width: 10vw;
+  top: 40vh;
+  left: 20vw;
+}
+
+.hut__small--one {
+  width: 11vw;
+  top: 46vh;
+  left: 12vw;
+}
+
+.house__large--two {
+  width: 15vw;
+  top: 40vh;
+  left: 29vw;
+}
+
 img {
   position: absolute;
 }
@@ -106,18 +134,25 @@ img {
 
 .hut__small--one {
   width: 11vw;
-  top: 48vh;
+  top: 46vh;
   left: 12vw;
 }
 
 .house__large--two {
-  width: 20vw;
+  width: 15vw;
   top: 40vh;
-  left: 25vw;
+  left: 29vw;
 }
 
 .house__small--two {
   width: 10vw;
   top: 50vh;
-  left: 25vw;
+  left: 27vw;
+}
+
+.cloud__one {
+  width: 38vw;
+  height: 8vw;
+  top: 10vh;
+  left: 10vw;
 }/*# sourceMappingURL=index.css.map */
