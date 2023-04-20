@@ -68,9 +68,28 @@ h1 {
   100% {
     transform: translateX(0vw);
   }
-
+}
+svg,
 img {
   position: absolute;
+}
+
+.house__large--one {
+  width: 10vw;
+  top: 40vh;
+  left: 7vw;
+}
+
+.house__small--one {
+  width: 10vw;
+  top: 40vh;
+  left: 20vw;
+}
+
+.hut__small--one {
+  width: 11vw;
+  top: 46vh;
+  left: 12vw;
 }
 
 img {
