@@ -1,36 +1,48 @@
 
-svg {
+svg, img {
     position: absolute;
-    max-height: 20vh;
+    // max-height: 20vh;
     // max-width: 30vw;
   }
   
   .house__large--one {
     width: 10vw;
+    height: 10vw;
     top: 40vh;
     left: 7vw;
   }
   
   .house__small--one {
     width: 10vw;
+    height: 10vw;
     top: 40vh;
     left: 20vw;
   }
   
   .hut__small--one {
     width: 11vw;
+    height: 11vw;
     top: 46vh;
     left: 12vw;
   }
   
   .house__large--two {
-    width: 20vw;
+    width: 15vw;
+    height: 15vw;
     top: 40vh;
     left: 29vw;
   }
 
   .house__small--two {
     width: 10vw;
+    height: 10vw;
     top: 50vh;
     left: 27vw;
+  }
+
+  .cloud__one {
+    width: 38vw;
+    height: 8vw;
+    top: 10vh;
+    left: 10vw;
   }
