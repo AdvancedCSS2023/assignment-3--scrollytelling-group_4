@@ -69,6 +69,17 @@ h1 {
     transform: translateX(0vw);
   }
 }
+@keyframes tree-movement {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-2.5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
 svg,
 img {
   position: absolute;
@@ -242,6 +253,13 @@ img {
 
 .tree__row--back {
   z-index: 1;
+}
+
+.tree {
+  animation-name: tree-movement;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 100%;
 }
 
 .tree__row--middle {
