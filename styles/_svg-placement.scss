@@ -5,31 +5,6 @@ img {
   // max-width: 30vw;
 }
 
-.house__large--one {
-  width: 10vw;
-  // height: 10vw;
-  top: 40vh;
-  left: 7vw;
-}
-
-.house__small--one {
-  width: 10vw;
-  // height: 10vw;
-  top: 40vh;
-  left: 20vw;
-}
-
-.hut__small--one {
-  width: 11vw;
-  // height: 11vw;
-  top: 46vh;
-  left: 12vw;
-}
-
-img {
-  position: absolute;
-}
-
 //Forest
 #tree_1 {
   @include place(5vw, 50vh, 0vw);
@@ -126,22 +101,22 @@ img {
 #tree_24 {
   @include place(6vw, 29vh, 40vw);
 }
-.tree__row--back{
+.tree__row--back {
   z-index: 1;
 }
 
-.tree{
+.tree {
   animation-name: tree-movement;
   animation-duration: 30s;
   animation-iteration-count: infinite;
   transform-origin: 50% 100%;
 }
 
-.tree__row--middle{
+.tree__row--middle {
   z-index: 2;
 }
 
-.tree__row--front{
+.tree__row--front {
   z-index: 3;
 }
 
@@ -164,17 +139,23 @@ img {
 
 .house__small--two {
   @include place(10vw, 40vh, 34vw);
+}
 
-  }
-
-  .cloud__one {
-    height: 8vw;
-    @include place(38vw, 70vh, 10vw);
-    animation: cloud-animation 30s alternate-reverse infinite; 
+.cloud__one {
+  height: 8vw;
+  @include place(38vw, 70vh, 10vw);
+  animation: cloud-animation 30s alternate-reverse infinite;
 }
 
 .cloud__two {
   @include place(8vw, 85vh, 7vw);
-  animation: cloud-animation 40s alternate-reverse ease-in-out infinite; 
+  animation: cloud-animation 40s alternate-reverse ease-in-out infinite;
 }
 
+.people__man--one {
+  @include place(8vw, 20vh, 20vw);
+  animation: walk 2s infinite;
+}
+.people__man--two {
+  @include place(7vw, 30vh, 1vw);
+}

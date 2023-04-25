@@ -58,6 +58,14 @@ h1 {
   overflow: hidden;
 }
 
+#landscape-message {
+  height: 100vh;
+  background-color: azure;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50vh;
+}
+
 @keyframes cloud-animation {
   0% {
     transform: translateX(-10vw);
@@ -81,28 +89,6 @@ h1 {
   }
 }
 svg,
-img {
-  position: absolute;
-}
-
-.house__large--one {
-  width: 10vw;
-  top: 40vh;
-  left: 7vw;
-}
-
-.house__small--one {
-  width: 10vw;
-  top: 40vh;
-  left: 20vw;
-}
-
-.hut__small--one {
-  width: 11vw;
-  top: 46vh;
-  left: 12vw;
-}
-
 img {
   position: absolute;
 }
@@ -313,4 +299,27 @@ img {
   bottom: 85vh;
   left: 7vw;
   animation: cloud-animation 40s alternate-reverse ease-in-out infinite;
+}
+
+.people__man--one {
+  width: 8vw;
+  bottom: 20vh;
+  left: 20vw;
+  animation: walk 2s infinite;
+}
+
+.people__man--two {
+  width: 7vw;
+  bottom: 30vh;
+  left: 1vw;
+}
+
+#landscape-message {
+  display: none;
+}
+
+@media (orientation: portrait) {
+  #landscape-message {
+    display: block;
+  }
 }/*# sourceMappingURL=index.css.map */
