@@ -392,6 +392,12 @@ img {
   left: 1vw;
 }
 
+.sun__sky--right {
+  width: 30vw;
+  bottom: 60vh;
+  left: 30vw;
+}
+
 #landscape-message {
   display: none;
 }

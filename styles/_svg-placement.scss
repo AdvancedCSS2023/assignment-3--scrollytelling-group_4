@@ -147,3 +147,7 @@ img {
 .people__man--two {
   @include place(7vw, 30vh, 1vw);
 }
+
+.sun__sky--right {
+  @include place(30vw, 60vh, 30vw);
+}
