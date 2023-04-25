@@ -1,0 +1,6 @@
+.tree {
+  animation-name: tree-movement;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 100%;
+}/*# sourceMappingURL=animation.css.map */
