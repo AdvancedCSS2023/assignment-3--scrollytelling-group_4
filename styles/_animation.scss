@@ -20,8 +20,8 @@
 }
 
 
-/*.wrapper__container[animation="box_3"]{
-    .tree__row--front{
+.wrapper__container[animation="box_3"]{
+    #tree_1{
         animation-name: tree-fall ;
         animation-duration: 3s;
         animation-iteration-count: 1;
