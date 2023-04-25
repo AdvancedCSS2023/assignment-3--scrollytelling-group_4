@@ -88,6 +88,17 @@ h1 {
     transform: rotate(5deg);
   }
 }
+@keyframes walk {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
 svg,
 img {
   position: absolute;
@@ -305,10 +316,11 @@ img {
   width: 8vw;
   bottom: 20vh;
   left: 20vw;
-  animation: walk 2s infinite;
+  animation: walk 1s step-end infinite;
 }
 
 .people__man--two {
+  animation: walk 1s step-end infinite;
   width: 7vw;
   bottom: 30vh;
   left: 1vw;

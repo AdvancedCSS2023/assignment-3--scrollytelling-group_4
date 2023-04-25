@@ -154,8 +154,9 @@ img {
 
 .people__man--one {
   @include place(8vw, 20vh, 20vw);
-  animation: walk 2s infinite;
+  animation: walk 1s step-end infinite;
 }
 .people__man--two {
+  animation: walk 1s step-end infinite;
   @include place(7vw, 30vh, 1vw);
 }
