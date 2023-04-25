@@ -135,19 +135,15 @@ img {
 .cloud__one {
   height: 8vw;
   @include place(38vw, 70vh, 10vw);
-  animation: cloud-animation 30s alternate-reverse infinite;
 }
 
 .cloud__two {
   @include place(8vw, 85vh, 7vw);
-  animation: cloud-animation 40s alternate-reverse ease-in-out infinite;
 }
 
 .people__man--one {
   @include place(8vw, 20vh, 20vw);
-  animation: walk 1s step-end infinite;
 }
 .people__man--two {
-  animation: walk 1s step-end infinite;
   @include place(7vw, 30vh, 1vw);
 }

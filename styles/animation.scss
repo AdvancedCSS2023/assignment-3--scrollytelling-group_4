@@ -4,3 +4,17 @@
     animation-iteration-count: infinite;
     transform-origin: 50% 100%;
   }
+
+  .cloud__one {
+  animation: cloud-animation 30s alternate-reverse infinite;
+}
+.cloud__two {
+  animation: cloud-animation 40s alternate-reverse ease-in-out infinite;
+}
+
+.people__man--one {
+  animation: walk 1s step-end infinite;
+}
+.people__man--two {
+  animation: walk 1s step-end infinite;
+}
