@@ -1,0 +1,14 @@
+
+    #landscape-message {
+      display: none;
+    }
+
+  
+    
+    @media (orientation: portrait) {
+      #landscape-message {
+        display: block;
+      }
+    }
+  
+  
