@@ -104,10 +104,40 @@ left: 50vw;
     }
 }
 
-#landscape-message {
+#landscape__message--container{
     height: 100vh;
+    width: 100vw;
     background-color: azure;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 50vh;
+    position: fixed;
+    z-index: 10;
 }
+
+.landscape__message--text {
+    display: block;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-top: 30vh;
+// margin-top: 30vh auto;
+text-align: center;
+font-weight: bold;
+
+} 
+
+.orientation__message--button {
+    display: block;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    text-align: center;
+    background-color: rgb(255, 104, 104);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.orientation__message--button:hover {
+    background-color: rgb(250, 149, 149);
+} 

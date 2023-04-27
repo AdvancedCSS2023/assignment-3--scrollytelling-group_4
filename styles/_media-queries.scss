@@ -1,14 +1,16 @@
 
-    #landscape-message {
+    #landscape__message--container {
       display: none;
     }
 
   
     
     @media (orientation: portrait) {
-      #landscape-message {
+      #landscape__message--container {
         display: block;
       }
     }
   
-  
+  .landscape__off {
+    display: hidden;
+  }
