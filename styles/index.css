@@ -385,7 +385,7 @@ svg {
 
 .house__large--one {
   width: 10vw;
-  bottom: 45vh;
+  bottom: 40vh;
   left: 7vw;
 }
 
@@ -403,7 +403,7 @@ svg {
 
 .house__large--two {
   width: 15vw;
-  bottom: 15vh;
+  bottom: 20vh;
   left: 25vw;
 }
 
@@ -411,6 +411,38 @@ svg {
   width: 10vw;
   bottom: 40vh;
   left: 34vw;
+}
+
+.house__large--three {
+  width: 10vw;
+  bottom: 50vh;
+  left: 25vw;
+  width: 15vw;
+}
+
+.building__container {
+  display: flex;
+}
+
+.building__tall--one {
+  width: 10vw;
+  bottom: 53vh;
+  left: 0vw;
+  width: 7vw;
+}
+
+.building__tall--two {
+  width: 10vw;
+  bottom: 53vh;
+  left: 7vw;
+  width: 8vw;
+}
+
+.building__tall--three {
+  width: 10vw;
+  bottom: 53vh;
+  left: 14vw;
+  width: 7vw;
 }
 
 .cloud__one {
