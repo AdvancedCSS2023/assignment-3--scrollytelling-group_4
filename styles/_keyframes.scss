@@ -1,0 +1,50 @@
+@keyframes cloud-animation {
+  0% {
+    transform: translateX(-10vw);
+  }
+
+  50% {
+    transform: translateX(10vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+@keyframes tree-movement {
+  0% {
+    transform: rotate(5deg);
+  }
+
+  50%{
+    transform: rotate(-2.5deg);
+  }
+  100%{
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes tree-fall {
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(-90deg);
+  }
+  100%{
+    opacity: 0;
+    transform: rotate(-90deg);
+  }
+}
+
+@keyframes walk {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}

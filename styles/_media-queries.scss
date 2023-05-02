@@ -1,0 +1,16 @@
+
+    #landscape__message--container {
+      display: none;
+    }
+
+  
+    
+    @media (orientation: portrait) {
+      #landscape__message--container {
+        display: block;
+      }
+    }
+  
+  .landscape__off {
+    display: hidden;
+  }

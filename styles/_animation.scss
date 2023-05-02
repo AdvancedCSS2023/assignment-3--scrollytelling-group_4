@@ -1,0 +1,48 @@
+.tree {
+    animation-name: tree-movement;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 100%;
+  }
+
+  .cloud__one {
+  animation: cloud-animation 30s alternate-reverse infinite;
+}
+.cloud__two {
+  animation: cloud-animation 40s alternate-reverse ease-in-out infinite;
+}
+
+.people__man--one {
+  animation: walk 1s step-end infinite;
+}
+.people__man--two {
+  animation: walk 1s step-end infinite;
+}
+
+
+.cow__head {
+  animation: cow-nod 4s infinite;
+}
+
+.wrapper__container[animation="box_3"]{
+    #tree_1{
+        animation-name: tree-fall ;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+      }
+}
+
+@keyframes cow-nod {
+  // nodding animation
+  
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
