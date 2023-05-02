@@ -143,12 +143,16 @@
   animation: cloud-animation 40s alternate-reverse ease-in-out infinite;
 }
 
-.people__man--one {
+.people__man--one, .people__man--two, .people__man--three {
   animation: walk 1s step-end infinite;
 }
 
 .people__man--two {
-  animation: walk 1s step-end infinite;
+  animation-delay: 0.3s;
+}
+
+.people__man--three {
+  animation-delay: 0.7s;
 }
 
 .cow__head {
@@ -222,26 +226,6 @@
   }
   100% {
     transform: rotateY(0deg);
-  }
-}
-@keyframes factory-vibration {
-  0% {
-    transform: translate(0);
-  }
-  20% {
-    transform: translate(-2px, 2px);
-  }
-  40% {
-    transform: translate(-2px, -2px);
-  }
-  60% {
-    transform: translate(2px, 2px);
-  }
-  80% {
-    transform: translate(2px, -2px);
-  }
-  100% {
-    transform: translate(0);
   }
 }
 @keyframes head-movement {
@@ -583,6 +567,12 @@ svg {
   left: 7vw;
 }
 
+.sun__sky--right {
+  width: 30vw;
+  bottom: 60vh;
+  left: 30vw;
+}
+
 .people__man--one {
   width: 8vw;
   bottom: 20vh;
@@ -595,10 +585,10 @@ svg {
   left: 1vw;
 }
 
-.sun__sky--right {
-  width: 30vw;
-  bottom: 60vh;
-  left: 30vw;
+.people__man--three {
+  width: 7vw;
+  bottom: 33vh;
+  left: 38vw;
 }
 
 #landscape__message--container {

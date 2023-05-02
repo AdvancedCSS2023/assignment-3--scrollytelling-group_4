@@ -217,7 +217,7 @@ svg {
   width: 7vw;
 }
 
-// clouds
+// sky
 .cloud__one {
   height: 8vw;
   @include place(38vw, 70vh, 10vw);
@@ -226,6 +226,11 @@ svg {
 .cloud__two {
   @include place(8vw, 85vh, 7vw);
 }
+
+.sun__sky--right {
+  @include place(30vw, 60vh, 30vw);
+}
+
 
 
 //people
@@ -236,6 +241,8 @@ svg {
   @include place(7vw, 30vh, 1vw);
 }
 
-.sun__sky--right {
-  @include place(30vw, 60vh, 30vw);
+.people__man--three {
+
+  @include place(7vw, 33vh, 38vw);
+
 }
