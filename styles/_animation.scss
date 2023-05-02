@@ -54,5 +54,5 @@
 .factory {
   @include place(10vw, 50vh, 40vw);
   width: 10vw;
-  animation: factory-vibration .3s linear infinite both
+  animation: factory-vibration .3s linear infinite both;
 }
