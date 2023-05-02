@@ -1,11 +1,11 @@
 .tree {
-    animation-name: tree-movement;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    transform-origin: 50% 100%;
-  }
+  animation-name: tree-movement;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 100%;
+}
 
-  .cloud__one {
+.cloud__one {
   animation: cloud-animation 30s alternate-reverse infinite;
 }
 .cloud__two {
@@ -19,30 +19,28 @@
   animation: walk 1s step-end infinite;
 }
 
-
 .cow__head {
   animation: cow-nod 4s infinite;
 }
 
-.wrapper__container[animation="box_3"]{
-    #tree_1{
-        animation-name: tree-fall ;
-        animation-duration: 3s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-      }
+.wrapper__container[animation="box_3"] {
+  #tree_1 {
+    animation-name: tree-fall;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
 }
 
-@keyframes cow-nod {
-  // nodding animation
-  
-  0% {
-    transform: rotate(0deg);
+.wrapper__container[animation="box_4"] {
+  .tree__row--front {
+    display: none;
   }
-  50% {
-    transform: rotate(10deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+}
+
+.forest_animal_head {
+  animation-name: head-movement;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 100%;
 }
