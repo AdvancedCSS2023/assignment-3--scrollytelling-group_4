@@ -16,22 +16,22 @@
     transform: rotate(5deg);
   }
 
-  50%{
+  50% {
     transform: rotate(-2.5deg);
   }
-  100%{
+  100% {
     transform: rotate(5deg);
   }
 }
 
 @keyframes tree-fall {
-  0%{
+  0% {
     transform: rotate(0deg);
   }
-  50%{
+  50% {
     transform: rotate(-90deg);
   }
-  100%{
+  100% {
     opacity: 0;
     transform: rotate(-90deg);
   }
@@ -46,5 +46,26 @@
   }
   100% {
     transform: rotateY(0deg);
+  }
+}
+
+@keyframes factory-vibration {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
   }
 }

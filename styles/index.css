@@ -218,6 +218,26 @@
     transform: rotateY(0deg);
   }
 }
+@keyframes factory-vibration {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 svg,
 img {
   position: absolute;
@@ -418,6 +438,14 @@ svg {
   bottom: 50vh;
   left: 25vw;
   width: 15vw;
+}
+
+.factory {
+  width: 10vw;
+  bottom: 50vh;
+  left: 40vw;
+  width: 10vw;
+  animation: factory-vibration 0.3s linear infinite both;
 }
 
 .building__container {
