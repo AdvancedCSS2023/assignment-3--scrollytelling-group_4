@@ -151,6 +151,10 @@
   animation: walk 1s step-end infinite;
 }
 
+.cow__head {
+  animation: cow-nod 4s infinite;
+}
+
 .wrapper__container[animation=box_3] #tree_1 {
   animation-name: tree-fall;
   animation-duration: 3s;
@@ -158,6 +162,17 @@
   animation-fill-mode: forwards;
 }
 
+@keyframes cow-nod {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 @keyframes cloud-animation {
   0% {
     transform: translateX(-10vw);
@@ -206,6 +221,10 @@
 svg,
 img {
   position: absolute;
+}
+
+svg {
+  max-width: 10vw;
 }
 
 #tree_1 {

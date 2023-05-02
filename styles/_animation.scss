@@ -20,6 +20,10 @@
 }
 
 
+.cow__head {
+  animation: cow-nod 4s infinite;
+}
+
 .wrapper__container[animation="box_3"]{
     #tree_1{
         animation-name: tree-fall ;
@@ -27,4 +31,18 @@
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
       }
+}
+
+@keyframes cow-nod {
+  // nodding animation
+  
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
