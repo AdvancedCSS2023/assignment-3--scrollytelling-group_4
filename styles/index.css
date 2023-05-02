@@ -143,7 +143,7 @@
   animation: cloud-animation 40s alternate-reverse ease-in-out infinite;
 }
 
-.people__man--one, .people__man--two, .people__man--three {
+.people__man--one, .people__man--two, .people__man--three, .people__man--four {
   animation: walk 1s step-end infinite;
 }
 
@@ -259,16 +259,16 @@
     transform: translate(0);
   }
   20% {
-    transform: translate(-2px, 2px);
+    transform: translate(-1px, 1px);
   }
   40% {
-    transform: translate(-2px, -2px);
+    transform: translate(-1px, -1px);
   }
   60% {
-    transform: translate(2px, 2px);
+    transform: translate(1px, 1px);
   }
   80% {
-    transform: translate(2px, -2px);
+    transform: translate(1px, -1px);
   }
   100% {
     transform: translate(0);
@@ -613,6 +613,12 @@ svg {
   width: 7vw;
   bottom: 33vh;
   left: 38vw;
+}
+
+.people__man--four {
+  width: 6vw;
+  bottom: 43vh;
+  left: 16vw;
 }
 
 #landscape__message--container {
