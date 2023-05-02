@@ -116,6 +116,55 @@ svg {
   z-index: 3;
 }
 
+#cat_1 {
+  @include place(5vw, 40vh, 10vw);
+  z-index: 2;
+}
+
+#cat_2 {
+  @include place(4vw, 30vh, 38vw);
+  z-index: 3;
+}
+
+#cat_3 {
+  @include place(3vw, 35vh, 20vw);
+  z-index: 2;
+}
+
+#monkey_1 {
+  @include place(5vw, 35vh, 28vw);
+  z-index: 2;
+}
+
+#monkey_2 {
+  @include place(3vw, 50vh, 12vw);
+  z-index: 1;
+}
+
+#monkey_3 {
+  @include place(4vw, 30vh, 3vw);
+  z-index: 3;
+}
+
+#cow_1 {
+  @include place(10vw, 20vh, 10vw);
+}
+
+#cow_2 {
+  @include place(8vw, 30vh, 35vw);
+  transform: rotateY(180deg);
+  z-index: 3;
+}
+
+#cow_3 {
+  @include place(6vw, 40vh, 10vw);
+  transform: rotateY(180deg);
+}
+
+#cow_4 {
+  @include place(5vw, 38vh, 30vw);
+}
+
 //Town
 .house__large--one {
   @include place(10vw, 40vh, 7vw);
