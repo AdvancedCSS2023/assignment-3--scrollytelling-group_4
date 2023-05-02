@@ -93,12 +93,39 @@
   margin-bottom: 10vh;
 }
 
-#landscape-message {
+#landscape__message--container {
   height: 100vh;
+  width: 100vw;
   background-color: azure;
-  font-weight: bold;
+  position: fixed;
+  z-index: 10;
+}
+
+.landscape__message--text {
+  display: block;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-top: 30vh;
   text-align: center;
-  margin-top: 50vh;
+  font-weight: bold;
+}
+
+.orientation__message--button {
+  display: block;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-top: 10vh;
+  text-align: center;
+  background-color: rgb(255, 104, 104);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.orientation__message--button:hover {
+  background-color: rgb(250, 149, 149);
 }
 
 .tree {
@@ -124,6 +151,10 @@
   animation: walk 1s step-end infinite;
 }
 
+.cow__head {
+  animation: cow-nod 4s infinite;
+}
+
 .wrapper__container[animation=box_3] #tree_1 {
   animation-name: tree-fall;
   animation-duration: 3s;
@@ -131,6 +162,17 @@
   animation-fill-mode: forwards;
 }
 
+@keyframes cow-nod {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 @keyframes cloud-animation {
   0% {
     transform: translateX(-10vw);
@@ -179,6 +221,10 @@
 svg,
 img {
   position: absolute;
+}
+
+svg {
+  max-width: 10vw;
 }
 
 #tree_1 {
@@ -398,12 +444,15 @@ img {
   left: 30vw;
 }
 
-#landscape-message {
+#landscape__message--container {
   display: none;
 }
 
 @media (orientation: portrait) {
-  #landscape-message {
+  #landscape__message--container {
     display: block;
   }
+}
+.landscape__off {
+  display: hidden;
 }/*# sourceMappingURL=index.css.map */
