@@ -1,6 +1,7 @@
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
+    font-family: sans-serif;
 }
 
 /*h1 {
@@ -9,6 +10,14 @@
     top: 45vh;
     left: 47vw;
 }*/
+h1 {
+    color: white;
+    font-size: 5rem;
+}
+
+h1::before {
+    content: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYjT_Guyy2uMppo9ylXHGfXaBRxt5FatzdEA&usqp=CAU);
+}
 
 .wrapper__container {
     display: flex;
@@ -28,6 +37,18 @@
     align-items: center;
     flex-direction: column;
 }
+
+.foreground__container {
+    z-index: 1;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://cdn.pixabay.com/photo/2022/05/15/17/25/forest-7198607_1280.jpg);
+    background-size: cover;
+    filter: sepia(50%)
+}   
+
 
 .wrapper__left, .wrapper__right {
     width: 50vw;

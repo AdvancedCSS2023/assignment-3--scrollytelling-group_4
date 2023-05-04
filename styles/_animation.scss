@@ -29,20 +29,7 @@
   animation: cow-nod 4s infinite;
 }
 
-.wrapper__container[animation="box_3"] {
-  #tree_1 {
-    animation-name: tree-fall;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-  }
-}
 
-.wrapper__container[animation="box_4"] {
-  .tree__row--front {
-    display: none;
-  }
-}
 
 .forest_animal_head {
   animation-name: head-movement;
@@ -53,4 +40,33 @@
 
 .factory {
   animation: factory-vibration .3s linear infinite both;
+}
+
+
+// Intersection observer animations
+
+// .wrapper__container[animation="box_x"] {
+//   
+// }
+
+.wrapper__container[animation="box_3"] {
+  #tree_1 {
+    animation-name: tree-fall;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+}
+
+.wrapper__container[animation="box_4"] {
+  .tree__row--front {
+    display: none;
+  }
+}
+
+.wrapper__container[animation="box_6"] {
+  .foreground__container {
+    display: none;
+  }  
 }
