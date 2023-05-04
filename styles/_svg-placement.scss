@@ -167,7 +167,7 @@ svg {
 
 //Town
 .house__large--one {
-  @include place(10vw, 45vh, 7vw);
+  @include place(10vw, 40vh, 7vw);
 }
 
 .house__small--one {
@@ -179,13 +179,45 @@ svg {
 }
 
 .house__large--two {
-  @include place(15vw, 15vh, 25vw);
+  @include place(15vw, 20vh, 25vw);
 }
 
 .house__small--two {
   @include place(10vw, 40vh, 34vw);
 }
 
+.house__large--three {
+  @include place(10vw, 50vh, 25vw);
+  width: 15vw;
+}
+
+.factory {
+  @include place(10vw, 50vh, 40vw);
+  width: 10vw;
+  animation: factory-vibration .3s linear infinite both
+}
+
+.building__container {
+  display: flex;
+// @include place(0vw, 0vh, 0vw);
+}
+
+.building__tall--one {
+  @include place(10vw, 53vh, 0vw);
+  width: 7vw;
+}
+
+.building__tall--two {
+  @include place(10vw, 53vh, 7vw);
+  width: 8vw;
+}
+
+.building__tall--three {
+  @include place(10vw, 53vh, 14vw);
+  width: 7vw;
+}
+
+// sky
 .cloud__one {
   height: 8vw;
   @include place(38vw, 70vh, 10vw);
@@ -195,6 +227,13 @@ svg {
   @include place(8vw, 85vh, 7vw);
 }
 
+.sun__sky--right {
+  @include place(30vw, 60vh, 30vw);
+}
+
+
+
+//people
 .people__man--one {
   @include place(8vw, 20vh, 20vw);
 }
@@ -202,6 +241,13 @@ svg {
   @include place(7vw, 30vh, 1vw);
 }
 
-.sun__sky--right {
-  @include place(30vw, 60vh, 30vw);
+.people__man--three {
+
+  @include place(7vw, 33vh, 38vw);
+
+}
+
+.people__man--four {
+  @include place(6vw, 43vh, 16vw);
+
 }

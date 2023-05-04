@@ -143,12 +143,16 @@
   animation: cloud-animation 40s alternate-reverse ease-in-out infinite;
 }
 
-.people__man--one {
+.people__man--one, .people__man--two, .people__man--three, .people__man--four {
   animation: walk 1s step-end infinite;
 }
 
 .people__man--two {
-  animation: walk 1s step-end infinite;
+  animation-delay: 0.3s;
+}
+
+.people__man--three {
+  animation-delay: 0.7s;
 }
 
 .cow__head {
@@ -171,6 +175,10 @@
   animation-duration: 3s;
   animation-iteration-count: infinite;
   transform-origin: 50% 100%;
+}
+
+.factory {
+  animation: factory-vibration 0.3s linear infinite both;
 }
 
 @keyframes cloud-animation {
@@ -244,6 +252,26 @@
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+@keyframes factory-vibration {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-1px, 1px);
+  }
+  40% {
+    transform: translate(-1px, -1px);
+  }
+  60% {
+    transform: translate(1px, 1px);
+  }
+  80% {
+    transform: translate(1px, -1px);
+  }
+  100% {
+    transform: translate(0);
   }
 }
 svg,
@@ -482,7 +510,7 @@ svg {
 
 .house__large--one {
   width: 10vw;
-  bottom: 45vh;
+  bottom: 40vh;
   left: 7vw;
 }
 
@@ -500,7 +528,7 @@ svg {
 
 .house__large--two {
   width: 15vw;
-  bottom: 15vh;
+  bottom: 20vh;
   left: 25vw;
 }
 
@@ -508,6 +536,46 @@ svg {
   width: 10vw;
   bottom: 40vh;
   left: 34vw;
+}
+
+.house__large--three {
+  width: 10vw;
+  bottom: 50vh;
+  left: 25vw;
+  width: 15vw;
+}
+
+.factory {
+  width: 10vw;
+  bottom: 50vh;
+  left: 40vw;
+  width: 10vw;
+  animation: factory-vibration 0.3s linear infinite both;
+}
+
+.building__container {
+  display: flex;
+}
+
+.building__tall--one {
+  width: 10vw;
+  bottom: 53vh;
+  left: 0vw;
+  width: 7vw;
+}
+
+.building__tall--two {
+  width: 10vw;
+  bottom: 53vh;
+  left: 7vw;
+  width: 8vw;
+}
+
+.building__tall--three {
+  width: 10vw;
+  bottom: 53vh;
+  left: 14vw;
+  width: 7vw;
 }
 
 .cloud__one {
@@ -523,6 +591,12 @@ svg {
   left: 7vw;
 }
 
+.sun__sky--right {
+  width: 30vw;
+  bottom: 60vh;
+  left: 30vw;
+}
+
 .people__man--one {
   width: 8vw;
   bottom: 20vh;
@@ -535,10 +609,16 @@ svg {
   left: 1vw;
 }
 
-.sun__sky--right {
-  width: 30vw;
-  bottom: 60vh;
-  left: 30vw;
+.people__man--three {
+  width: 7vw;
+  bottom: 33vh;
+  left: 38vw;
+}
+
+.people__man--four {
+  width: 6vw;
+  bottom: 43vh;
+  left: 16vw;
 }
 
 #landscape__message--container {
