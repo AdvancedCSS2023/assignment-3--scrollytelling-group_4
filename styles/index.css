@@ -203,6 +203,14 @@ h1::before {
 }
 
 .wrapper__container[animation=box_6] .foreground__container {
+  animation: fade-out 1.5s ease-in-out forwards;
+}
+
+.wrapper__container[animation=box_7] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_8] .foreground__container {
   display: none;
 }
 
@@ -297,6 +305,14 @@ h1::before {
   }
   100% {
     transform: translate(0);
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 svg,

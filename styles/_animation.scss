@@ -67,6 +67,19 @@
 
 .wrapper__container[animation="box_6"] {
   .foreground__container {
-    display: none;
+    // display: none;
+    animation: fade-out 1.5s ease-in-out forwards;
   }  
 }
+
+.wrapper__container[animation="box_7"] {
+  .foreground__container {
+    display: none;
+  }
+  }
+  
+  .wrapper__container[animation="box_8"] {
+    .foreground__container {
+      display: none;
+    }
+    }
