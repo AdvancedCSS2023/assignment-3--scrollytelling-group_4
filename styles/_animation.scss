@@ -49,6 +49,14 @@
 //   
 // }
 
+.wrapper__container[animation="box_1"] {
+  color: red;
+}
+
+.wrapper__container[animation="box_2"] {
+  color: red;
+}
+
 .wrapper__container[animation="box_3"] {
   #tree_1 {
     animation-name: tree-fall;
@@ -63,6 +71,10 @@
   .tree__row--front {
     display: none;
   }
+}
+
+.wrapper__container[animation="box_5"] {
+  color: red;
 }
 
 .wrapper__container[animation="box_6"] {
@@ -83,3 +95,39 @@
       display: none;
     }
     }
+
+    .wrapper__container[animation="box_9"] {
+      color: red;
+   }
+
+   .wrapper__container[animation="box_10"] {
+    color: red;
+ }
+
+ .wrapper__container[animation="box_11"] {
+  color: red;
+}
+
+.wrapper__container[animation="box_12"] {
+  color: red;
+}
+
+.wrapper__container[animation="box_13"] {
+  color: red;
+}
+
+.wrapper__container[animation="box_14"] {
+  color: red;
+}
+
+.wrapper__container[animation="box_15"] {
+  color: red;
+}
+
+.wrapper__container[animation="box_16"] {
+  color: red;
+}
+
+.wrapper__container[animation="box_17"] {
+  color: red;
+}
