@@ -13,25 +13,30 @@
 
 @keyframes tree-movement {
   0% {
+    transform: rotate(0);
+  }
+  25% {
     transform: rotate(5deg);
   }
-
   50%{
     transform: rotate(-2.5deg);
   }
-  100%{
+  75%{
     transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
   }
 }
 
 @keyframes tree-fall {
-  0%{
+  0% {
     transform: rotate(0deg);
   }
-  50%{
+  50% {
     transform: rotate(-90deg);
   }
-  100%{
+  100% {
     opacity: 0;
     transform: rotate(-90deg);
   }
@@ -46,5 +51,53 @@
   }
   100% {
     transform: rotateY(0deg);
+  }
+}
+
+@keyframes head-movement {
+  0% {
+    transform: rotate(5deg);
+  }
+
+  50%{
+    transform: rotate(-2.5deg);
+  }
+  100%{
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes cow-nod {
+  // nodding animation
+  
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes factory-vibration {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-1px, 1px);
+  }
+  40% {
+    transform: translate(-1px, -1px);
+  }
+  60% {
+    transform: translate(1px, 1px);
+  }
+  80% {
+    transform: translate(1px, -1px);
+  }
+  100% {
+    transform: translate(0);
   }
 }
