@@ -511,7 +511,7 @@ h1::before {
   transform: translateY(-25vh);
   opacity: 1;
 }
-.wrapper__container[animation=box_20] .people__man--one {
+.wrapper__container[animation=box_20] .people__man--one, .wrapper__container[animation=box_20] #cow_3, .wrapper__container[animation=box_20] #cow_4 {
   opacity: 0;
 }
 
@@ -537,7 +537,7 @@ h1::before {
   opacity: 1;
   top: 75vh;
 }
-.wrapper__container[animation=box_21] .people__man--one {
+.wrapper__container[animation=box_21] .people__man--one, .wrapper__container[animation=box_21] #cow_3, .wrapper__container[animation=box_21] #cow_4 {
   opacity: 0;
 }
 
@@ -570,7 +570,7 @@ h1::before {
   opacity: 1;
   top: 75vh;
 }
-.wrapper__container[animation=box_22] .people__man--one {
+.wrapper__container[animation=box_22] .people__man--one, .wrapper__container[animation=box_22] #cow_3, .wrapper__container[animation=box_22] #cow_4 {
   opacity: 0;
 }
 
@@ -600,7 +600,7 @@ h1::before {
   opacity: 1;
   top: 75vh;
 }
-.wrapper__container[animation=box_23] .people__man--one {
+.wrapper__container[animation=box_23] .people__man--one, .wrapper__container[animation=box_23] #cow_3, .wrapper__container[animation=box_23] #cow_4 {
   opacity: 0;
 }
 
@@ -626,7 +626,7 @@ h1::before {
   opacity: 1;
   top: 75vh;
 }
-.wrapper__container[animation=box_24] .people__man--one {
+.wrapper__container[animation=box_24] .people__man--one, .wrapper__container[animation=box_24] #cow_3, .wrapper__container[animation=box_24] #cow_4 {
   opacity: 0;
 }
 
@@ -662,7 +662,7 @@ h1::before {
   opacity: 1;
   top: 75vh;
 }
-.wrapper__container[animation=box_25] .people__man--one {
+.wrapper__container[animation=box_25] .people__man--one, .wrapper__container[animation=box_25] #cow_3, .wrapper__container[animation=box_25] #cow_4 {
   opacity: 0;
 }
 
@@ -697,7 +697,7 @@ h1::before {
 .wrapper__container[animation=box_26] .factory {
   animation-play-state: paused;
 }
-.wrapper__container[animation=box_26] .people__man--one {
+.wrapper__container[animation=box_26] .people__man--one, .wrapper__container[animation=box_26] #cow_3, .wrapper__container[animation=box_26] #cow_4 {
   opacity: 0;
 }
 
@@ -720,7 +720,7 @@ h1::before {
   bottom: 45vh;
   z-index: 1;
 }
-.wrapper__container[animation=box_27] .people__man--one {
+.wrapper__container[animation=box_27] .people__man--one, .wrapper__container[animation=box_27] #cow_3, .wrapper__container[animation=box_27] #cow_4 {
   opacity: 0;
 }
 
@@ -748,7 +748,7 @@ h1::before {
   bottom: 45vh;
   z-index: 1;
 }
-.wrapper__container[animation=box_28] .people__man--one {
+.wrapper__container[animation=box_28] .people__man--one, .wrapper__container[animation=box_28] #cow_3, .wrapper__container[animation=box_28] #cow_4 {
   opacity: 0;
 }
 
@@ -776,7 +776,7 @@ h1::before {
   bottom: 45vh;
   z-index: 1;
 }
-.wrapper__container[animation=box_29] .people__man--one {
+.wrapper__container[animation=box_29] .people__man--one, .wrapper__container[animation=box_29] #cow_3, .wrapper__container[animation=box_29] #cow_4 {
   opacity: 0;
 }
 
@@ -804,7 +804,7 @@ h1::before {
   bottom: 45vh;
   z-index: 1;
 }
-.wrapper__container[animation=box_30] .people__man--one {
+.wrapper__container[animation=box_30] .people__man--one, .wrapper__container[animation=box_30] #cow_3, .wrapper__container[animation=box_30] #cow_4 {
   opacity: 0;
 }
 
@@ -817,7 +817,7 @@ h1::before {
 .wrapper__container[animation=box_31] .forest_animal {
   opacity: 0;
 }
-.wrapper__container[animation=box_31] .people__man--one {
+.wrapper__container[animation=box_31] .people__man--one, .wrapper__container[animation=box_31] #cow_3, .wrapper__container[animation=box_31] #cow_4 {
   opacity: 0;
 }
 
