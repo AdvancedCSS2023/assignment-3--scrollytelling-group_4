@@ -212,3 +212,14 @@ font-weight: bold;
     display: flex;
     flex-direction: column;
 }
+
+.flood__container {
+    width: 100vw;
+    height: 25vh;
+    background: rgba(0,31,166);
+    background: linear-gradient(0deg, rgba(0,31,166,.6) 50%, rgba(0,95,255,1) 100%);
+    z-index: 10;
+    position: fixed;
+    top: 100vh;
+    opacity: 0;
+}
