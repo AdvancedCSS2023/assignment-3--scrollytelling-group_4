@@ -43,6 +43,12 @@
 
 
 
+.fire__animation {
+  animation: walk .7s step-end infinite;
+
+}
+
+
 .wrapper__container[animation="box_11"] {
   .foreground__container {
     transition-duration: 1s;

@@ -226,6 +226,10 @@ h1::before {
   animation: factory-vibration 0.3s linear infinite both;
 }
 
+.fire__animation {
+  animation: walk 0.7s step-end infinite;
+}
+
 .wrapper__container[animation=box_11] .foreground__container {
   transition-duration: 1s;
   opacity: 0;
@@ -859,6 +863,12 @@ svg {
   width: 6vw;
   bottom: 43vh;
   left: 16vw;
+}
+
+.fire__animation {
+  width: 5vw;
+  bottom: 20vh;
+  left: 10vw;
 }
 
 #landscape__message--container {
