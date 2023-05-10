@@ -202,6 +202,10 @@ h1::before {
   transition: transform 5s, opacity 5s;
 }
 
+.foreground__container {
+  transition: opacity 1s;
+}
+
 .cloud__one {
   animation: cloud-animation 30s alternate-reverse infinite;
 }
@@ -242,7 +246,6 @@ h1::before {
 }
 
 .wrapper__container[animation=box_11] .foreground__container {
-  transition-duration: 1s;
   opacity: 0;
 }
 .wrapper__container[animation=box_11] .factory {
@@ -702,6 +705,69 @@ h1::before {
   opacity: 0;
 }
 
+@media (prefers-reduced-motion) {
+  #cat_1,
+  #cat_2,
+  #cat_3,
+  #monkey_1,
+  #monkey_2,
+  #monkey_3 {
+    transition: opacity 5s;
+  }
+  .people {
+    animation: none;
+  }
+  .tree {
+    animation: none;
+  }
+  .cloud {
+    animation: none;
+  }
+  #factory {
+    animation: none;
+  }
+  .cow__head {
+    animation: none;
+  }
+  .forest_animal_head {
+    animation: none;
+  }
+  .wrapper__container[animation=box_15] .tree__row--front-right {
+    transform: rotate(0);
+  }
+  .wrapper__container[animation=box_16] .tree__row--front-left {
+    transform: rotate(0);
+  }
+  .wrapper__container[animation=box_17] #cat_1 {
+    transform: translateY(-5vh);
+    z-index: 1;
+  }
+  .wrapper__container[animation=box_17] #cat_2 {
+    transform: translateY(-15vh);
+    z-index: 1;
+  }
+  .wrapper__container[animation=box_17] #cat_3 {
+    transform: translateY(-10vh);
+    z-index: 1;
+  }
+  .wrapper__container[animation=box_17] #monkey_1 {
+    transform: translateY(-10vh);
+    z-index: 1;
+  }
+  .wrapper__container[animation=box_17] #monkey_3 {
+    transform: translateY(-20vh);
+    z-index: 1;
+  }
+  .wrapper__container[animation=box_20] .tree__row--middle-right {
+    transform: rotate(0);
+  }
+  .wrapper__container[animation=box_22] #monkey_2 {
+    transform: translateY(0);
+  }
+  .wrapper__container[animation=box_22] .tree__row--middle-left {
+    transform: rotate(0);
+  }
+}
 @keyframes cloud-animation {
   0% {
     transform: translateX(-10vw);
