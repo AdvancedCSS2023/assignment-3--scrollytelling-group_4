@@ -56,12 +56,20 @@
   animation: factory-vibration 0.3s linear infinite both;
 }
 
-
+.flood__container, .fire__animation--one, .fire__animation--two, .fire__animation--three, .fire__animation--four {
+  transition-duration: 2s;
+}
 
 .fire__animation--one, .fire__animation--two, .fire__animation--three, .fire__animation--four {
   animation: walk .7s step-end infinite;
 
 }
+
+.flood__container, .people__man--one {
+  transition-duration: 1.5s;
+}
+
+
 
 
 .wrapper__container[animation="box_11"] {
@@ -382,9 +390,12 @@
   }
 
   .flood__container {
-    transition-duration: 1.5s;
     transform: translateY(-25vh);
     opacity: 1;
+  }
+
+  .people__man--one {
+    opacity: 0;
   }
 }
 .wrapper__container[animation="box_21"] {
@@ -414,6 +425,9 @@
   .flood__container {
     opacity: 1;
     top: 75vh;
+  }
+  .people__man--one {
+    opacity: 0;
   }
 }
 
@@ -453,6 +467,9 @@
     opacity: 1;
     top: 75vh;
   }
+  .people__man--one {
+    opacity: 0;
+  }
 
 }
 
@@ -491,6 +508,10 @@
     top: 75vh;
   }
 
+  .people__man--one {
+    opacity: 0;
+  }
+
 }
 
 .wrapper__container[animation="box_24"] {
@@ -519,6 +540,10 @@ animation-play-state: paused;
   .flood__container {
     opacity: 1;
     top: 75vh;
+  }
+
+  .people__man--one {
+    opacity: 0;
   }
 }
 
@@ -560,6 +585,9 @@ animation-play-state: paused;
         opacity: 1;
         top: 75vh;
       }
+      .people__man--one {
+        opacity: 0;
+      }
 }
 
 .wrapper__container[animation="box_26"] {
@@ -595,12 +623,14 @@ animation-play-state: paused;
   }
 
   .flood__container, .fire__animation--one, .fire__animation--two, .fire__animation--three, .fire__animation--four {
-    transition-duration: 2s;
     opacity: 0;
   }
 
   .factory {
     animation-play-state: paused;
+      }
+      .people__man--one {
+        opacity: 0;
       }
 }
 
@@ -626,6 +656,10 @@ animation-play-state: paused;
     left: 25vw;
     bottom: 45vh;
     z-index: 1;
+  }
+
+  .people__man--one {
+    opacity: 0;
   }
 }
 
@@ -658,6 +692,10 @@ animation-play-state: paused;
     bottom: 45vh;
     z-index: 1;
   }
+
+  .people__man--one {
+    opacity: 0;
+  }
 }
 .wrapper__container[animation="box_29"] {
   .foreground__container {
@@ -687,6 +725,10 @@ animation-play-state: paused;
     left: 25vw;
     bottom: 45vh;
     z-index: 1;
+  }
+
+  .people__man--one {
+    opacity: 0;
   }
 }
 .wrapper__container[animation="box_30"] {
@@ -718,6 +760,10 @@ animation-play-state: paused;
     bottom: 45vh;
     z-index: 1;
   }
+
+  .people__man--one {
+    opacity: 0;
+  }
 }
 
 .wrapper__container[animation="box_31"] {
@@ -729,6 +775,10 @@ animation-play-state: paused;
   }
 
   .forest_animal {
+    opacity: 0;
+  }
+
+  .people__man--one {
     opacity: 0;
   }
 }

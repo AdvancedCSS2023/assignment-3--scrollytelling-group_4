@@ -252,8 +252,16 @@ h1::before {
   animation: factory-vibration 0.3s linear infinite both;
 }
 
+.flood__container, .fire__animation--one, .fire__animation--two, .fire__animation--three, .fire__animation--four {
+  transition-duration: 2s;
+}
+
 .fire__animation--one, .fire__animation--two, .fire__animation--three, .fire__animation--four {
   animation: walk 0.7s step-end infinite;
+}
+
+.flood__container, .people__man--one {
+  transition-duration: 1.5s;
 }
 
 .wrapper__container[animation=box_11] .foreground__container {
@@ -497,9 +505,11 @@ h1::before {
   opacity: 0;
 }
 .wrapper__container[animation=box_20] .flood__container {
-  transition-duration: 1.5s;
   transform: translateY(-25vh);
   opacity: 1;
+}
+.wrapper__container[animation=box_20] .people__man--one {
+  opacity: 0;
 }
 
 .wrapper__container[animation=box_21] .foreground__container {
@@ -523,6 +533,9 @@ h1::before {
 .wrapper__container[animation=box_21] .flood__container {
   opacity: 1;
   top: 75vh;
+}
+.wrapper__container[animation=box_21] .people__man--one {
+  opacity: 0;
 }
 
 .wrapper__container[animation=box_22] .foreground__container {
@@ -554,6 +567,9 @@ h1::before {
   opacity: 1;
   top: 75vh;
 }
+.wrapper__container[animation=box_22] .people__man--one {
+  opacity: 0;
+}
 
 .wrapper__container[animation=box_23] .factory {
   animation-play-state: paused;
@@ -581,6 +597,9 @@ h1::before {
   opacity: 1;
   top: 75vh;
 }
+.wrapper__container[animation=box_23] .people__man--one {
+  opacity: 0;
+}
 
 .wrapper__container[animation=box_24] .foreground__container {
   display: none;
@@ -603,6 +622,9 @@ h1::before {
 .wrapper__container[animation=box_24] .flood__container {
   opacity: 1;
   top: 75vh;
+}
+.wrapper__container[animation=box_24] .people__man--one {
+  opacity: 0;
 }
 
 .wrapper__container[animation=box_25] .foreground__container {
@@ -637,6 +659,9 @@ h1::before {
   opacity: 1;
   top: 75vh;
 }
+.wrapper__container[animation=box_25] .people__man--one {
+  opacity: 0;
+}
 
 .wrapper__container[animation=box_26] .foreground__container {
   display: none;
@@ -664,11 +689,13 @@ h1::before {
   z-index: 1;
 }
 .wrapper__container[animation=box_26] .flood__container, .wrapper__container[animation=box_26] .fire__animation--one, .wrapper__container[animation=box_26] .fire__animation--two, .wrapper__container[animation=box_26] .fire__animation--three, .wrapper__container[animation=box_26] .fire__animation--four {
-  transition-duration: 2s;
   opacity: 0;
 }
 .wrapper__container[animation=box_26] .factory {
   animation-play-state: paused;
+}
+.wrapper__container[animation=box_26] .people__man--one {
+  opacity: 0;
 }
 
 .wrapper__container[animation=box_27] .foreground__container {
@@ -689,6 +716,9 @@ h1::before {
   left: 25vw;
   bottom: 45vh;
   z-index: 1;
+}
+.wrapper__container[animation=box_27] .people__man--one {
+  opacity: 0;
 }
 
 .wrapper__container[animation=box_28] .foreground__container {
@@ -715,6 +745,9 @@ h1::before {
   bottom: 45vh;
   z-index: 1;
 }
+.wrapper__container[animation=box_28] .people__man--one {
+  opacity: 0;
+}
 
 .wrapper__container[animation=box_29] .foreground__container {
   display: none;
@@ -739,6 +772,9 @@ h1::before {
   left: 25vw;
   bottom: 45vh;
   z-index: 1;
+}
+.wrapper__container[animation=box_29] .people__man--one {
+  opacity: 0;
 }
 
 .wrapper__container[animation=box_30] .foreground__container {
@@ -765,6 +801,9 @@ h1::before {
   bottom: 45vh;
   z-index: 1;
 }
+.wrapper__container[animation=box_30] .people__man--one {
+  opacity: 0;
+}
 
 .wrapper__container[animation=box_31] .foreground__container {
   display: none;
@@ -773,6 +812,9 @@ h1::before {
   opacity: 0;
 }
 .wrapper__container[animation=box_31] .forest_animal {
+  opacity: 0;
+}
+.wrapper__container[animation=box_31] .people__man--one {
   opacity: 0;
 }
 
