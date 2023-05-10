@@ -869,6 +869,7 @@ svg {
   width: 5vw;
   bottom: 20vh;
   left: 10vw;
+  z-index: 1;
 }
 
 #landscape__message--container {

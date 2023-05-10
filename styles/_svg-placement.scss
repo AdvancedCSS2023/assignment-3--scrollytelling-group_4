@@ -255,5 +255,5 @@ svg {
 
 .fire__animation {
   @include place(5vw, 20vh, 10vw);
-
+  z-index: 1;
 }
