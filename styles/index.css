@@ -245,7 +245,7 @@ h1::before {
   animation: factory-vibration 0.3s linear infinite both;
 }
 
-.fire__animation--one, .fire__animation--two, .fire__animation--three, .fire__animation--four {
+.fire {
   animation: walk 0.7s step-end infinite;
 }
 
@@ -569,7 +569,7 @@ h1::before {
 .wrapper__container[animation=box_24] .forest_animal {
   opacity: 0;
 }
-.wrapper__container[animation=box_24] .fire__animation--one, .wrapper__container[animation=box_24] .fire__animation--two, .wrapper__container[animation=box_24] .fire__animation--three, .wrapper__container[animation=box_24] .fire__animation--four {
+.wrapper__container[animation=box_24] .fire {
   opacity: 1;
 }
 .wrapper__container[animation=box_24] .factory {
@@ -598,7 +598,7 @@ h1::before {
   bottom: 45vh;
   z-index: 1;
 }
-.wrapper__container[animation=box_25] .fire__animation--one, .wrapper__container[animation=box_25] .fire__animation--two, .wrapper__container[animation=box_25] .fire__animation--three, .wrapper__container[animation=box_25] .fire__animation--four {
+.wrapper__container[animation=box_25] .fire {
   opacity: 1;
 }
 .wrapper__container[animation=box_25] .factory {
@@ -630,7 +630,7 @@ h1::before {
   bottom: 45vh;
   z-index: 1;
 }
-.wrapper__container[animation=box_26] .fire__animation--one, .wrapper__container[animation=box_26] .fire__animation--two, .wrapper__container[animation=box_26] .fire__animation--three, .wrapper__container[animation=box_26] .fire__animation--four {
+.wrapper__container[animation=box_26] .fire {
   transition-duration: 1s;
   opacity: 0;
 }
@@ -768,6 +768,9 @@ h1::before {
     animation: none;
   }
   .forest_animal_head {
+    animation: none;
+  }
+  .fire {
     animation: none;
   }
   .wrapper__container[animation=box_15] .tree__row--front-right {
