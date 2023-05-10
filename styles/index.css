@@ -191,6 +191,11 @@ h1::before {
   opacity: 0;
 }
 
+@media (prefers-color-scheme: dark) {
+  .wrapper__left, .wrapper__right {
+    background: var(--main-background-color-dark);
+  }
+}
 .tree {
   animation-name: tree-movement;
   animation-duration: 30s;
@@ -893,6 +898,8 @@ h1::before {
     rgba(0, 245, 255, 1) 45%,
     rgba(45, 166, 0, 1) 40%
   );
+  --main-background-color-dark:linear-gradient(rgb(190, 9, 240) 45%,
+  rgb(79, 111, 68) 40%);
   --main-text-color: black;
   --secondary-text-color: white;
   --textbox-background-color: rgba(255, 255, 255, 0.9);

@@ -222,3 +222,9 @@ font-weight: bold;
     top: 100vh;
     opacity: 0;
 }
+
+@media (prefers-color-scheme: dark) {
+    .wrapper__left, .wrapper__right {
+        background: var(--main-background-color-dark);
+    }
+  }
