@@ -276,27 +276,99 @@ h1::before {
   opacity: 0;
 }
 .wrapper__container[animation=box_11] .factory {
-  display: none;
+  opacity: 0;
+}
+.wrapper__container[animation=box_11] .cow {
+  opacity: 0;
+}
+.wrapper__container[animation=box_11] .house__large--three {
+  opacity: 0;
+}
+.wrapper__container[animation=box_11] .house__large--two {
+  opacity: 0;
+}
+.wrapper__container[animation=box_11] .people__man--four {
+  opacity: 0;
+}
+.wrapper__container[animation=box_11] .people__man--two {
+  opacity: 0;
+}
+.wrapper__container[animation=box_11] .building__container {
+  opacity: 0;
 }
 
 .wrapper__container[animation=box_12] .foreground__container {
   display: none;
 }
 .wrapper__container[animation=box_12] .factory {
-  display: none;
+  opacity: 0;
+}
+.wrapper__container[animation=box_12] .cow {
+  opacity: 0;
+}
+.wrapper__container[animation=box_12] .house__large--three {
+  opacity: 0;
+}
+.wrapper__container[animation=box_12] .house__large--two {
+  opacity: 0;
+}
+.wrapper__container[animation=box_12] .people__man--four {
+  opacity: 0;
+}
+.wrapper__container[animation=box_12] .people__man--two {
+  opacity: 0;
+}
+.wrapper__container[animation=box_12] .building__container {
+  opacity: 0;
 }
 
 .wrapper__container[animation=box_13] .foreground__container {
   display: none;
 }
 .wrapper__container[animation=box_13] .factory {
-  display: none;
+  opacity: 0;
+}
+.wrapper__container[animation=box_13] .cow {
+  opacity: 0;
+}
+.wrapper__container[animation=box_13] .house__large--three {
+  opacity: 0;
+}
+.wrapper__container[animation=box_13] .house__large--two {
+  opacity: 0;
+}
+.wrapper__container[animation=box_13] .people__man--four {
+  opacity: 0;
+}
+.wrapper__container[animation=box_13] .people__man--two {
+  opacity: 0;
+}
+.wrapper__container[animation=box_13] .building__container {
+  opacity: 0;
 }
 
 .wrapper__container[animation=box_14] .foreground__container {
   display: none;
 }
 .wrapper__container[animation=box_14] .factory {
+  opacity: 0;
+}
+.wrapper__container[animation=box_14] .cow {
+  opacity: 0;
+}
+.wrapper__container[animation=box_14] .house__large--three {
+  opacity: 0;
+}
+.wrapper__container[animation=box_14] .house__large--two {
+  opacity: 0;
+}
+.wrapper__container[animation=box_14] .people__man--four {
+  opacity: 0;
+}
+.wrapper__container[animation=box_14] .people__man--two {
+  opacity: 0;
+}
+.wrapper__container[animation=box_14] .building__container {
   opacity: 0;
 }
 
