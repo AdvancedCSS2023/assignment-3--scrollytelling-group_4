@@ -114,20 +114,67 @@
     transition-duration: 2s;
     opacity: 0;
   }
-  
+
   .factory {
-    display: none;
+    opacity: 0;
+  }
+
+  .cow {
+    opacity: 0;
+  }
+
+  .house__large--three {
+    opacity: 0;
+  }
+
+  .house__large--two {
+    opacity: 0;
+  }
+
+  .people__man--four {
+    opacity: 0;
+  }
+
+  .people__man--two {
+    opacity: 0;
+  }
+
+  .building__container {
+    opacity: 0;
   }
 }
-
 
 .wrapper__container[animation="box_12"] {
   .foreground__container {
     display: none;
   }
-  
+
   .factory {
-    display: none;
+    opacity: 0;
+  }
+
+  .cow {
+    opacity: 0;
+  }
+
+  .house__large--three {
+    opacity: 0;
+  }
+
+  .house__large--two {
+    opacity: 0;
+  }
+
+  .people__man--four {
+    opacity: 0;
+  }
+
+  .people__man--two {
+    opacity: 0;
+  }
+
+  .building__container {
+    opacity: 0;
   }
 }
 
@@ -135,9 +182,33 @@
   .foreground__container {
     display: none;
   }
-  
+
   .factory {
-    display: none;
+    opacity: 0;
+  }
+
+  .cow {
+    opacity: 0;
+  }
+
+  .house__large--three {
+    opacity: 0;
+  }
+
+  .house__large--two {
+    opacity: 0;
+  }
+
+  .people__man--four {
+    opacity: 0;
+  }
+
+  .people__man--two {
+    opacity: 0;
+  }
+
+  .building__container {
+    opacity: 0;
   }
 }
 
@@ -145,8 +216,32 @@
   .foreground__container {
     display: none;
   }
-  
+
   .factory {
+    opacity: 0;
+  }
+
+  .cow {
+    opacity: 0;
+  }
+
+  .house__large--three {
+    opacity: 0;
+  }
+
+  .house__large--two {
+    opacity: 0;
+  }
+
+  .people__man--four {
+    opacity: 0;
+  }
+
+  .people__man--two {
+    opacity: 0;
+  }
+
+  .building__container {
     opacity: 0;
   }
 }
@@ -155,7 +250,7 @@
   .foreground__container {
     opacity: 0;
   }
-  
+
   .factory {
     opacity: 0;
   }
@@ -165,7 +260,7 @@
   .foreground__container {
     opacity: 0;
   }
-  
+
   .factory {
     opacity: 0;
   }
@@ -175,7 +270,7 @@
   .foreground__container {
     opacity: 0;
   }
-  
+
   .factory {
     transition-duration: 2s;
     opacity: 1;
@@ -222,7 +317,6 @@
     display: none;
   }
 }
-
 
 .wrapper__container[animation="box_25"] {
   .foreground__container {
