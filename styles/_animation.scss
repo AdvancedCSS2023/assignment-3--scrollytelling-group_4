@@ -63,7 +63,6 @@
 
 .wrapper__container[animation="box_4"] {
   .foreground__container {
-    // transition-duration: 2s;
     background-image: url(https://www.europarl.europa.eu/resources/library/images/20221025PHT46003/20221025PHT46003_original.jpg);
   }
 }
@@ -77,7 +76,6 @@
 
 .wrapper__container[animation="box_6"] {
   .foreground__container {
-    // transition-duration: 2s;
     background-image: url(https://www.sei.org/wp-content/uploads/2020/07/deforestationpalmoilauriga-scaled.jpg);
   }
 }
@@ -97,15 +95,17 @@
 
 .wrapper__container[animation="box_9"] {
   .foreground__container {
-    // transition-duration: 2s;
     background-image: url(https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F08fc215e-024c-11ea-a5c6-614c29c2a639.jpg?crop=6000%2C3375%2C0%2C312&resize=1500);
   }
 }
 
 .wrapper__container[animation="box_10"] {
   .foreground__container {
-    // transition-duration: 2s;
     background-image: url(https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F08fc215e-024c-11ea-a5c6-614c29c2a639.jpg?crop=6000%2C3375%2C0%2C312&resize=1500);
+  }
+
+  .factory {
+    display: none;
   }
 }
 
@@ -114,16 +114,19 @@
     transition-duration: 2s;
     opacity: 0;
   }
-}
-
-.wrapper__container[animation="box_11"] {
-  .foreground__container {
+  
+  .factory {
     display: none;
   }
 }
 
+
 .wrapper__container[animation="box_12"] {
   .foreground__container {
+    display: none;
+  }
+  
+  .factory {
     display: none;
   }
 }
@@ -132,11 +135,109 @@
   .foreground__container {
     display: none;
   }
+  
+  .factory {
+    display: none;
+  }
 }
 
 .wrapper__container[animation="box_14"] {
   .foreground__container {
     display: none;
-  
-  } 
   }
+  
+  .factory {
+    opacity: 0;
+  }
+}
+
+.wrapper__container[animation="box_15"] {
+  .foreground__container {
+    opacity: 0;
+  }
+  
+  .factory {
+    opacity: 0;
+  }
+}
+
+.wrapper__container[animation="box_16"] {
+  .foreground__container {
+    opacity: 0;
+  }
+  
+  .factory {
+    opacity: 0;
+  }
+}
+
+.wrapper__container[animation="box_17"] {
+  .foreground__container {
+    opacity: 0;
+  }
+  
+  .factory {
+    transition-duration: 2s;
+    opacity: 1;
+  }
+}
+
+.wrapper__container[animation="box_18"] {
+  .foreground__container {
+    display: none;
+  }
+}
+
+.wrapper__container[animation="box_19"] {
+  .foreground__container {
+    display: none;
+  }
+}
+
+.wrapper__container[animation="box_20"] {
+  .foreground__container {
+    display: none;
+  }
+}
+.wrapper__container[animation="box_21"] {
+  .foreground__container {
+    display: none;
+  }
+}
+
+.wrapper__container[animation="box_22"] {
+  .foreground__container {
+    display: none;
+  }
+}
+
+.wrapper__container[animation="box_23"] {
+  .foreground__container {
+    display: none;
+  }
+}
+
+.wrapper__container[animation="box_24"] {
+  .foreground__container {
+    display: none;
+  }
+}
+
+
+.wrapper__container[animation="box_25"] {
+  .foreground__container {
+    display: none;
+  }
+}
+
+.wrapper__container[animation="box_26"] {
+  .foreground__container {
+    display: none;
+  }
+}
+
+// .wrapper__container[animation="box_27"] {
+//   .foreground__container {
+//     display: none;
+//   }
+// }

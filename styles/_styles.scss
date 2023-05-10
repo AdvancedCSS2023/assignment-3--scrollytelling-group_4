@@ -182,3 +182,31 @@ font-weight: bold;
 .orientation__message--button:hover {
     background-color: rgb(250, 149, 149);
 } 
+
+.button__donation {
+    // display: block;
+    width: 25vw;
+    max-width: 90%;
+    // margin-left: 10vw;
+    // margin-bottom: 80vh;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    background-color: green;
+    border: .2rem solid white;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+
+}
+
+.button__donation:hover {
+    background-color: rgb(0, 175, 0);
+}
+
+#box_31 {
+    display: flex;
+    flex-direction: column;
+}

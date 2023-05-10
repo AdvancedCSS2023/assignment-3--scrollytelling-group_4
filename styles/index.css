@@ -153,6 +153,30 @@ h1::before {
   background-color: rgb(250, 149, 149);
 }
 
+.button__donation {
+  width: 25vw;
+  max-width: 90%;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  background-color: green;
+  border: 0.2rem solid white;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.button__donation:hover {
+  background-color: rgb(0, 175, 0);
+}
+
+#box_31 {
+  display: flex;
+  flex-direction: column;
+}
+
 .tree {
   animation-name: tree-movement;
   animation-duration: 30s;
@@ -238,25 +262,94 @@ h1::before {
 .wrapper__container[animation=box_10] .foreground__container {
   background-image: url(https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F08fc215e-024c-11ea-a5c6-614c29c2a639.jpg?crop=6000%2C3375%2C0%2C312&resize=1500);
 }
+.wrapper__container[animation=box_10] .factory {
+  display: none;
+}
 
 .wrapper__container[animation=box_11] .foreground__container {
   transition-duration: 2s;
   opacity: 0;
 }
-
-.wrapper__container[animation=box_11] .foreground__container {
+.wrapper__container[animation=box_11] .factory {
   display: none;
 }
 
 .wrapper__container[animation=box_12] .foreground__container {
   display: none;
 }
+.wrapper__container[animation=box_12] .factory {
+  display: none;
+}
 
 .wrapper__container[animation=box_13] .foreground__container {
   display: none;
 }
+.wrapper__container[animation=box_13] .factory {
+  display: none;
+}
 
 .wrapper__container[animation=box_14] .foreground__container {
+  display: none;
+}
+.wrapper__container[animation=box_14] .factory {
+  opacity: 0;
+}
+
+.wrapper__container[animation=box_15] .foreground__container {
+  opacity: 0;
+}
+.wrapper__container[animation=box_15] .factory {
+  opacity: 0;
+}
+
+.wrapper__container[animation=box_16] .foreground__container {
+  opacity: 0;
+}
+.wrapper__container[animation=box_16] .factory {
+  opacity: 0;
+}
+
+.wrapper__container[animation=box_17] .foreground__container {
+  opacity: 0;
+}
+.wrapper__container[animation=box_17] .factory {
+  transition-duration: 2s;
+  opacity: 1;
+}
+
+.wrapper__container[animation=box_18] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_19] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_20] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_21] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_22] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_23] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_24] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_25] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_26] .foreground__container {
   display: none;
 }
 
@@ -732,5 +825,9 @@ svg {
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 2rem;
+  }
+  .button__donation {
+    font-size: 1.2rem;
+    min-width: 70%;
   }
 }/*# sourceMappingURL=index.css.map */
