@@ -37,6 +37,10 @@
   animation-delay: 0.7s;
 }
 
+.cow {
+  z-index: 4;
+}
+
 .cow__head {
   animation: cow-nod 4s infinite;
 }
@@ -217,10 +221,6 @@
     opacity: 0;
   }
 
-  .cow {
-    opacity: 0;
-  }
-
   .people__man--four {
     opacity: 0;
   }
@@ -252,19 +252,10 @@
     transform: translateY(-10vh);
     z-index: 1;
   }
-
-  #cow_1,
-  #cow_2 {
-    opacity: 1;
-  }
 }
 
 .wrapper__container[animation="box_16"] {
   .foreground__container {
-    opacity: 0;
-  }
-
-  .cow {
     opacity: 0;
   }
 
@@ -302,11 +293,6 @@
     transform: translateY(-20vh);
     z-index: 1;
   }
-
-  #cow_1,
-  #cow_2 {
-    opacity: 1;
-  }
 }
 
 .wrapper__container[animation="box_17"] {
@@ -317,10 +303,6 @@
   .factory {
     transition-duration: 2s;
     opacity: 1;
-  }
-
-  .cow {
-    opacity: 0;
   }
 
   #cat_1,
@@ -334,11 +316,6 @@
 
   .tree__row--front {
     opacity: 0;
-  }
-
-  #cow_1,
-  #cow_2 {
-    opacity: 1;
   }
 }
 
@@ -356,15 +333,6 @@
   }
 
   #monkey_2 {
-    opacity: 1;
-  }
-
-  .cow {
-    opacity: 0;
-  }
-
-  #cow_1,
-  #cow_2 {
     opacity: 1;
   }
 }
@@ -386,15 +354,6 @@
     opacity: 1;
   }
 
-  .cow {
-    opacity: 0;
-  }
-
-  #cow_1,
-  #cow_2 {
-    opacity: 1;
-  }
-
   .tree__row--middle-right {
     animation: none;
   }
@@ -413,15 +372,6 @@
   }
 
   #monkey_2 {
-    opacity: 1;
-  }
-
-  .cow {
-    opacity: 0;
-  }
-
-  #cow_1,
-  #cow_2 {
     opacity: 1;
   }
 
@@ -447,18 +397,9 @@
     opacity: 1;
   }
 
-  .cow {
+  .tree__row--middle-right {
     opacity: 0;
   }
-
-  #cow_1,
-  #cow_2 {
-    opacity: 1;
-  }
-
-.tree__row--middle-right{
-  opacity: 0;
-}
 
   .tree__row--middle-left {
     animation: none;
@@ -487,7 +428,7 @@
     opacity: 0;
   }
 
-  .tree__row--middle-right{
+  .tree__row--middle-right {
     opacity: 0;
   }
 
@@ -510,7 +451,7 @@
     opacity: 0;
   }
 
-  .tree__row--middle{
+  .tree__row--middle {
     opacity: 0;
   }
 
@@ -537,7 +478,7 @@
     opacity: 0;
   }
 
-  .tree__row--middle{
+  .tree__row--middle {
     opacity: 0;
   }
 
@@ -560,13 +501,25 @@ animation-play-state: paused;
   .tree__row--front {
     opacity: 0;
   }
-  
-  .tree__row--middle{
+
+  .tree__row--middle {
     opacity: 0;
   }
 
   .forest_animal {
     opacity: 0;
+  }
+
+  #monkey_1 {
+    left: 45vw;
+    bottom: 50vh;
+    z-index: 1;
+  }
+
+  #cat_1 {
+    left: 25vw;
+    bottom: 45vh;
+    z-index: 1;
   }
 
   .fire__animation--one, .fire__animation--two, .fire__animation--three, .fire__animation--four {
@@ -585,12 +538,28 @@ animation-play-state: paused;
     opacity: 0;
   }
 
-  .tree__row--middle{
+  .tree__row--middle {
     opacity: 0;
+  }
+
+  .tree__row--middle-left {
+    opacity: 1;
   }
 
   .forest_animal {
     opacity: 0;
+  }
+
+  #monkey_1 {
+    left: 45vw;
+    bottom: 50vh;
+    z-index: 1;
+  }
+
+  #cat_1 {
+    left: 25vw;
+    bottom: 45vh;
+    z-index: 1;
   }
 
   .fire__animation--one, .fire__animation--two, .fire__animation--three, .fire__animation--four {
@@ -606,21 +575,115 @@ animation-play-state: paused;
   .foreground__container {
     display: none;
   }
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  .forest_animal {
+    opacity: 0;
+  }
+
+  #monkey_1 {
+    left: 45vw;
+    bottom: 50vh;
+    z-index: 1;
+  }
+
+  #cat_1 {
+    left: 25vw;
+    bottom: 45vh;
+    z-index: 1;
+  }
 }
 
 .wrapper__container[animation="box_28"] {
   .foreground__container {
     display: none;
   }
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  .forest_animal {
+    opacity: 0;
+  }
+
+  #monkey_1 {
+    opacity: 1;
+    left: 45vw;
+    bottom: 50vh;
+    z-index: 1;
+  }
+
+  #monkey_2 {
+    opacity: 1;
+  }
+
+  #cat_1 {
+    opacity: 1;
+    left: 25vw;
+    bottom: 45vh;
+    z-index: 1;
+  }
 }
 .wrapper__container[animation="box_29"] {
   .foreground__container {
     display: none;
   }
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  .forest_animal {
+    opacity: 0;
+  }
+
+  #monkey_1 {
+    opacity: 1;
+    left: 45vw;
+    bottom: 50vh;
+    z-index: 1;
+  }
+
+  #monkey_2 {
+    opacity: 1;
+  }
+
+  #cat_1 {
+    opacity: 1;
+    left: 25vw;
+    bottom: 45vh;
+    z-index: 1;
+  }
 }
 .wrapper__container[animation="box_30"] {
   .foreground__container {
     display: none;
+  }
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  .forest_animal {
+    opacity: 0;
+  }
+
+  #monkey_1 {
+    opacity: 1;
+    left: 45vw;
+    bottom: 50vh;
+    z-index: 1;
+  }
+
+  #monkey_2 {
+    opacity: 1;
+  }
+
+  #cat_1 {
+    opacity: 1;
+    left: 25vw;
+    bottom: 45vh;
+    z-index: 1;
   }
 }
 
@@ -628,5 +691,11 @@ animation-play-state: paused;
   .foreground__container {
     display: none;
   }
+  .tree__row--front {
+    opacity: 0;
+  }
 
+  .forest_animal {
+    opacity: 0;
+  }
 }
