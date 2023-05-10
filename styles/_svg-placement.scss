@@ -253,7 +253,27 @@ svg {
 }
 
 
-.fire__animation {
-  @include place(5vw, 20vh, 10vw);
+.fire__animation--one {
+  @include place(5vw, 50vh, 17vw);
   z-index: 1;
+  opacity: 0;
+}
+
+.fire__animation--two {
+  @include place(6vw, 47vh, 40vw);
+  z-index: 1;
+  opacity: 0;
+}
+
+.fire__animation--three {
+  @include place(3vw, 55vh, 14vw);
+  rotate: 15deg;
+  z-index: 1;
+  opacity: 0;
+}
+
+.fire__animation--four {
+  @include place(6vw, 50vh, 41vw);
+  z-index: 1;
+  opacity: 0;
 }
