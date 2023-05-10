@@ -181,6 +181,17 @@ h1::before {
   flex-direction: column;
 }
 
+.flood__container {
+  width: 100vw;
+  height: 25vh;
+  background: rgb(0, 31, 166);
+  background: linear-gradient(0deg, rgba(0, 31, 166, 0.6) 50%, rgb(0, 95, 255) 100%);
+  z-index: 10;
+  position: fixed;
+  top: 100vh;
+  opacity: 0;
+}
+
 .tree {
   animation-name: tree-movement;
   animation-duration: 30s;
@@ -485,6 +496,11 @@ h1::before {
   transform: rotate(-90deg);
   opacity: 0;
 }
+.wrapper__container[animation=box_20] .flood__container {
+  transition-duration: 1.5s;
+  transform: translateY(-25vh);
+  opacity: 1;
+}
 
 .wrapper__container[animation=box_21] .foreground__container {
   display: none;
@@ -503,6 +519,10 @@ h1::before {
 }
 .wrapper__container[animation=box_21] .tree__row--middle-left {
   animation: none;
+}
+.wrapper__container[animation=box_21] .flood__container {
+  opacity: 1;
+  top: 75vh;
 }
 
 .wrapper__container[animation=box_22] .foreground__container {
@@ -530,6 +550,10 @@ h1::before {
   transition-duration: 1s;
   opacity: 1;
 }
+.wrapper__container[animation=box_22] .flood__container {
+  opacity: 1;
+  top: 75vh;
+}
 
 .wrapper__container[animation=box_23] .factory {
   animation-play-state: paused;
@@ -553,6 +577,10 @@ h1::before {
   transition-duration: 1s;
   opacity: 1;
 }
+.wrapper__container[animation=box_23] .flood__container {
+  opacity: 1;
+  top: 75vh;
+}
 
 .wrapper__container[animation=box_24] .foreground__container {
   display: none;
@@ -571,6 +599,10 @@ h1::before {
 }
 .wrapper__container[animation=box_24] .factory {
   animation-play-state: paused;
+}
+.wrapper__container[animation=box_24] .flood__container {
+  opacity: 1;
+  top: 75vh;
 }
 
 .wrapper__container[animation=box_25] .foreground__container {
@@ -601,6 +633,10 @@ h1::before {
 .wrapper__container[animation=box_25] .factory {
   animation-play-state: paused;
 }
+.wrapper__container[animation=box_25] .flood__container {
+  opacity: 1;
+  top: 75vh;
+}
 
 .wrapper__container[animation=box_26] .foreground__container {
   display: none;
@@ -627,8 +663,8 @@ h1::before {
   bottom: 45vh;
   z-index: 1;
 }
-.wrapper__container[animation=box_26] .fire__animation--one, .wrapper__container[animation=box_26] .fire__animation--two, .wrapper__container[animation=box_26] .fire__animation--three, .wrapper__container[animation=box_26] .fire__animation--four {
-  transition-duration: 1s;
+.wrapper__container[animation=box_26] .flood__container, .wrapper__container[animation=box_26] .fire__animation--one, .wrapper__container[animation=box_26] .fire__animation--two, .wrapper__container[animation=box_26] .fire__animation--three, .wrapper__container[animation=box_26] .fire__animation--four {
+  transition-duration: 2s;
   opacity: 0;
 }
 .wrapper__container[animation=box_26] .factory {
