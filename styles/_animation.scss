@@ -3,6 +3,20 @@
   animation-duration: 30s;
   animation-iteration-count: infinite;
   transform-origin: 50% 100%;
+  transition: transform 2s, opacity 3s;
+}
+
+.house,
+.building__container,
+.factory,
+.cow,
+.people {
+  transition: opacity 2s;
+  transition-delay: 1s;
+}
+
+.forest_animal {
+  transition: transform 5s, opacity 5s;
 }
 
 .cloud__one {
@@ -12,10 +26,7 @@
   animation: cloud-animation 40s alternate-reverse ease-in-out infinite;
 }
 
-.people__man--one,
-.people__man--two,
-.people__man--three,
-.people__man--four {
+.people {
   animation: walk 1s step-end infinite;
 }
 .people__man--two {
@@ -57,30 +68,37 @@
 
   .factory {
     opacity: 0;
+    display: none;
   }
 
   .cow {
     opacity: 0;
+    display: none;
   }
 
   .house__large--three {
     opacity: 0;
+    display: none;
   }
 
   .house__large--two {
     opacity: 0;
+    display: none;
   }
 
   .people__man--four {
     opacity: 0;
+    display: none;
   }
 
   .people__man--two {
     opacity: 0;
+    display: none;
   }
 
   .building__container {
     opacity: 0;
+    display: none;
   }
 }
 
@@ -184,6 +202,10 @@
   .building__container {
     opacity: 0;
   }
+
+  .tree__row--front-right {
+    animation: none;
+  }
 }
 
 .wrapper__container[animation="box_15"] {
@@ -194,6 +216,47 @@
   .factory {
     opacity: 0;
   }
+
+  .cow {
+    opacity: 0;
+  }
+
+  .people__man--four {
+    opacity: 0;
+  }
+
+  .people__man--two {
+    opacity: 0;
+  }
+
+  .building__container {
+    opacity: 0;
+  }
+
+  .tree__row--front-right {
+    animation: none;
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  .tree__row--front-left {
+    animation: none;
+  }
+
+  #cat_2 {
+    transform: translateY(-15vh);
+    z-index: 1;
+  }
+
+  #monkey_1 {
+    transform: translateY(-10vh);
+    z-index: 1;
+  }
+
+  #cow_1,
+  #cow_2 {
+    opacity: 1;
+  }
 }
 
 .wrapper__container[animation="box_16"] {
@@ -201,8 +264,48 @@
     opacity: 0;
   }
 
-  .factory {
+  .cow {
     opacity: 0;
+  }
+
+  .tree__row--front-right {
+    opacity: 0;
+  }
+
+  .tree__row--front-left {
+    animation: none;
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  #cat_1 {
+    transform: translateY(-5vh);
+    z-index: 1;
+  }
+
+  #cat_2 {
+    transform: translateY(-15vh);
+    z-index: 1;
+  }
+
+  #cat_3 {
+    transform: translateY(-10vh);
+    z-index: 1;
+  }
+
+  #monkey_1 {
+    transform: translateY(-10vh);
+    z-index: 1;
+  }
+
+  #monkey_3 {
+    transform: translateY(-20vh);
+    z-index: 1;
+  }
+
+  #cow_1,
+  #cow_2 {
+    opacity: 1;
   }
 }
 
@@ -215,11 +318,54 @@
     transition-duration: 2s;
     opacity: 1;
   }
+
+  .cow {
+    opacity: 0;
+  }
+
+  #cat_1,
+  #cat_2,
+  #cat_3,
+  #monkey_1,
+  #monkey_3 {
+    transform: translateY(-50vh);
+    opacity: 0;
+  }
+
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  #cow_1,
+  #cow_2 {
+    opacity: 1;
+  }
 }
 
 .wrapper__container[animation="box_18"] {
   .foreground__container {
     display: none;
+  }
+
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  .forest_animal {
+    opacity: 0;
+  }
+
+  #monkey_2 {
+    opacity: 1;
+  }
+
+  .cow {
+    opacity: 0;
+  }
+
+  #cow_1,
+  #cow_2 {
+    opacity: 1;
   }
 }
 
@@ -227,16 +373,95 @@
   .foreground__container {
     display: none;
   }
+
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  .forest_animal {
+    opacity: 0;
+  }
+
+  #monkey_2 {
+    opacity: 1;
+  }
+
+  .cow {
+    opacity: 0;
+  }
+
+  #cow_1,
+  #cow_2 {
+    opacity: 1;
+  }
+
+  .tree__row--middle-right {
+    animation: none;
+  }
 }
 
 .wrapper__container[animation="box_20"] {
   .foreground__container {
     display: none;
   }
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  .forest_animal {
+    opacity: 0;
+  }
+
+  #monkey_2 {
+    opacity: 1;
+  }
+
+  .cow {
+    opacity: 0;
+  }
+
+  #cow_1,
+  #cow_2 {
+    opacity: 1;
+  }
+
+  .tree__row--middle-right {
+    animation: none;
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
 }
 .wrapper__container[animation="box_21"] {
   .foreground__container {
     display: none;
+  }
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  .forest_animal {
+    opacity: 0;
+  }
+
+  #monkey_2 {
+    opacity: 1;
+  }
+
+  .cow {
+    opacity: 0;
+  }
+
+  #cow_1,
+  #cow_2 {
+    opacity: 1;
+  }
+
+.tree__row--middle-right{
+  opacity: 0;
+}
+
+  .tree__row--middle-left {
+    animation: none;
   }
 }
 
@@ -244,11 +469,43 @@
   .foreground__container {
     display: none;
   }
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  .forest_animal {
+    opacity: 0;
+  }
+
+  #monkey_2 {
+    transform: translateY(-50vh);
+  }
+
+  .tree__row--middle-left {
+    animation: none;
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  .tree__row--middle-right{
+    opacity: 0;
+  }
 }
 
 .wrapper__container[animation="box_23"] {
   .foreground__container {
     display: none;
+  }
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  .tree__row--middle{
+    opacity: 0;
+  }
+
+  .forest_animal {
+    opacity: 0;
   }
 }
 
@@ -256,17 +513,50 @@
   .foreground__container {
     display: none;
   }
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  .tree__row--middle{
+    opacity: 0;
+  }
+
+  .forest_animal {
+    opacity: 0;
+  }
 }
 
 .wrapper__container[animation="box_25"] {
   .foreground__container {
     display: none;
   }
+  .tree__row--front {
+    opacity: 0;
+  }
+  
+  .tree__row--middle{
+    opacity: 0;
+  }
+
+  .forest_animal {
+    opacity: 0;
+  }
 }
 
 .wrapper__container[animation="box_26"] {
   .foreground__container {
     display: none;
+  }
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  .tree__row--middle{
+    opacity: 0;
+  }
+
+  .forest_animal {
+    opacity: 0;
   }
 }
 
