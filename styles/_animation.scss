@@ -64,7 +64,7 @@
   transition-duration: 2s;
 }
 
-.fire__animation--one, .fire__animation--two, .fire__animation--three, .fire__animation--four {
+.fire{
   animation: walk .7s step-end infinite;
 
 }
@@ -532,7 +532,7 @@
   .forest_animal {
     opacity: 0;
   }
-  .fire__animation--one, .fire__animation--two, .fire__animation--three, .fire__animation--four {
+  .fire {
     opacity: 1;
   }
 
@@ -578,7 +578,7 @@ animation-play-state: paused;
     z-index: 1;
   }
 
-  .fire__animation--one, .fire__animation--two, .fire__animation--three, .fire__animation--four {
+  .fire {
     opacity: 1;
   }
   .factory {
@@ -625,7 +625,9 @@ animation-play-state: paused;
     z-index: 1;
   }
 
-  .flood__container, .fire__animation--one, .fire__animation--two, .fire__animation--three, .fire__animation--four {
+
+  .fire {
+    transition-duration: 1s;
     opacity: 0;
   }
 
@@ -817,6 +819,10 @@ animation-play-state: paused;
   }
 
   .forest_animal_head {
+    animation: none;
+  }
+
+  .fire{
     animation: none;
   }
 
