@@ -190,7 +190,11 @@ h1::before {
   transition: transform 2s, opacity 3s;
 }
 
-.house, .building__container, .factory, .cow, .people {
+.house,
+.building__container,
+.factory,
+.cow,
+.people {
   transition: opacity 2s;
   transition-delay: 1s;
 }
@@ -423,7 +427,8 @@ h1::before {
   transform: translateY(-10vh);
   z-index: 1;
 }
-.wrapper__container[animation=box_15] #cow_1, .wrapper__container[animation=box_15] #cow_2 {
+.wrapper__container[animation=box_15] #cow_1,
+.wrapper__container[animation=box_15] #cow_2 {
   opacity: 1;
 }
 
@@ -461,7 +466,8 @@ h1::before {
   transform: translateY(-20vh);
   z-index: 1;
 }
-.wrapper__container[animation=box_16] #cow_1, .wrapper__container[animation=box_16] #cow_2 {
+.wrapper__container[animation=box_16] #cow_1,
+.wrapper__container[animation=box_16] #cow_2 {
   opacity: 1;
 }
 
@@ -475,14 +481,19 @@ h1::before {
 .wrapper__container[animation=box_17] .cow {
   opacity: 0;
 }
-.wrapper__container[animation=box_17] #cat_1, .wrapper__container[animation=box_17] #cat_2, .wrapper__container[animation=box_17] #cat_3, .wrapper__container[animation=box_17] #monkey_1, .wrapper__container[animation=box_17] #monkey_3 {
+.wrapper__container[animation=box_17] #cat_1,
+.wrapper__container[animation=box_17] #cat_2,
+.wrapper__container[animation=box_17] #cat_3,
+.wrapper__container[animation=box_17] #monkey_1,
+.wrapper__container[animation=box_17] #monkey_3 {
   transform: translateY(-50vh);
   opacity: 0;
 }
 .wrapper__container[animation=box_17] .tree__row--front {
   opacity: 0;
 }
-.wrapper__container[animation=box_17] #cow_1, .wrapper__container[animation=box_17] #cow_2 {
+.wrapper__container[animation=box_17] #cow_1,
+.wrapper__container[animation=box_17] #cow_2 {
   opacity: 1;
 }
 
@@ -501,40 +512,156 @@ h1::before {
 .wrapper__container[animation=box_18] .cow {
   opacity: 0;
 }
-.wrapper__container[animation=box_18] #cow_1, .wrapper__container[animation=box_18] #cow_2 {
+.wrapper__container[animation=box_18] #cow_1,
+.wrapper__container[animation=box_18] #cow_2 {
   opacity: 1;
 }
 
 .wrapper__container[animation=box_19] .foreground__container {
   display: none;
 }
+.wrapper__container[animation=box_19] .tree__row--front {
+  opacity: 0;
+}
+.wrapper__container[animation=box_19] .forest_animal {
+  opacity: 0;
+}
+.wrapper__container[animation=box_19] #monkey_2 {
+  opacity: 1;
+}
+.wrapper__container[animation=box_19] .cow {
+  opacity: 0;
+}
+.wrapper__container[animation=box_19] #cow_1,
+.wrapper__container[animation=box_19] #cow_2 {
+  opacity: 1;
+}
+.wrapper__container[animation=box_19] .tree__row--middle-right {
+  animation: none;
+}
 
 .wrapper__container[animation=box_20] .foreground__container {
   display: none;
+}
+.wrapper__container[animation=box_20] .tree__row--front {
+  opacity: 0;
+}
+.wrapper__container[animation=box_20] .forest_animal {
+  opacity: 0;
+}
+.wrapper__container[animation=box_20] #monkey_2 {
+  opacity: 1;
+}
+.wrapper__container[animation=box_20] .cow {
+  opacity: 0;
+}
+.wrapper__container[animation=box_20] #cow_1,
+.wrapper__container[animation=box_20] #cow_2 {
+  opacity: 1;
+}
+.wrapper__container[animation=box_20] .tree__row--middle-right {
+  animation: none;
+  transform: rotate(-90deg);
+  opacity: 0;
 }
 
 .wrapper__container[animation=box_21] .foreground__container {
   display: none;
 }
+.wrapper__container[animation=box_21] .tree__row--front {
+  opacity: 0;
+}
+.wrapper__container[animation=box_21] .forest_animal {
+  opacity: 0;
+}
+.wrapper__container[animation=box_21] #monkey_2 {
+  opacity: 1;
+}
+.wrapper__container[animation=box_21] .cow {
+  opacity: 0;
+}
+.wrapper__container[animation=box_21] #cow_1,
+.wrapper__container[animation=box_21] #cow_2 {
+  opacity: 1;
+}
+.wrapper__container[animation=box_21] .tree__row--middle-right {
+  opacity: 0;
+}
+.wrapper__container[animation=box_21] .tree__row--middle-left {
+  animation: none;
+}
 
 .wrapper__container[animation=box_22] .foreground__container {
   display: none;
+}
+.wrapper__container[animation=box_22] .tree__row--front {
+  opacity: 0;
+}
+.wrapper__container[animation=box_22] .forest_animal {
+  opacity: 0;
+}
+.wrapper__container[animation=box_22] #monkey_2 {
+  transform: translateY(-50vh);
+}
+.wrapper__container[animation=box_22] .tree__row--middle-left {
+  animation: none;
+  transform: rotate(-90deg);
+  opacity: 0;
+}
+.wrapper__container[animation=box_22] .tree__row--middle-right {
+  opacity: 0;
 }
 
 .wrapper__container[animation=box_23] .foreground__container {
   display: none;
 }
+.wrapper__container[animation=box_23] .tree__row--front {
+  opacity: 0;
+}
+.wrapper__container[animation=box_23] .tree__row--middle {
+  opacity: 0;
+}
+.wrapper__container[animation=box_23] .forest_animal {
+  opacity: 0;
+}
 
 .wrapper__container[animation=box_24] .foreground__container {
   display: none;
+}
+.wrapper__container[animation=box_24] .tree__row--front {
+  opacity: 0;
+}
+.wrapper__container[animation=box_24] .tree__row--middle {
+  opacity: 0;
+}
+.wrapper__container[animation=box_24] .forest_animal {
+  opacity: 0;
 }
 
 .wrapper__container[animation=box_25] .foreground__container {
   display: none;
 }
+.wrapper__container[animation=box_25] .tree__row--front {
+  opacity: 0;
+}
+.wrapper__container[animation=box_25] .tree__row--middle {
+  opacity: 0;
+}
+.wrapper__container[animation=box_25] .forest_animal {
+  opacity: 0;
+}
 
 .wrapper__container[animation=box_26] .foreground__container {
   display: none;
+}
+.wrapper__container[animation=box_26] .tree__row--front {
+  opacity: 0;
+}
+.wrapper__container[animation=box_26] .tree__row--middle {
+  opacity: 0;
+}
+.wrapper__container[animation=box_26] .forest_animal {
+  opacity: 0;
 }
 
 .wrapper__container[animation=box_27] .foreground__container {
