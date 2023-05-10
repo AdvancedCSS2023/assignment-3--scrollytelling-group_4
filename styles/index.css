@@ -190,7 +190,7 @@ h1::before {
   transition: transform 2s, opacity 3s;
 }
 
-.house, .building__container, .factory {
+.house, .building__container, .factory, .cow, .people {
   transition: opacity 2s;
   transition-delay: 1s;
 }
@@ -284,24 +284,31 @@ h1::before {
 }
 .wrapper__container[animation=box_11] .factory {
   opacity: 0;
+  display: none;
 }
 .wrapper__container[animation=box_11] .cow {
   opacity: 0;
+  display: none;
 }
 .wrapper__container[animation=box_11] .house__large--three {
   opacity: 0;
+  display: none;
 }
 .wrapper__container[animation=box_11] .house__large--two {
   opacity: 0;
+  display: none;
 }
 .wrapper__container[animation=box_11] .people__man--four {
   opacity: 0;
+  display: none;
 }
 .wrapper__container[animation=box_11] .people__man--two {
   opacity: 0;
+  display: none;
 }
 .wrapper__container[animation=box_11] .building__container {
   opacity: 0;
+  display: none;
 }
 
 .wrapper__container[animation=box_12] .foreground__container {
@@ -408,21 +415,23 @@ h1::before {
 .wrapper__container[animation=box_15] .tree__row--front-left {
   animation: none;
 }
+.wrapper__container[animation=box_15] #cat_2 {
+  transform: translateY(-15vh);
+  z-index: 1;
+}
+.wrapper__container[animation=box_15] #monkey_1 {
+  transform: translateY(-10vh);
+  z-index: 1;
+}
+.wrapper__container[animation=box_15] #cow_1, .wrapper__container[animation=box_15] #cow_2 {
+  opacity: 1;
+}
 
 .wrapper__container[animation=box_16] .foreground__container {
   opacity: 0;
 }
 .wrapper__container[animation=box_16] .cow {
   opacity: 0;
-}
-.wrapper__container[animation=box_16] .people__man--four {
-  opacity: 0;
-}
-.wrapper__container[animation=box_16] .people__man--two {
-  opacity: 0;
-}
-.wrapper__container[animation=box_16] .building__container {
-  opacity: 100;
 }
 .wrapper__container[animation=box_16] .tree__row--front-right {
   opacity: 0;
@@ -431,6 +440,29 @@ h1::before {
   animation: none;
   transform: rotate(-90deg);
   opacity: 0;
+}
+.wrapper__container[animation=box_16] #cat_1 {
+  transform: translateY(-5vh);
+  z-index: 1;
+}
+.wrapper__container[animation=box_16] #cat_2 {
+  transform: translateY(-15vh);
+  z-index: 1;
+}
+.wrapper__container[animation=box_16] #cat_3 {
+  transform: translateY(-10vh);
+  z-index: 1;
+}
+.wrapper__container[animation=box_16] #monkey_1 {
+  transform: translateY(-10vh);
+  z-index: 1;
+}
+.wrapper__container[animation=box_16] #monkey_3 {
+  transform: translateY(-20vh);
+  z-index: 1;
+}
+.wrapper__container[animation=box_16] #cow_1, .wrapper__container[animation=box_16] #cow_2 {
+  opacity: 1;
 }
 
 .wrapper__container[animation=box_17] .foreground__container {
@@ -443,13 +475,34 @@ h1::before {
 .wrapper__container[animation=box_17] .cow {
   opacity: 0;
 }
-.wrapper__container[animation=box_17] .forest_animal {
+.wrapper__container[animation=box_17] #cat_1, .wrapper__container[animation=box_17] #cat_2, .wrapper__container[animation=box_17] #cat_3, .wrapper__container[animation=box_17] #monkey_1, .wrapper__container[animation=box_17] #monkey_3 {
   transform: translateY(-50vh);
   opacity: 0;
+}
+.wrapper__container[animation=box_17] .tree__row--front {
+  opacity: 0;
+}
+.wrapper__container[animation=box_17] #cow_1, .wrapper__container[animation=box_17] #cow_2 {
+  opacity: 1;
 }
 
 .wrapper__container[animation=box_18] .foreground__container {
   display: none;
+}
+.wrapper__container[animation=box_18] .tree__row--front {
+  opacity: 0;
+}
+.wrapper__container[animation=box_18] .forest_animal {
+  opacity: 0;
+}
+.wrapper__container[animation=box_18] #monkey_2 {
+  opacity: 1;
+}
+.wrapper__container[animation=box_18] .cow {
+  opacity: 0;
+}
+.wrapper__container[animation=box_18] #cow_1, .wrapper__container[animation=box_18] #cow_2 {
+  opacity: 1;
 }
 
 .wrapper__container[animation=box_19] .foreground__container {
