@@ -3,6 +3,16 @@
   animation-duration: 30s;
   animation-iteration-count: infinite;
   transform-origin: 50% 100%;
+  transition: transform 2s, opacity 3s;
+}
+
+.house, .building__container, .factory{
+  transition: opacity 2s;
+  transition-delay: 1s;
+}
+
+.forest_animal{
+  transition: transform 5s, opacity 5s;
 }
 
 .cloud__one {
@@ -12,10 +22,7 @@
   animation: cloud-animation 40s alternate-reverse ease-in-out infinite;
 }
 
-.people__man--one,
-.people__man--two,
-.people__man--three,
-.people__man--four {
+.people{
   animation: walk 1s step-end infinite;
 }
 .people__man--two {
@@ -244,6 +251,10 @@
   .building__container {
     opacity: 0;
   }
+
+  .tree__row--front-right{
+    animation: none;
+  }
 }
 
 .wrapper__container[animation="box_15"] {
@@ -254,6 +265,32 @@
   .factory {
     opacity: 0;
   }
+
+  .cow {
+    opacity: 0;
+  }
+
+  .people__man--four {
+    opacity: 0;
+  }
+
+  .people__man--two {
+    opacity: 0;
+  }
+
+  .building__container {
+    opacity: 0;
+  }
+
+  .tree__row--front-right{
+    animation: none;
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  .tree__row--front-left{
+    animation: none;
+  }
 }
 
 .wrapper__container[animation="box_16"] {
@@ -261,7 +298,29 @@
     opacity: 0;
   }
 
-  .factory {
+  .cow {
+    opacity: 0;
+  }
+
+  .people__man--four {
+    opacity: 0;
+  }
+
+  .people__man--two {
+    opacity: 0;
+  }
+
+  .building__container {
+    opacity: 100;
+  }
+
+  .tree__row--front-right{
+    opacity: 0;
+  }
+
+  .tree__row--front-left{
+    animation: none;
+    transform: rotate(-90deg);
     opacity: 0;
   }
 }
@@ -274,6 +333,15 @@
   .factory {
     transition-duration: 2s;
     opacity: 1;
+  }
+
+  .cow{
+    opacity: 0;
+  }
+
+  .forest_animal{
+    transform: translateY(-50vh);
+    opacity: 0;
   }
 }
 
