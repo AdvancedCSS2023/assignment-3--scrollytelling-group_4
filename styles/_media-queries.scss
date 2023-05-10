@@ -23,6 +23,8 @@
     display: hidden;
   }
 
+
+    
   @media screen and (max-width: 768px) {
     h1 {
       font-size:2rem;
@@ -32,6 +34,13 @@
      font-size: 1.2rem;
   min-width: 70%;
   }
+
+  .main__text.intro__text {
+    font-size: 1.2rem;
   }
-    
-  
+
+  // #box_13 .main__text, #box_17 .main__text, #box_18 .main__text, #box_19 .main__text, #box_20 .main__text, #box_22 .main__text, #box_27 .main__text   {
+  //   margin-left: 19rem;
+  //   }
+
+  }

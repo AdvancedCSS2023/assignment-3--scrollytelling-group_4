@@ -1373,6 +1373,14 @@ svg {
   opacity: 0;
 }
 
+#box_17 .main__text, #box_20 .main__text, #box_22 .main__text, #box_27 .main__text, #box_28 .main__text {
+  margin-left: 45vw;
+}
+
+#box_23 .main__text {
+  margin-right: 100vh;
+}
+
 #landscape__message--container {
   display: none;
 }
@@ -1396,5 +1404,8 @@ svg {
   .button__donation {
     font-size: 1.2rem;
     min-width: 70%;
+  }
+  .main__text.intro__text {
+    font-size: 1.2rem;
   }
 }/*# sourceMappingURL=index.css.map */
