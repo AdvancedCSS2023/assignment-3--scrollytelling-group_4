@@ -222,6 +222,10 @@ h1::before {
   animation-delay: 0.7s;
 }
 
+.cow {
+  z-index: 4;
+}
+
 .cow__head {
   animation: cow-nod 4s infinite;
 }
@@ -354,9 +358,6 @@ h1::before {
 .wrapper__container[animation=box_15] .factory {
   opacity: 0;
 }
-.wrapper__container[animation=box_15] .cow {
-  opacity: 0;
-}
 .wrapper__container[animation=box_15] .people__man--four {
   opacity: 0;
 }
@@ -382,15 +383,8 @@ h1::before {
   transform: translateY(-10vh);
   z-index: 1;
 }
-.wrapper__container[animation=box_15] #cow_1,
-.wrapper__container[animation=box_15] #cow_2 {
-  opacity: 1;
-}
 
 .wrapper__container[animation=box_16] .foreground__container {
-  opacity: 0;
-}
-.wrapper__container[animation=box_16] .cow {
   opacity: 0;
 }
 .wrapper__container[animation=box_16] .tree__row--front-right {
@@ -421,10 +415,6 @@ h1::before {
   transform: translateY(-20vh);
   z-index: 1;
 }
-.wrapper__container[animation=box_16] #cow_1,
-.wrapper__container[animation=box_16] #cow_2 {
-  opacity: 1;
-}
 
 .wrapper__container[animation=box_17] .foreground__container {
   opacity: 0;
@@ -432,9 +422,6 @@ h1::before {
 .wrapper__container[animation=box_17] .factory {
   transition-duration: 2s;
   opacity: 1;
-}
-.wrapper__container[animation=box_17] .cow {
-  opacity: 0;
 }
 .wrapper__container[animation=box_17] #cat_1,
 .wrapper__container[animation=box_17] #cat_2,
@@ -446,10 +433,6 @@ h1::before {
 }
 .wrapper__container[animation=box_17] .tree__row--front {
   opacity: 0;
-}
-.wrapper__container[animation=box_17] #cow_1,
-.wrapper__container[animation=box_17] #cow_2 {
-  opacity: 1;
 }
 
 .wrapper__container[animation=box_18] .foreground__container {
@@ -464,13 +447,6 @@ h1::before {
 .wrapper__container[animation=box_18] #monkey_2 {
   opacity: 1;
 }
-.wrapper__container[animation=box_18] .cow {
-  opacity: 0;
-}
-.wrapper__container[animation=box_18] #cow_1,
-.wrapper__container[animation=box_18] #cow_2 {
-  opacity: 1;
-}
 
 .wrapper__container[animation=box_19] .foreground__container {
   display: none;
@@ -482,13 +458,6 @@ h1::before {
   opacity: 0;
 }
 .wrapper__container[animation=box_19] #monkey_2 {
-  opacity: 1;
-}
-.wrapper__container[animation=box_19] .cow {
-  opacity: 0;
-}
-.wrapper__container[animation=box_19] #cow_1,
-.wrapper__container[animation=box_19] #cow_2 {
   opacity: 1;
 }
 .wrapper__container[animation=box_19] .tree__row--middle-right {
@@ -507,13 +476,6 @@ h1::before {
 .wrapper__container[animation=box_20] #monkey_2 {
   opacity: 1;
 }
-.wrapper__container[animation=box_20] .cow {
-  opacity: 0;
-}
-.wrapper__container[animation=box_20] #cow_1,
-.wrapper__container[animation=box_20] #cow_2 {
-  opacity: 1;
-}
 .wrapper__container[animation=box_20] .tree__row--middle-right {
   animation: none;
   transform: rotate(-90deg);
@@ -530,13 +492,6 @@ h1::before {
   opacity: 0;
 }
 .wrapper__container[animation=box_21] #monkey_2 {
-  opacity: 1;
-}
-.wrapper__container[animation=box_21] .cow {
-  opacity: 0;
-}
-.wrapper__container[animation=box_21] #cow_1,
-.wrapper__container[animation=box_21] #cow_2 {
   opacity: 1;
 }
 .wrapper__container[animation=box_21] .tree__row--middle-right {
@@ -605,6 +560,16 @@ h1::before {
 .wrapper__container[animation=box_25] .forest_animal {
   opacity: 0;
 }
+.wrapper__container[animation=box_25] #monkey_1 {
+  left: 45vw;
+  bottom: 50vh;
+  z-index: 1;
+}
+.wrapper__container[animation=box_25] #cat_1 {
+  left: 25vw;
+  bottom: 45vh;
+  z-index: 1;
+}
 
 .wrapper__container[animation=box_26] .foreground__container {
   display: none;
@@ -615,28 +580,126 @@ h1::before {
 .wrapper__container[animation=box_26] .tree__row--middle {
   opacity: 0;
 }
+.wrapper__container[animation=box_26] .tree__row--middle-left {
+  opacity: 1;
+}
 .wrapper__container[animation=box_26] .forest_animal {
   opacity: 0;
+}
+.wrapper__container[animation=box_26] #monkey_1 {
+  left: 45vw;
+  bottom: 50vh;
+  z-index: 1;
+}
+.wrapper__container[animation=box_26] #cat_1 {
+  left: 25vw;
+  bottom: 45vh;
+  z-index: 1;
 }
 
 .wrapper__container[animation=box_27] .foreground__container {
   display: none;
 }
+.wrapper__container[animation=box_27] .tree__row--front {
+  opacity: 0;
+}
+.wrapper__container[animation=box_27] .forest_animal {
+  opacity: 0;
+}
+.wrapper__container[animation=box_27] #monkey_1 {
+  left: 45vw;
+  bottom: 50vh;
+  z-index: 1;
+}
+.wrapper__container[animation=box_27] #cat_1 {
+  left: 25vw;
+  bottom: 45vh;
+  z-index: 1;
+}
 
 .wrapper__container[animation=box_28] .foreground__container {
   display: none;
+}
+.wrapper__container[animation=box_28] .tree__row--front {
+  opacity: 0;
+}
+.wrapper__container[animation=box_28] .forest_animal {
+  opacity: 0;
+}
+.wrapper__container[animation=box_28] #monkey_1 {
+  opacity: 1;
+  left: 45vw;
+  bottom: 50vh;
+  z-index: 1;
+}
+.wrapper__container[animation=box_28] #monkey_2 {
+  opacity: 1;
+}
+.wrapper__container[animation=box_28] #cat_1 {
+  opacity: 1;
+  left: 25vw;
+  bottom: 45vh;
+  z-index: 1;
 }
 
 .wrapper__container[animation=box_29] .foreground__container {
   display: none;
 }
+.wrapper__container[animation=box_29] .tree__row--front {
+  opacity: 0;
+}
+.wrapper__container[animation=box_29] .forest_animal {
+  opacity: 0;
+}
+.wrapper__container[animation=box_29] #monkey_1 {
+  opacity: 1;
+  left: 45vw;
+  bottom: 50vh;
+  z-index: 1;
+}
+.wrapper__container[animation=box_29] #monkey_2 {
+  opacity: 1;
+}
+.wrapper__container[animation=box_29] #cat_1 {
+  opacity: 1;
+  left: 25vw;
+  bottom: 45vh;
+  z-index: 1;
+}
 
 .wrapper__container[animation=box_30] .foreground__container {
   display: none;
 }
+.wrapper__container[animation=box_30] .tree__row--front {
+  opacity: 0;
+}
+.wrapper__container[animation=box_30] .forest_animal {
+  opacity: 0;
+}
+.wrapper__container[animation=box_30] #monkey_1 {
+  opacity: 1;
+  left: 45vw;
+  bottom: 50vh;
+  z-index: 1;
+}
+.wrapper__container[animation=box_30] #monkey_2 {
+  opacity: 1;
+}
+.wrapper__container[animation=box_30] #cat_1 {
+  opacity: 1;
+  left: 25vw;
+  bottom: 45vh;
+  z-index: 1;
+}
 
 .wrapper__container[animation=box_31] .foreground__container {
   display: none;
+}
+.wrapper__container[animation=box_31] .tree__row--front {
+  opacity: 0;
+}
+.wrapper__container[animation=box_31] .forest_animal {
+  opacity: 0;
 }
 
 @keyframes cloud-animation {
@@ -963,7 +1026,7 @@ svg {
 
 #cow_2 {
   width: 8vw;
-  bottom: 30vh;
+  bottom: 25vh;
   left: 35vw;
   transform: rotateY(180deg);
   z-index: 3;
@@ -971,14 +1034,14 @@ svg {
 
 #cow_3 {
   width: 6vw;
-  bottom: 40vh;
+  bottom: 4vh;
   left: 10vw;
   transform: rotateY(180deg);
 }
 
 #cow_4 {
-  width: 5vw;
-  bottom: 38vh;
+  width: 12vw;
+  bottom: 10vh;
   left: 30vw;
 }
 
