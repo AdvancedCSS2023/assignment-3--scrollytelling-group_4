@@ -92,7 +92,7 @@ h1::before {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 1.5rem;
   border-radius: 25px;
-  width: 70vh;
+  max-width: 40ch;
 }
 
 .main__text.intro__text {
@@ -116,6 +116,11 @@ h1::before {
 }
 .textbox:last-child {
   margin-bottom: 10vh;
+  position: absolute;
+  width: 8vh;
+  height: 10vh;
+  bottom: 2812vh;
+  /* background-color: red; */
 }
 
 #landscape__message--container {
@@ -350,6 +355,26 @@ h1::before {
 }
 
 .wrapper__container[animation=box_26] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_27] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_28] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_29] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_30] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_31] .foreground__container {
   display: none;
 }
 
@@ -816,6 +841,9 @@ svg {
 @media (orientation: portrait) {
   #landscape__message--container {
     display: block;
+  }
+  .main__text.intro__text {
+    margin-right: 10vh;
   }
 }
 .landscape__off {
