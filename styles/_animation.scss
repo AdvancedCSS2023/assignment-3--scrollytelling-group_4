@@ -12,24 +12,23 @@
   animation: cloud-animation 40s alternate-reverse ease-in-out infinite;
 }
 
-.people__man--one, .people__man--two, .people__man--three, .people__man--four {
+.people__man--one,
+.people__man--two,
+.people__man--three,
+.people__man--four {
   animation: walk 1s step-end infinite;
 }
 .people__man--two {
-  animation-delay: .3s;
+  animation-delay: 0.3s;
 }
 
 .people__man--three {
-  animation-delay: .7s;
-
-
+  animation-delay: 0.7s;
 }
 
 .cow__head {
   animation: cow-nod 4s infinite;
 }
-
-
 
 .forest_animal_head {
   animation-name: head-movement;
@@ -39,14 +38,13 @@
 }
 
 .factory {
-  animation: factory-vibration .3s linear infinite both;
+  animation: factory-vibration 0.3s linear infinite both;
 }
-
 
 // Intersection observer animations
 
 // .wrapper__container[animation="box_x"] {
-//   
+//
 // }
 
 .wrapper__container[animation="box_3"] {
@@ -59,72 +57,86 @@
 
   .foreground__container {
     transition-duration: 2s;
-   background-image: url(https://www.europarl.europa.eu/resources/library/images/20221025PHT46003/20221025PHT46003_original.jpg);
+    background-image: url(https://www.europarl.europa.eu/resources/library/images/20221025PHT46003/20221025PHT46003_original.jpg);
   }
-  
 }
 
 .wrapper__container[animation="box_4"] {
- 
   .foreground__container {
     // transition-duration: 2s;
-   background-image: url(https://www.europarl.europa.eu/resources/library/images/20221025PHT46003/20221025PHT46003_original.jpg);
+    background-image: url(https://www.europarl.europa.eu/resources/library/images/20221025PHT46003/20221025PHT46003_original.jpg);
   }
-  
 }
 
 .wrapper__container[animation="box_5"] {
- 
   .foreground__container {
     transition-duration: 2s;
-   background-image: url(https://www.sei.org/wp-content/uploads/2020/07/deforestationpalmoilauriga-scaled.jpg );
+    background-image: url(https://www.sei.org/wp-content/uploads/2020/07/deforestationpalmoilauriga-scaled.jpg);
   }
-  
 }
-
 
 .wrapper__container[animation="box_6"] {
   .foreground__container {
     // transition-duration: 2s;
-   background-image: url(https://www.sei.org/wp-content/uploads/2020/07/deforestationpalmoilauriga-scaled.jpg );
-  } 
+    background-image: url(https://www.sei.org/wp-content/uploads/2020/07/deforestationpalmoilauriga-scaled.jpg);
+  }
 }
 
 .wrapper__container[animation="box_7"] {
   .foreground__container {
-   background-image: url(https://www.sei.org/wp-content/uploads/2020/07/deforestationpalmoilauriga-scaled.jpg );
+    background-image: url(https://www.sei.org/wp-content/uploads/2020/07/deforestationpalmoilauriga-scaled.jpg);
   }
+}
+
+.wrapper__container[animation="box_8"] {
+  .foreground__container {
+    transition-duration: 2s;
+    background-image: url(https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F08fc215e-024c-11ea-a5c6-614c29c2a639.jpg?crop=6000%2C3375%2C0%2C312&resize=1500);
   }
+}
+
+.wrapper__container[animation="box_9"] {
+  .foreground__container {
+    // transition-duration: 2s;
+    background-image: url(https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F08fc215e-024c-11ea-a5c6-614c29c2a639.jpg?crop=6000%2C3375%2C0%2C312&resize=1500);
+  }
+}
+
+.wrapper__container[animation="box_10"] {
+  .foreground__container {
+    // transition-duration: 2s;
+    background-image: url(https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F08fc215e-024c-11ea-a5c6-614c29c2a639.jpg?crop=6000%2C3375%2C0%2C312&resize=1500);
+  }
+}
+
+.wrapper__container[animation="box_11"] {
+  .foreground__container {
+    transition-duration: 2s;
+    opacity: 0;
+  }
+}
+
+.wrapper__container[animation="box_11"] {
+  .foreground__container {
+    display: none;
+  }
+}
+
+.wrapper__container[animation="box_12"] {
+  .foreground__container {
+    display: none;
+  }
+}
+
+.wrapper__container[animation="box_13"] {
+  .foreground__container {
+    display: none;
+  }
+}
+
+.wrapper__container[animation="box_14"] {
+  .foreground__container {
+    display: none;
   
-  .wrapper__container[animation="box_8"] {
-    .foreground__container {
-      transition-duration: 2s;
-     background-image: url(https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F08fc215e-024c-11ea-a5c6-614c29c2a639.jpg?crop=6000%2C3375%2C0%2C312&resize=1500 );
-    } 
-    }
-
-    .wrapper__container[animation="box_9"] {
-      .foreground__container {
-        // transition-duration: 2s;
-       background-image: url(https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F08fc215e-024c-11ea-a5c6-614c29c2a639.jpg?crop=6000%2C3375%2C0%2C312&resize=1500 );
-      } 
-      }
-
-      .wrapper__container[animation="box_10"] {
-        .foreground__container {
-          // transition-duration: 2s;
-         background-image: url(https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F08fc215e-024c-11ea-a5c6-614c29c2a639.jpg?crop=6000%2C3375%2C0%2C312&resize=1500 );
-        } 
-        }
-
-        .wrapper__container[animation="box_11"] {
-          .foreground__container {
-            
-            transition-duration: 2s;
-            opacity: 0;
-            
-          } 
-          }
-  
-        
-      
+  } 
+  }

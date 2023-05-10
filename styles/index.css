@@ -108,7 +108,7 @@ h1::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 90vh;
   width: 80vw;
 }
 .textbox:first-child {
@@ -168,7 +168,10 @@ h1::before {
   animation: cloud-animation 40s alternate-reverse ease-in-out infinite;
 }
 
-.people__man--one, .people__man--two, .people__man--three, .people__man--four {
+.people__man--one,
+.people__man--two,
+.people__man--three,
+.people__man--four {
   animation: walk 1s step-end infinite;
 }
 
@@ -239,6 +242,22 @@ h1::before {
 .wrapper__container[animation=box_11] .foreground__container {
   transition-duration: 2s;
   opacity: 0;
+}
+
+.wrapper__container[animation=box_11] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_12] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_13] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_14] .foreground__container {
+  display: none;
 }
 
 @keyframes cloud-animation {
