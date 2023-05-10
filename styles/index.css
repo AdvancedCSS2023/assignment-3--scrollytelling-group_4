@@ -86,25 +86,29 @@ h1::before {
   overflow: hidden;
 }
 
-.textbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-  width: 80vw;
+.main__text {
+  color: black;
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  border-radius: 25px;
+  max-width: 40ch;
 }
-.textbox:first-child {
-  margin-top: 10vh;
-}
-.textbox:last-child {
-  margin-bottom: 10vh;
+
+.main__text.intro__text {
+  background-color: green;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  border-radius: 0;
+  margin-right: 90vh;
 }
 
 .textbox {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 90vh;
   width: 80vw;
 }
 .textbox:first-child {
@@ -112,6 +116,11 @@ h1::before {
 }
 .textbox:last-child {
   margin-bottom: 10vh;
+  position: absolute;
+  width: 8vh;
+  height: 10vh;
+  bottom: 2812vh;
+  /* background-color: red; */
 }
 
 #landscape__message--container {
@@ -149,6 +158,30 @@ h1::before {
   background-color: rgb(250, 149, 149);
 }
 
+.button__donation {
+  width: 25vw;
+  max-width: 90%;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  background-color: green;
+  border: 0.2rem solid white;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.button__donation:hover {
+  background-color: rgb(0, 175, 0);
+}
+
+#box_31 {
+  display: flex;
+  flex-direction: column;
+}
+
 .tree {
   animation-name: tree-movement;
   animation-duration: 30s;
@@ -164,7 +197,10 @@ h1::before {
   animation: cloud-animation 40s alternate-reverse ease-in-out infinite;
 }
 
-.people__man--one, .people__man--two, .people__man--three, .people__man--four {
+.people__man--one,
+.people__man--two,
+.people__man--three,
+.people__man--four {
   animation: walk 1s step-end infinite;
 }
 
@@ -197,20 +233,148 @@ h1::before {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+.wrapper__container[animation=box_3] .foreground__container {
+  transition-duration: 2s;
+  background-image: url(https://www.europarl.europa.eu/resources/library/images/20221025PHT46003/20221025PHT46003_original.jpg);
+}
 
-.wrapper__container[animation=box_4] .tree__row--front {
-  display: none;
+.wrapper__container[animation=box_4] .foreground__container {
+  background-image: url(https://www.europarl.europa.eu/resources/library/images/20221025PHT46003/20221025PHT46003_original.jpg);
+}
+
+.wrapper__container[animation=box_5] .foreground__container {
+  transition-duration: 2s;
+  background-image: url(https://www.sei.org/wp-content/uploads/2020/07/deforestationpalmoilauriga-scaled.jpg);
 }
 
 .wrapper__container[animation=box_6] .foreground__container {
-  animation: fade-out 1.5s ease-in-out forwards;
+  background-image: url(https://www.sei.org/wp-content/uploads/2020/07/deforestationpalmoilauriga-scaled.jpg);
 }
 
 .wrapper__container[animation=box_7] .foreground__container {
-  display: none;
+  background-image: url(https://www.sei.org/wp-content/uploads/2020/07/deforestationpalmoilauriga-scaled.jpg);
 }
 
 .wrapper__container[animation=box_8] .foreground__container {
+  transition-duration: 2s;
+  background-image: url(https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F08fc215e-024c-11ea-a5c6-614c29c2a639.jpg?crop=6000%2C3375%2C0%2C312&resize=1500);
+}
+
+.wrapper__container[animation=box_9] .foreground__container {
+  background-image: url(https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F08fc215e-024c-11ea-a5c6-614c29c2a639.jpg?crop=6000%2C3375%2C0%2C312&resize=1500);
+}
+
+.wrapper__container[animation=box_10] .foreground__container {
+  background-image: url(https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F08fc215e-024c-11ea-a5c6-614c29c2a639.jpg?crop=6000%2C3375%2C0%2C312&resize=1500);
+}
+.wrapper__container[animation=box_10] .factory {
+  display: none;
+}
+
+.wrapper__container[animation=box_11] .foreground__container {
+  transition-duration: 2s;
+  opacity: 0;
+}
+.wrapper__container[animation=box_11] .factory {
+  display: none;
+}
+
+.wrapper__container[animation=box_12] .foreground__container {
+  display: none;
+}
+.wrapper__container[animation=box_12] .factory {
+  display: none;
+}
+
+.wrapper__container[animation=box_13] .foreground__container {
+  display: none;
+}
+.wrapper__container[animation=box_13] .factory {
+  display: none;
+}
+
+.wrapper__container[animation=box_14] .foreground__container {
+  display: none;
+}
+.wrapper__container[animation=box_14] .factory {
+  opacity: 0;
+}
+
+.wrapper__container[animation=box_15] .foreground__container {
+  opacity: 0;
+}
+.wrapper__container[animation=box_15] .factory {
+  opacity: 0;
+}
+
+.wrapper__container[animation=box_16] .foreground__container {
+  opacity: 0;
+}
+.wrapper__container[animation=box_16] .factory {
+  opacity: 0;
+}
+
+.wrapper__container[animation=box_17] .foreground__container {
+  opacity: 0;
+}
+.wrapper__container[animation=box_17] .factory {
+  transition-duration: 2s;
+  opacity: 1;
+}
+
+.wrapper__container[animation=box_18] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_19] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_20] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_21] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_22] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_23] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_24] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_25] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_26] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_27] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_28] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_29] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_30] .foreground__container {
+  display: none;
+}
+
+.wrapper__container[animation=box_31] .foreground__container {
   display: none;
 }
 
@@ -678,6 +842,9 @@ svg {
   #landscape__message--container {
     display: block;
   }
+  .main__text.intro__text {
+    margin-right: 10vh;
+  }
 }
 .landscape__off {
   display: hidden;
@@ -686,5 +853,9 @@ svg {
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 2rem;
+  }
+  .button__donation {
+    font-size: 1.2rem;
+    min-width: 70%;
   }
 }/*# sourceMappingURL=index.css.map */

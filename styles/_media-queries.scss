@@ -9,7 +9,15 @@
       #landscape__message--container {
         display: block;
       }
+  
+      .main__text.intro__text {
+        margin-right: 10vh;
     }
+    }
+
+  
+  
+
   
   .landscape__off {
     display: hidden;
@@ -19,6 +27,11 @@
     h1 {
       font-size:2rem;
     }
+
+    .button__donation {
+     font-size: 1.2rem;
+  min-width: 70%;
+  }
   }
     
   
