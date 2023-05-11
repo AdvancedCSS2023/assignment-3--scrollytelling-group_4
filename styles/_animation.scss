@@ -823,7 +823,10 @@
   #cow_4 {
     opacity: 0;
   }
+
+
 }
+
 
 .wrapper__container[animation="box_31"] {
   .foreground__container {
@@ -833,13 +836,40 @@
     opacity: 0;
   }
 
-  .forest_animal {
-    opacity: 0;
-  }
-
-  .people__man--one,
+  .people__man--one, .forest_animal,
   #cow_3,
   #cow_4 {
     opacity: 0;
   }
+
+  #monkey_1 {
+    opacity: 1;
+    left: 45vw;
+    bottom: 50vh;
+    z-index: 1;
+  }
+
+  #monkey_2 {
+    opacity: 1;
+  }
+
+  #cat_1 {
+    opacity: 1;
+    left: 25vw;
+    bottom: 45vh;
+    z-index: 1;
+  }
+
+
+  .main__text {
+    font-weight: bolder;
+  }
+
+  .backdrop__filter {
+    transition-duration: 1.5s;
+    opacity: 1;
+  }
+  
+
+
 }
