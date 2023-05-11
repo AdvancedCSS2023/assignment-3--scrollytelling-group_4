@@ -401,7 +401,9 @@
     opacity: 1;
   }
 
-  .people__man--one, #cow_3, #cow_4  {
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
     opacity: 0;
   }
 }
@@ -433,7 +435,9 @@
     opacity: 1;
     top: 75vh;
   }
-  .people__man--one, #cow_3, #cow_4  {
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
     opacity: 0;
   }
 }
@@ -475,7 +479,9 @@
     opacity: 1;
     top: 75vh;
   }
-  .people__man--one, #cow_3, #cow_4 {
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
     opacity: 0;
   }
 }
@@ -517,7 +523,9 @@
     top: 75vh;
   }
 
-  .people__man--one, #cow_3, #cow_4  {
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
     opacity: 0;
   }
 }
@@ -553,7 +561,9 @@
     top: 75vh;
   }
 
-  .people__man--one, #cow_3, #cow_4  {
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
     opacity: 0;
   }
 }
@@ -599,7 +609,9 @@
     opacity: 1;
     top: 75vh;
   }
-  .people__man--one, #cow_3, #cow_4  {
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
     opacity: 0;
   }
 }
@@ -647,7 +659,9 @@
   .factory {
     animation-play-state: paused;
   }
-  .people__man--one, #cow_3, #cow_4  {
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
     opacity: 0;
   }
 }
@@ -676,7 +690,9 @@
     z-index: 1;
   }
 
-  .people__man--one, #cow_3, #cow_4  {
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
     opacity: 0;
   }
 }
@@ -711,7 +727,9 @@
     z-index: 1;
   }
 
-  .people__man--one, #cow_3, #cow_4  {
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
     opacity: 0;
   }
 }
@@ -745,7 +763,9 @@
     z-index: 1;
   }
 
-  .people__man--one, #cow_3, #cow_4  {
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
     opacity: 0;
   }
 }
@@ -779,7 +799,9 @@
     z-index: 1;
   }
 
-  .people__man--one, #cow_3, #cow_4  {
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
     opacity: 0;
   }
 }
@@ -796,10 +818,15 @@
     opacity: 0;
   }
 
-  .people__man--one, #cow_3, #cow_4  {
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
     opacity: 0;
   }
 }
+
+
+// Reduced motion media query
 
 @media (prefers-reduced-motion) {
   #cat_1,
@@ -888,12 +915,18 @@
     }
   }
 
-  
   video {
     display: none;
   }
 
   .foreground__container {
     background-image: url(../assets/deforestation-bg-image.jpg);
+  }
+
+  .fire__animation--one,
+  .fire__animation--two,
+  .fire__animation--three,
+  .fire__animation--four {
+    animation: walk 1.5s step-end infinite;
   }
 }
