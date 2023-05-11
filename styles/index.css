@@ -1,15 +1,11 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   font-family: sans-serif;
 }
 
-/*h1 {
-    position: absolute;
-    z-index: 2;
-    top: 45vh;
-    left: 47vw;
-}*/
 h1 {
   color: white;
   font-size: 5rem;
@@ -48,7 +44,8 @@ h1::before {
   filter: sepia(50%);
 }
 
-.wrapper__left, .wrapper__right {
+.wrapper__left,
+.wrapper__right {
   width: 50vw;
   min-width: 50vw;
   height: 100vh;
@@ -256,15 +253,23 @@ h1::before {
   animation: factory-vibration 0.3s linear infinite both;
 }
 
-.flood__container, .fire__animation--one, .fire__animation--two, .fire__animation--three, .fire__animation--four {
+.flood__container,
+.fire__animation--one,
+.fire__animation--two,
+.fire__animation--three,
+.fire__animation--four {
   transition-duration: 2s;
 }
 
-.fire__animation--one, .fire__animation--two, .fire__animation--three, .fire__animation--four {
+.fire__animation--one,
+.fire__animation--two,
+.fire__animation--three,
+.fire__animation--four {
   animation: walk 0.7s step-end infinite;
 }
 
-.flood__container, .people__man--one {
+.flood__container,
+.people__man--one {
   transition-duration: 1.5s;
 }
 
@@ -561,7 +566,8 @@ h1::before {
 .wrapper__container[animation=box_22] .tree__row--middle-right {
   opacity: 0;
 }
-.wrapper__container[animation=box_22] .fire__animation--one, .wrapper__container[animation=box_22] .fire__animation--two {
+.wrapper__container[animation=box_22] .fire__animation--one,
+.wrapper__container[animation=box_22] .fire__animation--two {
   transition-delay: 0.3s;
   transition-duration: 1s;
   opacity: 1;
@@ -589,10 +595,12 @@ h1::before {
 .wrapper__container[animation=box_23] .forest_animal {
   opacity: 0;
 }
-.wrapper__container[animation=box_23] .fire__animation--one, .wrapper__container[animation=box_23] .fire__animation--two {
+.wrapper__container[animation=box_23] .fire__animation--one,
+.wrapper__container[animation=box_23] .fire__animation--two {
   opacity: 1;
 }
-.wrapper__container[animation=box_23] .fire__animation--three, .wrapper__container[animation=box_23] .fire__animation--four {
+.wrapper__container[animation=box_23] .fire__animation--three,
+.wrapper__container[animation=box_23] .fire__animation--four {
   transition-duration: 1s;
   opacity: 1;
 }
@@ -616,7 +624,10 @@ h1::before {
 .wrapper__container[animation=box_24] .forest_animal {
   opacity: 0;
 }
-.wrapper__container[animation=box_24] .fire__animation--one, .wrapper__container[animation=box_24] .fire__animation--two, .wrapper__container[animation=box_24] .fire__animation--three, .wrapper__container[animation=box_24] .fire__animation--four {
+.wrapper__container[animation=box_24] .fire__animation--one,
+.wrapper__container[animation=box_24] .fire__animation--two,
+.wrapper__container[animation=box_24] .fire__animation--three,
+.wrapper__container[animation=box_24] .fire__animation--four {
   opacity: 1;
 }
 .wrapper__container[animation=box_24] .factory {
@@ -652,7 +663,10 @@ h1::before {
   bottom: 45vh;
   z-index: 1;
 }
-.wrapper__container[animation=box_25] .fire__animation--one, .wrapper__container[animation=box_25] .fire__animation--two, .wrapper__container[animation=box_25] .fire__animation--three, .wrapper__container[animation=box_25] .fire__animation--four {
+.wrapper__container[animation=box_25] .fire__animation--one,
+.wrapper__container[animation=box_25] .fire__animation--two,
+.wrapper__container[animation=box_25] .fire__animation--three,
+.wrapper__container[animation=box_25] .fire__animation--four {
   opacity: 1;
 }
 .wrapper__container[animation=box_25] .factory {
@@ -691,7 +705,11 @@ h1::before {
   bottom: 45vh;
   z-index: 1;
 }
-.wrapper__container[animation=box_26] .flood__container, .wrapper__container[animation=box_26] .fire__animation--one, .wrapper__container[animation=box_26] .fire__animation--two, .wrapper__container[animation=box_26] .fire__animation--three, .wrapper__container[animation=box_26] .fire__animation--four {
+.wrapper__container[animation=box_26] .flood__container,
+.wrapper__container[animation=box_26] .fire__animation--one,
+.wrapper__container[animation=box_26] .fire__animation--two,
+.wrapper__container[animation=box_26] .fire__animation--three,
+.wrapper__container[animation=box_26] .fire__animation--four {
   opacity: 0;
 }
 .wrapper__container[animation=box_26] .factory {
@@ -882,6 +900,12 @@ h1::before {
   }
   .wrapper__container[animation=box_22] .tree__row--middle-left {
     transform: rotate(0);
+  }
+  video {
+    display: none;
+  }
+  .foreground__container {
+    background-image: url(../assets/deforestation-bg-image.jpg);
   }
 }
 @keyframes cloud-animation {
