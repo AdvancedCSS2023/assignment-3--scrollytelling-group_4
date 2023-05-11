@@ -4,20 +4,31 @@
     rgba(0, 245, 255, 1) 45%,
     rgba(45, 166, 0, 1) 40%
   );
-  --main-background-color-dark:linear-gradient(rgb(190, 9, 240) 45%,
-  rgb(79, 111, 68) 40%);
+  --main-background-color-dark: linear-gradient(
+    rgb(190, 9, 240) 45%,
+    rgb(79, 111, 68) 40%
+  );
   --main-text-color: black;
-  --main-text-color-dark:white;
+  --main-text-color-dark: white;
   --secondary-text-color: white;
   --textbox-background-color: rgba(255, 255, 255, 0.9);
-  --textbox-background-color-dark:black;
+  --textbox-background-color-dark: black;
   --secondary-textbox-bg-color: green;
-  --donate-hover:rgb(0, 175, 0);
-  --landscape-message-bg-color:azure;
-  --landscape-message-button-color:rgb(255, 104, 104);
-  --landscape-message-button-hover:rgb(250, 149, 149);
-  --landscape-message-button-color-dark:rgb(255, 104, 104);
-  --landscape-message-button-hover-dark:rgb(250, 149, 149);
-  --flood-background:rgba(0,31,166);
-  --flood-gradient:linear-gradient(0deg, rgba(0,31,166,.6) 50%, rgba(0,95,255,1) 100%);
+  --donate-hover: rgb(0, 175, 0);
+  --landscape-message-bg-color: azure;
+  --landscape-message-button-color: rgb(255, 104, 104);
+  --landscape-message-button-hover: rgb(250, 149, 149);
+  --secondary-textbox-bg-color-dark: rgb(112, 0, 120);
+  --donate-hover-dark: rgb(157, 8, 168);
+  --landscape-message-bg-color-dark: rgb(31, 15, 77);
+  --landscape-message-button-color-dark: rgb(188, 1, 157);
+  --landscape-message-button-hover-dark: rgb(237, 3, 198);
+  --flood-background: rgba(0, 31, 166);
+  --flood-gradient: linear-gradient(
+    0deg,
+    rgba(0, 31, 166, 0.6) 50%,
+    rgba(0, 95, 255, 1) 100%
+  );
+  --link-text-color-dark:rgba(4, 255, 234, 0.993);
+  --link-text-color-dark-visited:orange;
 }
