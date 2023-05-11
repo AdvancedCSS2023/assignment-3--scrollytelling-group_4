@@ -415,7 +415,7 @@ video {
 .factory,
 .cow,
 .people {
-  transition: opacity 2s;
+  transition: opacity 2s, transform 2s;
   transition-delay: 1s;
 }
 
@@ -449,7 +449,6 @@ video {
 
 .cow {
   z-index: 4;
-  transition: transform 2s;
 }
 
 .cow__head {
