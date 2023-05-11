@@ -467,18 +467,11 @@ video {
   animation: factory-vibration 0.3s linear infinite both;
 }
 
-.flood__container,
-.fire__animation--one,
-.fire__animation--two,
-.fire__animation--three,
-.fire__animation--four {
+.fire {
   transition-duration: 2s;
 }
 
-.fire__animation--one,
-.fire__animation--two,
-.fire__animation--three,
-.fire__animation--four {
+.fire {
   animation: walk 0.7s step-end infinite;
 }
 
@@ -1077,7 +1070,8 @@ video {
 .wrapper__container[animation=box_31] .tree__row--front {
   opacity: 0;
 }
-.wrapper__container[animation=box_31] .people__man--one, .wrapper__container[animation=box_31] .forest_animal,
+.wrapper__container[animation=box_31] .people__man--one,
+.wrapper__container[animation=box_31] .forest_animal,
 .wrapper__container[animation=box_31] #cow_3,
 .wrapper__container[animation=box_31] #cow_4 {
   opacity: 0;
