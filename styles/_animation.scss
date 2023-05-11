@@ -60,21 +60,25 @@
   animation: factory-vibration 0.3s linear infinite both;
 }
 
-.flood__container, .fire__animation--one, .fire__animation--two, .fire__animation--three, .fire__animation--four {
+.flood__container,
+.fire__animation--one,
+.fire__animation--two,
+.fire__animation--three,
+.fire__animation--four {
   transition-duration: 2s;
 }
 
-.fire{
-  animation: walk .7s step-end infinite;
-
+.fire__animation--one,
+.fire__animation--two,
+.fire__animation--three,
+.fire__animation--four {
+  animation: walk 0.7s step-end infinite;
 }
 
-.flood__container, .people__man--one {
+.flood__container,
+.people__man--one {
   transition-duration: 1.5s;
 }
-
-
-
 
 .wrapper__container[animation="box_11"] {
   .foreground__container {
@@ -397,7 +401,9 @@
     opacity: 1;
   }
 
-  .people__man--one {
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
     opacity: 0;
   }
 }
@@ -429,7 +435,9 @@
     opacity: 1;
     top: 75vh;
   }
-  .people__man--one {
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
     opacity: 0;
   }
 }
@@ -460,8 +468,9 @@
     opacity: 0;
   }
 
-  .fire__animation--one, .fire__animation--two {
-    transition-delay: .3s;
+  .fire__animation--one,
+  .fire__animation--two {
+    transition-delay: 0.3s;
     transition-duration: 1s;
     opacity: 1;
   }
@@ -470,10 +479,11 @@
     opacity: 1;
     top: 75vh;
   }
-  .people__man--one {
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
     opacity: 0;
   }
-
 }
 
 .wrapper__container[animation="box_23"] {
@@ -496,11 +506,13 @@
     opacity: 0;
   }
 
-  .fire__animation--one, .fire__animation--two {
+  .fire__animation--one,
+  .fire__animation--two {
     opacity: 1;
   }
 
-  .fire__animation--three, .fire__animation--four {
+  .fire__animation--three,
+  .fire__animation--four {
     // transition-delay: .3s;
     transition-duration: 1s;
     opacity: 1;
@@ -511,10 +523,11 @@
     top: 75vh;
   }
 
-  .people__man--one {
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
     opacity: 0;
   }
-
 }
 
 .wrapper__container[animation="box_24"] {
@@ -537,7 +550,7 @@
   }
 
   .factory {
-animation-play-state: paused;
+    animation-play-state: paused;
   }
 
   .flood__container {
@@ -545,7 +558,9 @@ animation-play-state: paused;
     top: 75vh;
   }
 
-  .people__man--one {
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
     opacity: 0;
   }
 }
@@ -583,14 +598,16 @@ animation-play-state: paused;
   }
   .factory {
     animation-play-state: paused;
-      }
-      .flood__container {
-        opacity: 1;
-        top: 75vh;
-      }
-      .people__man--one {
-        opacity: 0;
-      }
+  }
+  .flood__container {
+    opacity: 1;
+    top: 75vh;
+  }
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
+    opacity: 0;
+  }
 }
 
 .wrapper__container[animation="box_26"] {
@@ -633,10 +650,12 @@ animation-play-state: paused;
 
   .factory {
     animation-play-state: paused;
-      }
-      .people__man--one {
-        opacity: 0;
-      }
+  }
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
+    opacity: 0;
+  }
 }
 
 .wrapper__container[animation="box_27"] {
@@ -663,7 +682,9 @@ animation-play-state: paused;
     z-index: 1;
   }
 
-  .people__man--one {
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
     opacity: 0;
   }
 }
@@ -698,7 +719,9 @@ animation-play-state: paused;
     z-index: 1;
   }
 
-  .people__man--one {
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
     opacity: 0;
   }
 }
@@ -732,7 +755,9 @@ animation-play-state: paused;
     z-index: 1;
   }
 
-  .people__man--one {
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
     opacity: 0;
   }
 }
@@ -766,7 +791,9 @@ animation-play-state: paused;
     z-index: 1;
   }
 
-  .people__man--one {
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
     opacity: 0;
   }
 }
@@ -783,99 +810,10 @@ animation-play-state: paused;
     opacity: 0;
   }
 
-  .people__man--one {
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
     opacity: 0;
   }
 }
 
-@media (prefers-reduced-motion) {
-  #cat_1,
-  #cat_2,
-  #cat_3,
-  #monkey_1,
-  #monkey_2,
-  #monkey_3 {
-    transition: opacity 5s;
-  }
-
-  .people {
-    animation: none;
-  }
-
-  .tree {
-    animation: none;
-  }
-
-  .cloud {
-    animation: none;
-  }
-
-  #factory {
-    animation: none;
-  }
-
-  .cow__head {
-    animation: none;
-  }
-
-  .forest_animal_head {
-    animation: none;
-  }
-
-  .fire{
-    animation: none;
-  }
-
-  .wrapper__container[animation="box_15"] {
-    .tree__row--front-right {
-      transform: rotate(0);
-    }
-  }
-
-  .wrapper__container[animation="box_16"] {
-    .tree__row--front-left {
-      transform: rotate(0);
-    }
-  }
-  .wrapper__container[animation="box_17"] {
-    #cat_1 {
-      transform: translateY(-5vh);
-      z-index: 1;
-    }
-
-    #cat_2 {
-      transform: translateY(-15vh);
-      z-index: 1;
-    }
-
-    #cat_3 {
-      transform: translateY(-10vh);
-      z-index: 1;
-    }
-
-    #monkey_1 {
-      transform: translateY(-10vh);
-      z-index: 1;
-    }
-
-    #monkey_3 {
-      transform: translateY(-20vh);
-      z-index: 1;
-    }
-  }
-  .wrapper__container[animation="box_20"] {
-    .tree__row--middle-right {
-      transform: rotate(0);
-    }
-  }
-
-  .wrapper__container[animation="box_22"] {
-    #monkey_2 {
-      transform: translateY(0);
-    }
-
-    .tree__row--middle-left {
-      transform: rotate(0);
-    }
-  }
-}

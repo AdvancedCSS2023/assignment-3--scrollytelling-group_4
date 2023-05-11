@@ -6,12 +6,6 @@
   font-family: sans-serif;
 }
 
-/*h1 {
-    position: absolute;
-    z-index: 2;
-    top: 45vh;
-    left: 47vw;
-}*/
 h1 {
   color: var(--secondary-text-color);
   font-size: 5rem;
@@ -59,11 +53,6 @@ h1::before {
   position: fixed;
   background: var(--main-background-color);
 }
-
-// .wrapper__left {
-//     background-color: rgb(71, 255, 194);
-
-// }
 
 .wrapper__svg--right {
   position: absolute;
@@ -132,20 +121,6 @@ h1::before {
   }
 }
 
-// .textbox{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     height: 80vh;
-//     width: 80vw;
-//     &:first-child{
-//         margin-top: 10vh;
-//     }
-//     &:last-child{
-//         margin-bottom: 10vh;
-//     }
-// }
-
 #landscape__message--container {
   height: 100vh;
   width: 100vw;
@@ -204,6 +179,8 @@ h1::before {
 #box_31 {
   display: flex;
   flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .flood__container {
@@ -227,4 +204,9 @@ h1::before {
     color: var(--main-text-color-dark);
     background-color: var(--textbox-background-color-dark);
   }
+
+
+video {
+  object-fit: cover;
+  width: 100%;
 }
