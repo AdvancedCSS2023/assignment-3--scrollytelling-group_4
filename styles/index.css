@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   font-family: sans-serif;
@@ -48,7 +50,8 @@ h1::before {
   filter: sepia(50%);
 }
 
-.wrapper__left, .wrapper__right {
+.wrapper__left,
+.wrapper__right {
   width: 50vw;
   min-width: 50vw;
   height: 100vh;
@@ -192,8 +195,13 @@ h1::before {
 }
 
 @media (prefers-color-scheme: dark) {
-  .wrapper__left, .wrapper__right {
+  .wrapper__left,
+  .wrapper__right {
     background: var(--main-background-color-dark);
+  }
+  .main__text {
+    color: var(--main-text-color-dark);
+    background-color: var(--textbox-background-color-dark);
   }
 }
 .tree {
@@ -901,13 +909,17 @@ h1::before {
   --main-background-color-dark:linear-gradient(rgb(190, 9, 240) 45%,
   rgb(79, 111, 68) 40%);
   --main-text-color: black;
+  --main-text-color-dark:white;
   --secondary-text-color: white;
   --textbox-background-color: rgba(255, 255, 255, 0.9);
+  --textbox-background-color-dark:black;
   --secondary-textbox-bg-color: green;
   --donate-hover:rgb(0, 175, 0);
   --landscape-message-bg-color:azure;
   --landscape-message-button-color:rgb(255, 104, 104);
   --landscape-message-button-hover:rgb(250, 149, 149);
+  --landscape-message-button-color-dark:rgb(255, 104, 104);
+  --landscape-message-button-hover-dark:rgb(250, 149, 149);
   --flood-background:rgba(0,31,166);
   --flood-gradient:linear-gradient(0deg, rgba(0,31,166,.6) 50%, rgba(0,95,255,1) 100%);
 }
