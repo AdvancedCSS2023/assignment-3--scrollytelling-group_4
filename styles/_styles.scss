@@ -7,12 +7,16 @@
 }
 
 h1 {
-    color: var(--secondary-text-color);
-    font-size: 5rem;
+  color: var(--secondary-text-color);
+  font-size: 5rem;
 }
 
 h1::before {
   content: url(https://globalgoalscms.co.uk/wp-content/uploads/2021/09/globalgoals_675a6237-f33f-42b2-9e76-21fd53e22e93_goal_15.5_rgb_ng.svg);
+}
+
+a{
+    text-decoration: none;
 }
 
 .wrapper__container {
@@ -46,14 +50,13 @@ h1::before {
   filter: sepia(50%);
 }
 
-
-.wrapper__left, .wrapper__right {
-    width: 50vw;
-    min-width: 50vw;
-    height: 100vh;
-    position: fixed;
-    background: var(--main-background-color);
-
+.wrapper__left,
+.wrapper__right {
+  width: 50vw;
+  min-width: 50vw;
+  height: 100vh;
+  position: fixed;
+  background: var(--main-background-color);
 }
 
 .wrapper__svg--right {
@@ -86,22 +89,22 @@ h1::before {
   overflow: hidden;
 }
 
-.main__text { 
-    color: var(--main-text-color);
-    font-size: 1.5rem;
-    background-color: var(--textbox-background-color);
-    padding: 1.5rem;
-    border-radius: 25px;
-    max-width: 40ch;
+.main__text {
+  color: var(--main-text-color);
+  font-size: 1.5rem;
+  background-color: var(--textbox-background-color);
+  padding: 1.5rem;
+  border-radius: 25px;
+  max-width: 40ch;
 }
 
 .main__text.intro__text {
-    background-color: var(--secondary-textbox-bg-color);
-    color: var(--secondary-text-color);
-    text-transform: uppercase;
-    font-weight: 900;
-    border-radius: 0;
-    margin-right: 90vh;
+  background-color: var(--secondary-textbox-bg-color);
+  color: var(--secondary-text-color);
+  text-transform: uppercase;
+  font-weight: 900;
+  border-radius: 0;
+  margin-right: 90vh;
 }
 
 .textbox {
@@ -142,42 +145,40 @@ h1::before {
 }
 
 .orientation__message--button {
-    display: block;
-    width: 80vw;
-    margin-left: 10vw;
-    margin-top: 10vh;
-    text-align: center;
-    background-color: var(--landscape-message-button-color);
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 1.5rem;
-    font-weight: bold;
-
+  display: block;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-top: 10vh;
+  text-align: center;
+  background-color: var(--landscape-message-button-color);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .orientation__message--button:hover {
-    background-color: var(--landscape-message-button-hover);
-} 
+  background-color: var(--landscape-message-button-hover);
+}
 
 .button__donation {
-    width: 25vw;
-    max-width: 90%;
-    margin-top: 1rem;
-    text-decoration: none;
-    color: var(--secondary-text-color);
-    text-align: center;
-    background-color: var(--secondary-textbox-bg-color);
-    border: .2rem solid var(--secondary-text-color);
-    border-radius: 5px;
-    padding: 1rem;
-    font-size: 1.5rem;
-    font-weight: 900;
-
+  width: 25vw;
+  max-width: 90%;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: var(--secondary-text-color);
+  text-align: center;
+  background-color: var(--secondary-textbox-bg-color);
+  border: 0.2rem solid var(--secondary-text-color);
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 900;
 }
 
 .button__donation:hover {
-    background-color: var(--donate-hover);
+  background-color: var(--donate-hover);
 }
 
 #box_31 {
@@ -188,22 +189,62 @@ h1::before {
 }
 
 .flood__container {
-    width: 100vw;
-    height: 25vh;
-    background: --flood-background;
-    background: var(--flood-gradient);
-    z-index: 10;
-    position: fixed;
-    top: 100vh;
-    opacity: 0;
+  width: 100vw;
+  height: 25vh;
+  background: --flood-background;
+  background: var(--flood-gradient);
+  z-index: 10;
+  position: fixed;
+  top: 100vh;
+  opacity: 0;
 }
 
 @media (prefers-color-scheme: dark) {
-    .wrapper__left, .wrapper__right {
-        background: var(--main-background-color-dark);
-    }
+  .wrapper__left,
+  .wrapper__right {
+    background: var(--main-background-color-dark);
   }
 
+  .main__text {
+    color: var(--main-text-color-dark);
+    background-color: var(--textbox-background-color-dark);
+  }
+
+  .main__text.intro__text {
+    background-color: var(--secondary-textbox-bg-color-dark);
+  }
+
+  .button__donation {
+    background-color: var(--secondary-textbox-bg-color-dark);
+    border: 0.2rem solid var(--secondary-text-color-dark);
+  }
+  
+  .button__donation:hover {
+    background-color: var(--donate-hover-dark);
+  }
+
+  #landscape__message--container {
+    background-color: var(--landscape-message-bg-color-dark);
+    color: var(--secondary-text-color);
+  }
+
+  .orientation__message--button {
+    background-color: var(--landscape-message-button-color-dark);
+    color: var(--secondary-text-color);
+  }
+  
+  .orientation__message--button:hover {
+    background-color: var(--landscape-message-button-hover-dark);
+  }
+  
+  a{
+    color:var(--link-text-color-dark);
+  }
+
+  a:visited{
+    color: var(--link-text-color-dark-visited);
+  }
+}
 
 video {
   object-fit: cover;

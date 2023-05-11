@@ -15,6 +15,10 @@ h1::before {
   content: url(https://globalgoalscms.co.uk/wp-content/uploads/2021/09/globalgoals_675a6237-f33f-42b2-9e76-21fd53e22e93_goal_15.5_rgb_ng.svg);
 }
 
+a {
+  text-decoration: none;
+}
+
 .wrapper__container {
   display: flex;
   max-height: 100vh;
@@ -45,7 +49,8 @@ h1::before {
   filter: sepia(50%);
 }
 
-.wrapper__left, .wrapper__right {
+.wrapper__left,
+.wrapper__right {
   width: 50vw;
   min-width: 50vw;
   height: 100vh;
@@ -191,8 +196,40 @@ h1::before {
 }
 
 @media (prefers-color-scheme: dark) {
-  .wrapper__left, .wrapper__right {
+  .wrapper__left,
+  .wrapper__right {
     background: var(--main-background-color-dark);
+  }
+  .main__text {
+    color: var(--main-text-color-dark);
+    background-color: var(--textbox-background-color-dark);
+  }
+  .main__text.intro__text {
+    background-color: var(--secondary-textbox-bg-color-dark);
+  }
+  .button__donation {
+    background-color: var(--secondary-textbox-bg-color-dark);
+    border: 0.2rem solid var(--secondary-text-color-dark);
+  }
+  .button__donation:hover {
+    background-color: var(--donate-hover-dark);
+  }
+  #landscape__message--container {
+    background-color: var(--landscape-message-bg-color-dark);
+    color: var(--secondary-text-color);
+  }
+  .orientation__message--button {
+    background-color: var(--landscape-message-button-color-dark);
+    color: var(--secondary-text-color);
+  }
+  .orientation__message--button:hover {
+    background-color: var(--landscape-message-button-hover-dark);
+  }
+  a {
+    color: var(--link-text-color-dark);
+  }
+  a:visited {
+    color: var(--link-text-color-dark-visited);
   }
 }
 video {
@@ -268,6 +305,7 @@ video {
 
 .cow {
   z-index: 4;
+  transition: transform 2s;
 }
 
 .cow__head {
@@ -548,6 +586,9 @@ video {
   transform: translateY(-25vh);
   opacity: 1;
 }
+.wrapper__container[animation=box_20] #cow_1 {
+  transform: translateY(-5vh);
+}
 .wrapper__container[animation=box_20] .people__man--one,
 .wrapper__container[animation=box_20] #cow_3,
 .wrapper__container[animation=box_20] #cow_4 {
@@ -575,6 +616,9 @@ video {
 .wrapper__container[animation=box_21] .flood__container {
   opacity: 1;
   top: 75vh;
+}
+.wrapper__container[animation=box_21] #cow_1 {
+  transform: translateY(-5vh);
 }
 .wrapper__container[animation=box_21] .people__man--one,
 .wrapper__container[animation=box_21] #cow_3,
@@ -612,6 +656,9 @@ video {
   opacity: 1;
   top: 75vh;
 }
+.wrapper__container[animation=box_22] #cow_1 {
+  transform: translateY(-5vh);
+}
 .wrapper__container[animation=box_22] .people__man--one,
 .wrapper__container[animation=box_22] #cow_3,
 .wrapper__container[animation=box_22] #cow_4 {
@@ -646,6 +693,9 @@ video {
   opacity: 1;
   top: 75vh;
 }
+.wrapper__container[animation=box_23] #cow_1 {
+  transform: translateY(-5vh);
+}
 .wrapper__container[animation=box_23] .people__man--one,
 .wrapper__container[animation=box_23] #cow_3,
 .wrapper__container[animation=box_23] #cow_4 {
@@ -673,6 +723,9 @@ video {
 .wrapper__container[animation=box_24] .flood__container {
   opacity: 1;
   top: 75vh;
+}
+.wrapper__container[animation=box_24] #cow_1 {
+  transform: translateY(-5vh);
 }
 .wrapper__container[animation=box_24] .people__man--one,
 .wrapper__container[animation=box_24] #cow_3,
@@ -711,6 +764,9 @@ video {
 .wrapper__container[animation=box_25] .flood__container {
   opacity: 1;
   top: 75vh;
+}
+.wrapper__container[animation=box_25] #cow_1 {
+  transform: translateY(-5vh);
 }
 .wrapper__container[animation=box_25] .people__man--one,
 .wrapper__container[animation=box_25] #cow_3,
@@ -911,18 +967,33 @@ video {
     rgba(0, 245, 255, 1) 45%,
     rgba(45, 166, 0, 1) 40%
   );
-  --main-background-color-dark:linear-gradient(rgb(190, 9, 240) 45%,
-  rgb(79, 111, 68) 40%);
+  --main-background-color-dark: linear-gradient(
+    rgb(190, 9, 240) 45%,
+    rgb(79, 111, 68) 40%
+  );
   --main-text-color: black;
+  --main-text-color-dark: white;
   --secondary-text-color: white;
   --textbox-background-color: rgba(255, 255, 255, 0.9);
+  --textbox-background-color-dark: black;
   --secondary-textbox-bg-color: green;
-  --donate-hover:rgb(0, 175, 0);
-  --landscape-message-bg-color:azure;
-  --landscape-message-button-color:rgb(255, 104, 104);
-  --landscape-message-button-hover:rgb(250, 149, 149);
-  --flood-background:rgba(0,31,166);
-  --flood-gradient:linear-gradient(0deg, rgba(0,31,166,.6) 50%, rgba(0,95,255,1) 100%);
+  --donate-hover: rgb(0, 175, 0);
+  --landscape-message-bg-color: azure;
+  --landscape-message-button-color: rgb(255, 104, 104);
+  --landscape-message-button-hover: rgb(250, 149, 149);
+  --secondary-textbox-bg-color-dark: rgb(112, 0, 120);
+  --donate-hover-dark: rgb(157, 8, 168);
+  --landscape-message-bg-color-dark: rgb(31, 15, 77);
+  --landscape-message-button-color-dark: rgb(188, 1, 157);
+  --landscape-message-button-hover-dark: rgb(237, 3, 198);
+  --flood-background: rgba(0, 31, 166);
+  --flood-gradient: linear-gradient(
+    0deg,
+    rgba(0, 31, 166, 0.6) 50%,
+    rgba(0, 95, 255, 1) 100%
+  );
+  --link-text-color-dark:rgba(4, 255, 234, 0.993);
+  --link-text-color-dark-visited:orange;
 }
 
 @keyframes cloud-animation {
