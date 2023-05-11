@@ -545,10 +545,7 @@
   .forest_animal {
     opacity: 0;
   }
-  .fire__animation--one,
-  .fire__animation--two,
-  .fire__animation--three,
-  .fire__animation--four {
+  .fire {
     opacity: 1;
   }
 
@@ -596,10 +593,7 @@
     z-index: 1;
   }
 
-  .fire__animation--one,
-  .fire__animation--two,
-  .fire__animation--three,
-  .fire__animation--four {
+  .fire {
     opacity: 1;
   }
   .factory {
@@ -648,11 +642,9 @@
     z-index: 1;
   }
 
-  .flood__container,
-  .fire__animation--one,
-  .fire__animation--two,
-  .fire__animation--three,
-  .fire__animation--four {
+
+  .fire {
+    transition-duration: 1s;
     opacity: 0;
   }
 

@@ -7,8 +7,8 @@
 }
 
 h1 {
-  color: white;
-  font-size: 5rem;
+    color: var(--secondary-text-color);
+    font-size: 5rem;
 }
 
 h1::before {
@@ -45,18 +45,14 @@ h1::before {
   filter: sepia(50%);
 }
 
-.wrapper__left,
-.wrapper__right {
-  width: 50vw;
-  min-width: 50vw;
-  height: 100vh;
-  // outline: 1px solid black;
-  position: fixed;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 245, 255, 1) 45%,
-    rgba(45, 166, 0, 1) 40%
-  );
+
+.wrapper__left, .wrapper__right {
+    width: 50vw;
+    min-width: 50vw;
+    height: 100vh;
+    position: fixed;
+    background: var(--main-background-color);
+
 }
 
 .wrapper__svg--right {
@@ -89,22 +85,22 @@ h1::before {
   overflow: hidden;
 }
 
-.main__text {
-  color: black;
-  font-size: 1.5rem;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 1.5rem;
-  border-radius: 25px;
-  max-width: 40ch;
+.main__text { 
+    color: var(--main-text-color);
+    font-size: 1.5rem;
+    background-color: var(--textbox-background-color);
+    padding: 1.5rem;
+    border-radius: 25px;
+    max-width: 40ch;
 }
 
 .main__text.intro__text {
-  background-color: green;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 900;
-  border-radius: 0;
-  margin-right: 90vh;
+    background-color: var(--secondary-textbox-bg-color);
+    color: var(--secondary-text-color);
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 0;
+    margin-right: 90vh;
 }
 
 .textbox {
@@ -129,7 +125,7 @@ h1::before {
 #landscape__message--container {
   height: 100vh;
   width: 100vw;
-  background-color: azure;
+  background-color: var(--landscape-message-bg-color);
   position: fixed;
   z-index: 10;
 }
@@ -145,40 +141,42 @@ h1::before {
 }
 
 .orientation__message--button {
-  display: block;
-  width: 80vw;
-  margin-left: 10vw;
-  margin-top: 10vh;
-  text-align: center;
-  background-color: rgb(255, 104, 104);
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 1.5rem;
-  font-weight: bold;
+    display: block;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    text-align: center;
+    background-color: var(--landscape-message-button-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+
 }
 
 .orientation__message--button:hover {
-  background-color: rgb(250, 149, 149);
-}
+    background-color: var(--landscape-message-button-hover);
+} 
 
 .button__donation {
-  width: 25vw;
-  max-width: 90%;
-  margin-top: 1rem;
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  background-color: green;
-  border: 0.2rem solid white;
-  border-radius: 5px;
-  padding: 1rem;
-  font-size: 1.5rem;
-  font-weight: 900;
+    width: 25vw;
+    max-width: 90%;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    text-align: center;
+    background-color: var(--secondary-textbox-bg-color);
+    border: .2rem solid var(--secondary-text-color);
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+
 }
 
 .button__donation:hover {
-  background-color: rgb(0, 175, 0);
+    background-color: var(--donate-hover);
 }
 
 #box_31 {
@@ -187,19 +185,21 @@ h1::before {
 }
 
 .flood__container {
-  width: 100vw;
-  height: 25vh;
-  background: rgba(0, 31, 166);
-  background: linear-gradient(
-    0deg,
-    rgba(0, 31, 166, 0.6) 50%,
-    rgba(0, 95, 255, 1) 100%
-  );
-  z-index: 10;
-  position: fixed;
-  top: 100vh;
-  opacity: 0;
+    width: 100vw;
+    height: 25vh;
+    background: --flood-background;
+    background: var(--flood-gradient);
+    z-index: 10;
+    position: fixed;
+    top: 100vh;
+    opacity: 0;
 }
+
+@media (prefers-color-scheme: dark) {
+    .wrapper__left, .wrapper__right {
+        background: var(--main-background-color-dark);
+    }
+  }
 
 
 video {
