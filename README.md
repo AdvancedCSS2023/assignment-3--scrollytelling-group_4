@@ -1,10 +1,10 @@
 # Deforestation scrollytelling experience
 
-The project is a scrollytelling experience showing the effects of deforestation. The purpose of the project is collecting donations for The Nature Concervacy's work with preserving nature.
+The project is a scrollytelling experience that highlights the impacts of deforestation. It is aimed to educate adults between the age of 35 – 45 about deforestation by visualizing how deforestation effects animals and humans alike. Additionally, the project serves as a platform to promote The Nature Conservancy's initiatives in nature preservation.
 
-## Why the project is usefull
+## Why the project is useful
 
-The project is usefull for us as it helps us develop our coding skills while also gaining experience using Git/GitHub. It's also usefull as a fun way to present the effects of deforestation and help collect donations. 
+The project is useful for us as it helps us develop our coding skills while also gaining experience using Git/GitHub. It also provides a visually engaging way to present the impacts of deforestation and to promote conservation efforts.
 
 ## How to get started
 
@@ -22,14 +22,14 @@ The project is usefull for us as it helps us develop our coding skills while als
 
 ## Where to seek help
 
-### Reporting bugs, suggesting enchancements and other issues
+### Reporting bugs, suggesting enhancements and other issues
 
-To report issues and bugs in the project, or suggest enchancements:
+To report issues and bugs in the project, or suggest enhancements:
 
-1. Go to the Issues section in the Repository on Github
-2. Press new Issue
-3. Write a detailed explantation of the issue
-4. Submit the Issue
+1. Go to the Issues section in the Repository on Github.
+2. Click on “New Issue”.
+3. Write a detailed explanation of the issue.
+4. Click “Submit” to create the Issue.
 
 ### Help contributing to the project
 
@@ -37,7 +37,7 @@ To get help contributing to the project, please reach out to one of the contribu
 
 ## Which technology is used
 
-the project is developed using mostly HTML and CSS/SASS. The project also utilizes some Javascript, mainly the Intersection Observer API. The codebase is hosted on Github.
+The project is developed using mostly HTML and CSS/SASS. The project also utilizes some Javascript, particularly the Intersection Observer API. The codebase is hosted on Github.
 
 ## Who are the creators/maintainers 
 
@@ -47,6 +47,7 @@ The main contributors are:
 
 - Andreas Christiansen
 - Sander Byenstuen
+
 
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/E1TYCvbT)
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10887732&assignment_repo_type=AssignmentRepo)
