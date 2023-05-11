@@ -1,3 +1,4 @@
+// Base transition/animation properties
 .tree {
   animation-name: tree-movement;
   animation-duration: 30s;
@@ -11,7 +12,7 @@
 .factory,
 .cow,
 .people {
-  transition: opacity 2s;
+  transition: opacity 2s, transform 2s;
   transition-delay: 1s;
 }
 
@@ -43,7 +44,6 @@
 
 .cow {
   z-index: 4;
-  transition: transform 2s;
 }
 
 .cow__head {
@@ -61,18 +61,11 @@
   animation: factory-vibration 0.3s linear infinite both;
 }
 
-.flood__container,
-.fire__animation--one,
-.fire__animation--two,
-.fire__animation--three,
-.fire__animation--four {
+.fire {
   transition-duration: 2s;
 }
 
-.fire__animation--one,
-.fire__animation--two,
-.fire__animation--three,
-.fire__animation--four {
+.fire {
   animation: walk 0.7s step-end infinite;
 }
 
@@ -80,6 +73,10 @@
 .people__man--one {
   transition-duration: 1.5s;
 }
+
+
+
+// Intersection observer animation properties
 
 .wrapper__container[animation="box_11"] {
   .foreground__container {
@@ -122,6 +119,7 @@
   }
 }
 
+
 .wrapper__container[animation="box_12"] {
   .foreground__container {
     display: none;
@@ -156,6 +154,7 @@
   }
 }
 
+
 .wrapper__container[animation="box_13"] {
   .foreground__container {
     display: none;
@@ -189,6 +188,7 @@
     opacity: 0;
   }
 }
+
 
 .wrapper__container[animation="box_14"] {
   .foreground__container {
@@ -227,6 +227,7 @@
     animation: none;
   }
 }
+
 
 .wrapper__container[animation="box_15"] {
   .foreground__container {
@@ -270,6 +271,7 @@
   }
 }
 
+
 .wrapper__container[animation="box_16"] {
   .foreground__container {
     opacity: 0;
@@ -311,6 +313,7 @@
   }
 }
 
+
 .wrapper__container[animation="box_17"] {
   .foreground__container {
     opacity: 0;
@@ -335,6 +338,7 @@
   }
 }
 
+
 .wrapper__container[animation="box_18"] {
   .foreground__container {
     display: none;
@@ -352,6 +356,7 @@
     opacity: 1;
   }
 }
+
 
 .wrapper__container[animation="box_19"] {
   .foreground__container {
@@ -374,6 +379,7 @@
     animation: none;
   }
 }
+
 
 .wrapper__container[animation="box_20"] {
   .foreground__container {
@@ -412,6 +418,8 @@
     opacity: 0;
   }
 }
+
+
 .wrapper__container[animation="box_21"] {
   .foreground__container {
     display: none;
@@ -451,6 +459,7 @@
     opacity: 0;
   }
 }
+
 
 .wrapper__container[animation="box_22"] {
   .foreground__container {
@@ -501,6 +510,7 @@
   }
 }
 
+
 .wrapper__container[animation="box_23"] {
   .factory {
     animation-play-state: paused;
@@ -549,6 +559,7 @@
   }
 }
 
+
 .wrapper__container[animation="box_24"] {
   .foreground__container {
     display: none;
@@ -587,6 +598,7 @@
     opacity: 0;
   }
 }
+
 
 .wrapper__container[animation="box_25"] {
   .foreground__container {
@@ -638,6 +650,7 @@
   }
 }
 
+
 .wrapper__container[animation="box_26"] {
   .foreground__container {
     display: none;
@@ -685,6 +698,7 @@
   }
 }
 
+
 .wrapper__container[animation="box_27"] {
   .foreground__container {
     display: none;
@@ -715,6 +729,7 @@
     opacity: 0;
   }
 }
+
 
 .wrapper__container[animation="box_28"] {
   .foreground__container {
@@ -752,6 +767,8 @@
     opacity: 0;
   }
 }
+
+
 .wrapper__container[animation="box_29"] {
   .foreground__container {
     display: none;
@@ -788,6 +805,8 @@
     opacity: 0;
   }
 }
+
+
 .wrapper__container[animation="box_30"] {
   .foreground__container {
     display: none;
@@ -823,10 +842,7 @@
   #cow_4 {
     opacity: 0;
   }
-
-
 }
-
 
 .wrapper__container[animation="box_31"] {
   .foreground__container {
@@ -836,7 +852,8 @@
     opacity: 0;
   }
 
-  .people__man--one, .forest_animal,
+  .people__man--one,
+  .forest_animal,
   #cow_3,
   #cow_4 {
     opacity: 0;
@@ -860,7 +877,6 @@
     z-index: 1;
   }
 
-
   .main__text {
     font-weight: bolder;
   }
@@ -869,7 +885,4 @@
     transition-duration: 1.5s;
     opacity: 1;
   }
-  
-
-
 }

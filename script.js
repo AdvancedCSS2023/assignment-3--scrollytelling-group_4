@@ -23,7 +23,6 @@ textboxes.forEach((textbox) => {
 });
 
 
-
 // orientation button 
 const orientationButton = document.querySelector(".orientation__message--button");
 const orientationContainer = document.querySelector("#landscape__message--container");
