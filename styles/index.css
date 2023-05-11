@@ -71,7 +71,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  filter: drop-shadow(2px 4px 6px black);
+  filter: drop-shadow(2px 4px 6px var(--textbox-background-color-dark));
 }
 
 .foreground__container {
@@ -93,32 +93,8 @@ a {
   background: var(--main-background-color);
 }
 
-.wrapper__svg--right {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  max-height: 100%;
-  max-width: 100%;
-  overflow: hidden;
-}
-
 .wrapper__right {
   left: 50vw;
-}
-
-.wrapper__svg--right {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  max-height: 100%;
-  max-width: 100%;
-  overflow: hidden;
 }
 
 .main__text {
@@ -155,7 +131,6 @@ a {
   width: 8vh;
   height: 10vh;
   bottom: 2812vh;
-  /* background-color: red; */
 }
 
 #landscape__message--container {
@@ -214,6 +189,8 @@ a {
 
 #box_31 {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   margin-bottom: 10vh;
   z-index: 2;
