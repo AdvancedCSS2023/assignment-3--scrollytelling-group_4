@@ -872,4 +872,11 @@ animation-play-state: paused;
       transform: rotate(0);
     }
   }
+video {
+display: none;
+}
+
+.foreground__container {
+  background-image: url(../assets/deforestation-bg-image.jpg);
+}
 }

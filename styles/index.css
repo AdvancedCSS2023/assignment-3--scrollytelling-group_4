@@ -883,6 +883,12 @@ h1::before {
   .wrapper__container[animation=box_22] .tree__row--middle-left {
     transform: rotate(0);
   }
+  video {
+    display: none;
+  }
+  .foreground__container {
+    background-image: url(../assets/deforestation-bg-image.jpg);
+  }
 }
 @keyframes cloud-animation {
   0% {
