@@ -60,21 +60,25 @@
   animation: factory-vibration 0.3s linear infinite both;
 }
 
-.flood__container, .fire__animation--one, .fire__animation--two, .fire__animation--three, .fire__animation--four {
+.flood__container,
+.fire__animation--one,
+.fire__animation--two,
+.fire__animation--three,
+.fire__animation--four {
   transition-duration: 2s;
 }
 
-.fire__animation--one, .fire__animation--two, .fire__animation--three, .fire__animation--four {
-  animation: walk .7s step-end infinite;
-
+.fire__animation--one,
+.fire__animation--two,
+.fire__animation--three,
+.fire__animation--four {
+  animation: walk 0.7s step-end infinite;
 }
 
-.flood__container, .people__man--one {
+.flood__container,
+.people__man--one {
   transition-duration: 1.5s;
 }
-
-
-
 
 .wrapper__container[animation="box_11"] {
   .foreground__container {
@@ -460,8 +464,9 @@
     opacity: 0;
   }
 
-  .fire__animation--one, .fire__animation--two {
-    transition-delay: .3s;
+  .fire__animation--one,
+  .fire__animation--two {
+    transition-delay: 0.3s;
     transition-duration: 1s;
     opacity: 1;
   }
@@ -473,7 +478,6 @@
   .people__man--one {
     opacity: 0;
   }
-
 }
 
 .wrapper__container[animation="box_23"] {
@@ -496,11 +500,13 @@
     opacity: 0;
   }
 
-  .fire__animation--one, .fire__animation--two {
+  .fire__animation--one,
+  .fire__animation--two {
     opacity: 1;
   }
 
-  .fire__animation--three, .fire__animation--four {
+  .fire__animation--three,
+  .fire__animation--four {
     // transition-delay: .3s;
     transition-duration: 1s;
     opacity: 1;
@@ -514,7 +520,6 @@
   .people__man--one {
     opacity: 0;
   }
-
 }
 
 .wrapper__container[animation="box_24"] {
@@ -532,12 +537,15 @@
   .forest_animal {
     opacity: 0;
   }
-  .fire__animation--one, .fire__animation--two, .fire__animation--three, .fire__animation--four {
+  .fire__animation--one,
+  .fire__animation--two,
+  .fire__animation--three,
+  .fire__animation--four {
     opacity: 1;
   }
 
   .factory {
-animation-play-state: paused;
+    animation-play-state: paused;
   }
 
   .flood__container {
@@ -578,19 +586,22 @@ animation-play-state: paused;
     z-index: 1;
   }
 
-  .fire__animation--one, .fire__animation--two, .fire__animation--three, .fire__animation--four {
+  .fire__animation--one,
+  .fire__animation--two,
+  .fire__animation--three,
+  .fire__animation--four {
     opacity: 1;
   }
   .factory {
     animation-play-state: paused;
-      }
-      .flood__container {
-        opacity: 1;
-        top: 75vh;
-      }
-      .people__man--one {
-        opacity: 0;
-      }
+  }
+  .flood__container {
+    opacity: 1;
+    top: 75vh;
+  }
+  .people__man--one {
+    opacity: 0;
+  }
 }
 
 .wrapper__container[animation="box_26"] {
@@ -625,16 +636,20 @@ animation-play-state: paused;
     z-index: 1;
   }
 
-  .flood__container, .fire__animation--one, .fire__animation--two, .fire__animation--three, .fire__animation--four {
+  .flood__container,
+  .fire__animation--one,
+  .fire__animation--two,
+  .fire__animation--three,
+  .fire__animation--four {
     opacity: 0;
   }
 
   .factory {
     animation-play-state: paused;
-      }
-      .people__man--one {
-        opacity: 0;
-      }
+  }
+  .people__man--one {
+    opacity: 0;
+  }
 }
 
 .wrapper__container[animation="box_27"] {
@@ -872,11 +887,13 @@ animation-play-state: paused;
       transform: rotate(0);
     }
   }
-video {
-display: none;
-}
 
-.foreground__container {
-  background-image: url(../assets/deforestation-bg-image.jpg);
-}
+  
+  video {
+    display: none;
+  }
+
+  .foreground__container {
+    background-image: url(../assets/deforestation-bg-image.jpg);
+  }
 }

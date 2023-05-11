@@ -194,12 +194,12 @@ svg {
 .factory {
   @include place(10vw, 50vh, 40vw);
   width: 10vw;
-  animation: factory-vibration .3s linear infinite both
+  animation: factory-vibration 0.3s linear infinite both;
 }
 
 .building__container {
   display: flex;
-// @include place(0vw, 0vh, 0vw);
+  // @include place(0vw, 0vh, 0vw);
 }
 
 .building__tall--one {
@@ -231,8 +231,6 @@ svg {
   @include place(30vw, 60vh, 30vw);
 }
 
-
-
 //people
 .people__man--one {
   @include place(8vw, 20vh, 20vw);
@@ -242,16 +240,12 @@ svg {
 }
 
 .people__man--three {
-
   @include place(7vw, 33vh, 38vw);
-
 }
 
 .people__man--four {
   @include place(6vw, 43vh, 16vw);
-
 }
-
 
 .fire__animation--one {
   @include place(5vw, 50vh, 17vw);

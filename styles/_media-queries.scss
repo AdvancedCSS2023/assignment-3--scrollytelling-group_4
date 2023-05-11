@@ -1,37 +1,28 @@
+#landscape__message--container {
+  display: none;
+}
 
-    #landscape__message--container {
-      display: none;
-    }
-
-  
-    
-    @media (orientation: portrait) {
-      #landscape__message--container {
-        display: block;
-      }
-  
-      .main__text.intro__text {
-        margin-right: 10vh;
-    }
-    }
-
-  
-  
-
-  
-  .landscape__off {
-    display: hidden;
+@media (orientation: portrait) {
+  #landscape__message--container {
+    display: block;
   }
 
-  @media screen and (max-width: 768px) {
-    h1 {
-      font-size:2rem;
-    }
+  .main__text.intro__text {
+    margin-right: 10vh;
+  }
+}
 
-    .button__donation {
-     font-size: 1.2rem;
-  min-width: 70%;
+.landscape__off {
+  display: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
   }
+
+  .button__donation {
+    font-size: 1.2rem;
+    min-width: 70%;
   }
-    
-  
+}
