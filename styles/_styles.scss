@@ -15,8 +15,8 @@ h1::before {
   content: url(https://globalgoalscms.co.uk/wp-content/uploads/2021/09/globalgoals_675a6237-f33f-42b2-9e76-21fd53e22e93_goal_15.5_rgb_ng.svg);
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 .wrapper__container {
@@ -166,53 +166,6 @@ a{
   opacity: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  .wrapper__left,
-  .wrapper__right {
-    background: var(--main-background-color-dark);
-  }
-
-  .main__text {
-    color: var(--main-text-color-dark);
-    background-color: var(--textbox-background-color-dark);
-  }
-
-  .main__text.intro__text {
-    background-color: var(--secondary-textbox-bg-color-dark);
-  }
-
-  .button__donation {
-    background-color: var(--secondary-textbox-bg-color-dark);
-    border: 0.2rem solid var(--secondary-text-color-dark);
-  }
-  
-  .button__donation:hover {
-    background-color: var(--donate-hover-dark);
-  }
-
-  #landscape__message--container {
-    background-color: var(--landscape-message-bg-color-dark);
-    color: var(--secondary-text-color);
-  }
-
-  .orientation__message--button {
-    background-color: var(--landscape-message-button-color-dark);
-    color: var(--secondary-text-color);
-  }
-  
-  .orientation__message--button:hover {
-    background-color: var(--landscape-message-button-hover-dark);
-  }
-  
-  a{
-    color:var(--link-text-color-dark);
-  }
-
-  a:visited{
-    color: var(--link-text-color-dark-visited);
-  }
-}
-
 video {
   object-fit: cover;
   width: 100%;
@@ -226,7 +179,7 @@ video {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: var(--filter-color);
   z-index: 1;
   opacity: 0;
 }
@@ -236,5 +189,4 @@ video {
   color: var(--secondary-text-color);
   top: 90vh;
   font-style: italic;
-  
 }
