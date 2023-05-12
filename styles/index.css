@@ -208,43 +208,6 @@ a {
   opacity: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  .wrapper__left,
-  .wrapper__right {
-    background: var(--main-background-color-dark);
-  }
-  .main__text {
-    color: var(--main-text-color-dark);
-    background-color: var(--textbox-background-color-dark);
-  }
-  .main__text.intro__text {
-    background-color: var(--secondary-textbox-bg-color-dark);
-  }
-  .button__donation {
-    background-color: var(--secondary-textbox-bg-color-dark);
-    border: 0.2rem solid var(--secondary-text-color-dark);
-  }
-  .button__donation:hover {
-    background-color: var(--donate-hover-dark);
-  }
-  #landscape__message--container {
-    background-color: var(--landscape-message-bg-color-dark);
-    color: var(--secondary-text-color);
-  }
-  .orientation__message--button {
-    background-color: var(--landscape-message-button-color-dark);
-    color: var(--secondary-text-color);
-  }
-  .orientation__message--button:hover {
-    background-color: var(--landscape-message-button-hover-dark);
-  }
-  a {
-    color: var(--link-text-color-dark);
-  }
-  a:visited {
-    color: var(--link-text-color-dark-visited);
-  }
-}
 video {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1565,5 +1528,42 @@ svg {
   .fire__animation--three,
   .fire__animation--four {
     animation: walk 1.5s step-end infinite;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .wrapper__left,
+  .wrapper__right {
+    background: var(--main-background-color-dark);
+  }
+  .main__text {
+    color: var(--main-text-color-dark);
+    background-color: var(--textbox-background-color-dark);
+  }
+  .main__text.intro__text {
+    background-color: var(--secondary-textbox-bg-color-dark);
+  }
+  .button__donation {
+    background-color: var(--secondary-textbox-bg-color-dark);
+    border: 0.2rem solid var(--secondary-text-color-dark);
+  }
+  .button__donation:hover {
+    background-color: var(--donate-hover-dark);
+  }
+  #landscape__message--container {
+    background-color: var(--landscape-message-bg-color-dark);
+    color: var(--secondary-text-color);
+  }
+  .orientation__message--button {
+    background-color: var(--landscape-message-button-color-dark);
+    color: var(--secondary-text-color);
+  }
+  .orientation__message--button:hover {
+    background-color: var(--landscape-message-button-hover-dark);
+  }
+  a {
+    color: var(--link-text-color-dark);
+  }
+  a:visited {
+    color: var(--link-text-color-dark-visited);
   }
 }/*# sourceMappingURL=index.css.map */
