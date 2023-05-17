@@ -1,0 +1,12 @@
+@mixin place($width, $bottom, $left){
+    width: $width;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }

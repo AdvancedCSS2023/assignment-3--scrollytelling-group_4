@@ -1,0 +1,888 @@
+// Base transition/animation properties
+.tree {
+  animation-name: tree-movement;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 100%;
+  transition: transform 2s, opacity 3s;
+}
+
+.house,
+.building__container,
+.factory,
+.cow,
+.people {
+  transition: opacity 2s, transform 2s;
+  transition-delay: 1s;
+}
+
+.forest_animal {
+  transition: transform 5s, opacity 5s;
+}
+
+.foreground__container {
+  transition: opacity 1s;
+}
+
+.cloud__one {
+  animation: cloud-animation 30s alternate-reverse infinite;
+}
+.cloud__two {
+  animation: cloud-animation 40s alternate-reverse ease-in-out infinite;
+}
+
+.people {
+  animation: walk 1s step-end infinite;
+}
+.people__man--two {
+  animation-delay: 0.3s;
+}
+
+.people__man--three {
+  animation-delay: 0.7s;
+}
+
+.cow {
+  z-index: 4;
+}
+
+.cow__head {
+  animation: cow-nod 4s infinite;
+}
+
+.forest_animal_head {
+  animation-name: head-movement;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 100%;
+}
+
+.factory {
+  animation: factory-vibration 0.3s linear infinite both;
+}
+
+.fire {
+  transition-duration: 2s;
+}
+
+.fire {
+  animation: walk 0.7s step-end infinite;
+}
+
+.flood__container,
+.people__man--one {
+  transition-duration: 1.5s;
+}
+
+
+
+// Intersection observer animation properties
+
+.wrapper__container[animation="box_11"] {
+  .foreground__container {
+    opacity: 0;
+  }
+
+  .factory {
+    opacity: 0;
+    display: none;
+  }
+
+  .cow {
+    opacity: 0;
+    display: none;
+  }
+
+  .house__large--three {
+    opacity: 0;
+    display: none;
+  }
+
+  .house__large--two {
+    opacity: 0;
+    display: none;
+  }
+
+  .people__man--four {
+    opacity: 0;
+    display: none;
+  }
+
+  .people__man--two {
+    opacity: 0;
+    display: none;
+  }
+
+  .building__container {
+    opacity: 0;
+    display: none;
+  }
+}
+
+
+.wrapper__container[animation="box_12"] {
+  .foreground__container {
+    display: none;
+  }
+
+  .factory {
+    opacity: 0;
+  }
+
+  .cow {
+    opacity: 0;
+  }
+
+  .house__large--three {
+    opacity: 0;
+  }
+
+  .house__large--two {
+    opacity: 0;
+  }
+
+  .people__man--four {
+    opacity: 0;
+  }
+
+  .people__man--two {
+    opacity: 0;
+  }
+
+  .building__container {
+    opacity: 0;
+  }
+}
+
+
+.wrapper__container[animation="box_13"] {
+  .foreground__container {
+    display: none;
+  }
+
+  .factory {
+    opacity: 0;
+  }
+
+  .cow {
+    opacity: 0;
+  }
+
+  .house__large--three {
+    opacity: 0;
+  }
+
+  .house__large--two {
+    opacity: 0;
+  }
+
+  .people__man--four {
+    opacity: 0;
+  }
+
+  .people__man--two {
+    opacity: 0;
+  }
+
+  .building__container {
+    opacity: 0;
+  }
+}
+
+
+.wrapper__container[animation="box_14"] {
+  .foreground__container {
+    display: none;
+  }
+
+  .factory {
+    opacity: 0;
+  }
+
+  .cow {
+    opacity: 0;
+  }
+
+  .house__large--three {
+    opacity: 0;
+  }
+
+  .house__large--two {
+    opacity: 0;
+  }
+
+  .people__man--four {
+    opacity: 0;
+  }
+
+  .people__man--two {
+    opacity: 0;
+  }
+
+  .building__container {
+    opacity: 0;
+  }
+
+  .tree__row--front-right {
+    animation: none;
+  }
+}
+
+
+.wrapper__container[animation="box_15"] {
+  .foreground__container {
+    opacity: 0;
+  }
+
+  .factory {
+    opacity: 0;
+  }
+
+  .people__man--four {
+    opacity: 0;
+  }
+
+  .people__man--two {
+    opacity: 0;
+  }
+
+  .building__container {
+    opacity: 0;
+  }
+
+  .tree__row--front-right {
+    animation: none;
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  .tree__row--front-left {
+    animation: none;
+  }
+
+  #cat_2 {
+    transform: translateY(-15vh);
+    z-index: 1;
+  }
+
+  #monkey_1 {
+    transform: translateY(-10vh);
+    z-index: 1;
+  }
+}
+
+
+.wrapper__container[animation="box_16"] {
+  .foreground__container {
+    opacity: 0;
+  }
+
+  .tree__row--front-right {
+    opacity: 0;
+  }
+
+  .tree__row--front-left {
+    animation: none;
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  #cat_1 {
+    transform: translateY(-5vh);
+    z-index: 1;
+  }
+
+  #cat_2 {
+    transform: translateY(-15vh);
+    z-index: 1;
+  }
+
+  #cat_3 {
+    transform: translateY(-10vh);
+    z-index: 1;
+  }
+
+  #monkey_1 {
+    transform: translateY(-10vh);
+    z-index: 1;
+  }
+
+  #monkey_3 {
+    transform: translateY(-20vh);
+    z-index: 1;
+  }
+}
+
+
+.wrapper__container[animation="box_17"] {
+  .foreground__container {
+    opacity: 0;
+  }
+
+  .factory {
+    transition-duration: 2s;
+    opacity: 1;
+  }
+
+  #cat_1,
+  #cat_2,
+  #cat_3,
+  #monkey_1,
+  #monkey_3 {
+    transform: translateY(-50vh);
+    opacity: 0;
+  }
+
+  .tree__row--front {
+    opacity: 0;
+  }
+}
+
+
+.wrapper__container[animation="box_18"] {
+  .foreground__container {
+    display: none;
+  }
+
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  .forest_animal {
+    opacity: 0;
+  }
+
+  #monkey_2 {
+    opacity: 1;
+  }
+}
+
+
+.wrapper__container[animation="box_19"] {
+  .foreground__container {
+    display: none;
+  }
+
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  .forest_animal {
+    opacity: 0;
+  }
+
+  #monkey_2 {
+    opacity: 1;
+  }
+
+  .tree__row--middle-right {
+    animation: none;
+  }
+}
+
+
+.wrapper__container[animation="box_20"] {
+  .foreground__container {
+    display: none;
+  }
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  .forest_animal {
+    opacity: 0;
+  }
+
+  #monkey_2 {
+    opacity: 1;
+  }
+
+  .tree__row--middle-right {
+    animation: none;
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  .flood__container {
+    transform: translateY(-25vh);
+    opacity: 1;
+  }
+
+  #cow_1 {
+    transform: translateY(-5vh);
+  }
+
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
+    opacity: 0;
+  }
+}
+
+
+.wrapper__container[animation="box_21"] {
+  .foreground__container {
+    display: none;
+  }
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  .forest_animal {
+    opacity: 0;
+  }
+
+  #monkey_2 {
+    opacity: 1;
+  }
+
+  .tree__row--middle-right {
+    opacity: 0;
+  }
+
+  .tree__row--middle-left {
+    animation: none;
+  }
+
+  .flood__container {
+    opacity: 1;
+    top: 75vh;
+  }
+
+  #cow_1 {
+    transform: translateY(-5vh);
+  }
+
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
+    opacity: 0;
+  }
+}
+
+
+.wrapper__container[animation="box_22"] {
+  .foreground__container {
+    display: none;
+  }
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  .forest_animal {
+    opacity: 0;
+  }
+
+  #monkey_2 {
+    transform: translateY(-50vh);
+  }
+
+  .tree__row--middle-left {
+    animation: none;
+    transform: rotate(-90deg);
+    opacity: 0;
+  }
+
+  .tree__row--middle-right {
+    opacity: 0;
+  }
+
+  .fire__animation--one,
+  .fire__animation--two {
+    transition-delay: 0.3s;
+    transition-duration: 1s;
+    opacity: 1;
+  }
+
+  .flood__container {
+    opacity: 1;
+    top: 75vh;
+  }
+
+  #cow_1 {
+    transform: translateY(-5vh);
+  }
+
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
+    opacity: 0;
+  }
+}
+
+
+.wrapper__container[animation="box_23"] {
+  .factory {
+    animation-play-state: paused;
+  }
+
+  .foreground__container {
+    display: none;
+  }
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  .tree__row--middle {
+    opacity: 0;
+  }
+
+  .forest_animal {
+    opacity: 0;
+  }
+
+  .fire__animation--one,
+  .fire__animation--two {
+    opacity: 1;
+  }
+
+  .fire__animation--three,
+  .fire__animation--four {
+    // transition-delay: .3s;
+    transition-duration: 1s;
+    opacity: 1;
+  }
+
+  .flood__container {
+    opacity: 1;
+    top: 75vh;
+  }
+
+  #cow_1 {
+    transform: translateY(-5vh);
+  }
+
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
+    opacity: 0;
+  }
+}
+
+
+.wrapper__container[animation="box_24"] {
+  .foreground__container {
+    display: none;
+  }
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  .tree__row--middle {
+    opacity: 0;
+  }
+
+  .forest_animal {
+    opacity: 0;
+  }
+  .fire {
+    opacity: 1;
+  }
+
+  .factory {
+    animation-play-state: paused;
+  }
+
+  .flood__container {
+    opacity: 1;
+    top: 75vh;
+  }
+
+  #cow_1 {
+    transform: translateY(-5vh);
+  }
+
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
+    opacity: 0;
+  }
+}
+
+
+.wrapper__container[animation="box_25"] {
+  .foreground__container {
+    display: none;
+  }
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  .tree__row--middle {
+    opacity: 0;
+  }
+
+  .forest_animal {
+    opacity: 0;
+  }
+
+  #monkey_1 {
+    left: 45vw;
+    bottom: 50vh;
+    z-index: 1;
+  }
+
+  #cat_1 {
+    left: 25vw;
+    bottom: 45vh;
+    z-index: 1;
+  }
+
+  .fire {
+    opacity: 1;
+  }
+  .factory {
+    animation-play-state: paused;
+  }
+  .flood__container {
+    opacity: 1;
+    top: 75vh;
+  }
+
+  #cow_1 {
+    transform: translateY(-5vh);
+  }
+
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
+    opacity: 0;
+  }
+}
+
+
+.wrapper__container[animation="box_26"] {
+  .foreground__container {
+    display: none;
+  }
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  .tree__row--middle {
+    opacity: 0;
+  }
+
+  .tree__row--middle-left {
+    opacity: 1;
+  }
+
+  .forest_animal {
+    opacity: 0;
+  }
+
+  #monkey_1 {
+    left: 45vw;
+    bottom: 50vh;
+    z-index: 1;
+  }
+
+  #cat_1 {
+    left: 25vw;
+    bottom: 45vh;
+    z-index: 1;
+  }
+
+  .fire {
+    transition-duration: 1s;
+    opacity: 0;
+  }
+
+  .factory {
+    animation-play-state: paused;
+  }
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
+    opacity: 0;
+  }
+}
+
+
+.wrapper__container[animation="box_27"] {
+  .foreground__container {
+    display: none;
+  }
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  .forest_animal {
+    opacity: 0;
+  }
+
+  #monkey_1 {
+    left: 45vw;
+    bottom: 50vh;
+    z-index: 1;
+  }
+
+  #cat_1 {
+    left: 25vw;
+    bottom: 45vh;
+    z-index: 1;
+  }
+
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
+    opacity: 0;
+  }
+}
+
+
+.wrapper__container[animation="box_28"] {
+  .foreground__container {
+    display: none;
+  }
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  .forest_animal {
+    opacity: 0;
+  }
+
+  #monkey_1 {
+    opacity: 1;
+    left: 45vw;
+    bottom: 50vh;
+    z-index: 1;
+  }
+
+  #monkey_2 {
+    opacity: 1;
+  }
+
+  #cat_1 {
+    opacity: 1;
+    left: 25vw;
+    bottom: 45vh;
+    z-index: 1;
+  }
+
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
+    opacity: 0;
+  }
+}
+
+
+.wrapper__container[animation="box_29"] {
+  .foreground__container {
+    display: none;
+  }
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  .forest_animal {
+    opacity: 0;
+  }
+
+  #monkey_1 {
+    opacity: 1;
+    left: 45vw;
+    bottom: 50vh;
+    z-index: 1;
+  }
+
+  #monkey_2 {
+    opacity: 1;
+  }
+
+  #cat_1 {
+    opacity: 1;
+    left: 25vw;
+    bottom: 45vh;
+    z-index: 1;
+  }
+
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
+    opacity: 0;
+  }
+}
+
+
+.wrapper__container[animation="box_30"] {
+  .foreground__container {
+    display: none;
+  }
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  .forest_animal {
+    opacity: 0;
+  }
+
+  #monkey_1 {
+    opacity: 1;
+    left: 45vw;
+    bottom: 50vh;
+    z-index: 1;
+  }
+
+  #monkey_2 {
+    opacity: 1;
+  }
+
+  #cat_1 {
+    opacity: 1;
+    left: 25vw;
+    bottom: 45vh;
+    z-index: 1;
+  }
+
+  .people__man--one,
+  #cow_3,
+  #cow_4 {
+    opacity: 0;
+  }
+}
+
+.wrapper__container[animation="box_31"] {
+  .foreground__container {
+    display: none;
+  }
+  .tree__row--front {
+    opacity: 0;
+  }
+
+  .people__man--one,
+  .forest_animal,
+  #cow_3,
+  #cow_4 {
+    opacity: 0;
+  }
+
+  #monkey_1 {
+    opacity: 1;
+    left: 45vw;
+    bottom: 50vh;
+    z-index: 1;
+  }
+
+  #monkey_2 {
+    opacity: 1;
+  }
+
+  #cat_1 {
+    opacity: 1;
+    left: 25vw;
+    bottom: 45vh;
+    z-index: 1;
+  }
+
+  .main__text {
+    font-weight: bolder;
+  }
+
+  .backdrop__filter {
+    transition-duration: 1.5s;
+    opacity: 1;
+  }
+}

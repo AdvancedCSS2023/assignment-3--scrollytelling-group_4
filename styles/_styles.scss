@@ -1,0 +1,192 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: var(--secondary-text-color);
+  font-size: 5rem;
+}
+
+h1::before {
+  content: url(https://globalgoalscms.co.uk/wp-content/uploads/2021/09/globalgoals_675a6237-f33f-42b2-9e76-21fd53e22e93_goal_15.5_rgb_ng.svg);
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper__container {
+  display: flex;
+  max-height: 100vh;
+  position: absolute;
+  z-index: 1;
+}
+
+.foreground {
+  position: absolute;
+  flex-shrink: 0;
+  width: 100%;
+  z-index: 5;
+  overflow: auto;
+  @include flex-centered;
+  filter: drop-shadow(2px 4px 6px var(--textbox-background-color-dark));
+}
+
+.foreground__container {
+  z-index: 1;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: sepia(50%);
+}
+
+.wrapper__left,
+.wrapper__right {
+  width: 50vw;
+  min-width: 50vw;
+  height: 100vh;
+  position: fixed;
+  background: var(--main-background-color);
+}
+
+.wrapper__right {
+  left: 50vw;
+}
+
+.main__text {
+  color: var(--main-text-color);
+  font-size: 1.5rem;
+  background-color: var(--textbox-background-color);
+  padding: 1.5rem;
+  border-radius: 25px;
+  max-width: 40ch;
+}
+
+.main__text.intro__text {
+  background-color: var(--secondary-textbox-bg-color);
+  color: var(--secondary-text-color);
+  text-transform: uppercase;
+  font-weight: 900;
+  border-radius: 0;
+  margin-right: 90vh;
+}
+
+.textbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 80vw;
+  &:first-child {
+    margin-top: 10vh;
+  }
+  &:last-child {
+    margin-bottom: 10vh;
+    position: absolute;
+    width: 8vh;
+    height: 10vh;
+    bottom: 2812vh;
+  }
+}
+
+#landscape__message--container {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--landscape-message-bg-color);
+  position: fixed;
+  z-index: 10;
+}
+
+.landscape__message--text {
+  display: block;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-top: 30vh;
+  text-align: center;
+  font-weight: bold;
+}
+
+.orientation__message--button {
+  display: block;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-top: 10vh;
+  text-align: center;
+  background-color: var(--landscape-message-button-color);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.orientation__message--button:hover {
+  background-color: var(--landscape-message-button-hover);
+}
+
+.button__donation {
+  width: 25vw;
+  max-width: 90%;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: var(--secondary-text-color);
+  text-align: center;
+  background-color: var(--secondary-textbox-bg-color);
+  border: 0.2rem solid var(--secondary-text-color);
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.button__donation:hover {
+  background-color: var(--donate-hover);
+}
+
+#box_31 {
+  @include flex-centered;
+  margin-bottom: 10vh;
+  z-index: 2;
+}
+
+.flood__container {
+  width: 100vw;
+  height: 25vh;
+  background: --flood-background;
+  background: var(--flood-gradient);
+  z-index: 10;
+  position: fixed;
+  top: 100vh;
+  opacity: 0;
+}
+
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.backdrop__filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: var(--filter-color);
+  z-index: 1;
+  opacity: 0;
+}
+
+.author__credit {
+  position: fixed;
+  color: var(--secondary-text-color);
+  top: 90vh;
+  font-style: italic;
+}
